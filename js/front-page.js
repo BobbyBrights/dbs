@@ -84,4 +84,13 @@ jQuery(document).ready(function($){
     }
   })();
 
+  (function responsive () {
+    $(window).on('resize', () => {
+      if ($(window).width() < 1050) {
+        $('#mobile-logo-svg').css('opacity', '1');
+        $('.header__hamburger').css('opacity', '1');
+      }
+    })
+  })();
+
 })
