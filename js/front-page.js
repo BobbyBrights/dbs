@@ -50,7 +50,7 @@ jQuery(document).ready(function($){
   (function closeForm () {
     $('.contact-form__x-button').on('click', () => {
       $('.contact-form').css({
-        'left': '-100vw',
+        'right': '-100vw',
       });
     })
   })();
@@ -58,13 +58,12 @@ jQuery(document).ready(function($){
   (function openForm () {
     $('.header__hamburger').on('click', () => {
       $('.contact-form').css({
-        'left': '0',
+        'right': '0',
       });
     })
     $('.header__contact-us > span').on('click', () => {
       $('.contact-form').css({
-        'left': '0',
-        // 'height': 'auto',
+        'right': '0',
       });
     })
 

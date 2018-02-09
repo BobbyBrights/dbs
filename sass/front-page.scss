@@ -22,11 +22,11 @@
     width: 100vw;
     position: absolute;
     top: 0;
-    left: -100vw;
+    right: -100vw;
     background-color: #edede8;
     z-index: 2;
     padding: 0 4%;
-    transition: left 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out;
     .contact-form__x-button-wrap {
       height: 50px;
       width: 100%;
