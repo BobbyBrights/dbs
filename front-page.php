@@ -22,14 +22,16 @@ get_header(); ?>
         <div class="contact-form__x-button-wrap">
           <div class="contact-form__x-button"></div>
         </div>
-
+        <div class="contact-form__contact-us">
+          <span>contact us</span>   
+        </div>
         <?php echo do_shortcode('[wpforms id="5" title="false" description="false"]') ?>
 
-        <div class="contact-form__information">
+        <!-- <div class="contact-form__information">
           <a href="mailto:info@dbsdevelopments.ca" class="contact-form__information-email">info@dbsdevelopments.ca</a> <br>
           <a href="tel:416.429.0969" class="contact-form__information-phone">416.429.0969</a>
           <p>11 Curity Ave.,<br> Toronto, On <br> M4B 1X4</p>
-        </div>
+        </div> -->
       </div>
 
       <header>
