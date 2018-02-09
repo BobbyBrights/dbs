@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   img {
     height: 100%;
     width: 100%;
@@ -12,7 +12,7 @@
     left: 0;
   }
   .main__overlay {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: absolute;
     left: 0;
@@ -22,7 +22,7 @@
   }
   .contact-form {
     color: rgb(40, 73, 68);
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -32,6 +32,9 @@
     z-index: 2;
     padding: 0 4%;
     transition: right 0.5s ease-in-out;
+    .wpforms-container-full {
+      margin: 0;
+    }
     .contact-form__x-button-wrap {
       height: 50px;
       width: 100%;
@@ -183,8 +186,9 @@
 
   .slogans {
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     padding: 0 4%;
+    // overflow: hidden;
     .slogan {
       color: #edede8;
       text-transform: capitalize;
@@ -195,14 +199,14 @@
       font-style: normal;
       font-stretch: normal;
       position: relative;
-      bottom: -30px;
+      bottom: -20px;
       opacity: 0;
       transition: bottom 1s ease-in-out, opacity 1s ease-in-out;
     }
     .slogan__comming-soon {
       font-weight: 100;
       font-family: unset;
-      margin-top: 30px;
+      margin-top: 15px;
       font-size: 1.5em;
     }
   }

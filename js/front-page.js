@@ -68,10 +68,19 @@ jQuery(document).ready(function($){
     })
 
   })();
+
   // change form id to the one provided by the plugin
   (function redirectAfterSubmit () {
     if (window.location.href == `${window.location.protocol}//${window.location.hostname}/#wpforms-294`) {
       document.location.href="/";
+    }
+  })();
+
+  (function styleOnSafari() {
+    let isSafariMobile = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
+
+    if (isSafariMobile) {
+      $('.slogans').css('bottom', '90px');
     }
   })();
 
