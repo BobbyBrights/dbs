@@ -1,0 +1,31 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2018 Schwartzco Inc.
+        License: 1801-RRAJAU     
+*/
+
+
+@font-face {
+  font-family: 'Druk Wide Web';
+  src: url('DrukWide-Medium-Web.eot');
+  src: url('DrukWide-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('DrukWide-Medium-Web.woff2') format('woff2'),
+       url('DrukWide-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.DrukWide-Medium-Web {
+  font-family: 'Druk Wide Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
