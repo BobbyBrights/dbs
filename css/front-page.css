@@ -37,6 +37,14 @@
   font-family: 'Druk Wide Web';
 }
 
+.front-page__landing-page .front-page__landing-page-slogans .front-page__landing-page-slogan {
+  opacity: 0;
+  position: relative;
+  bottom: -30px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .front-page__landing-page .front-page__landing-page-slogans a {
   color: #edede8;
   text-decoration: none;
