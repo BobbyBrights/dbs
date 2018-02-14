@@ -119,6 +119,9 @@ add_action( 'widgets_init', 'dbs_widgets_init' );
 function dbs_scripts() {
 	wp_enqueue_style( 'dbs-style', get_stylesheet_uri() );
 
+	// scroll reveal
+	wp_enqueue_script( 'dbs__scroll-reveal', get_template_directory_uri() . '/js/scrollreveal/dist/scrollreveal.min.js', array(), true );
+
 	// front page
 	wp_enqueue_style( 'dbs__front-page-style', get_template_directory_uri() . '/css/front-page.css' );
 	wp_enqueue_script( 'dbs__front-page-script', get_template_directory_uri() . '/js/front-page.js', array(), true );
