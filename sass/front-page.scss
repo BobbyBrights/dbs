@@ -59,8 +59,12 @@
     padding-top: 20px;
     color: #15534e;
     .front-page__content-description-header {
-      font-size: 2.2em;
-      font-weight: bold;
+      font-size: 2em;
+      font-weight: 500;
+      font-family: 'Druk Wide Web';
+    }
+    .front-page__content-description-detail {
+      font-size: 1.2em;
     }
     a {
       text-decoration: none;
@@ -101,10 +105,6 @@
       flex-grow: 1;
       width: 50%;
       padding: 160px 0 0 6vw;
-      .front-page__content-description-header {
-        font-family: 'Druk Wide Web';
-        font-weight: 500;
-      }
     }
   }
 
