@@ -8,7 +8,7 @@ Getting Started
 - Clone and put the theme into theme folder inside your Wordpress site
 - Active the theme in Wordpress backend
 
-**For developing method**
+**For developing purpose**
 - Clone the theme to local machine
 - Open Terminal/Command line in that folder
 - Run 'npm install --save'
