@@ -1,213 +1,66 @@
-#main {
-  height: 100vh;
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
+.front-page__landing-page {
+  height: 95vh;
   width: 100vw;
   position: relative;
-  overflow-x: hidden;
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
-  .main__overlay {
+  .front-page__landing-page-overlay {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     position: absolute;
+    top: 0;
     left: 0;
-    top: 0;
     background-color: #15534e;
-    opacity: 0.7;
+    opacity: 0.6;
   }
-  .contact-form {
-    color: rgb(40, 73, 68);
-    height: 100vh;
-    width: 100vw;
+  .front-page__landing-page-slogans {
     position: absolute;
-    top: 0;
-    right: -100vw;
-    overflow: hidden;
-    background-color: #edede8;
-    z-index: 2;
-    padding: 0 4%;
-    transition: right 0.5s ease-in-out;
-    .wpforms-container-full {
-      margin: 0;
-    }
-    .contact-form__x-button-wrap {
-      height: 50px;
-      width: 100%;
-      margin-bottom: 50px;
-      position: relative;
-      .contact-form__x-button {
-        height: 100%;
-        width: 50px;
-        position: absolute;
-        right: 4%;
-        top: 7vw;
-        cursor: pointer; 
-        transition: all 0.5s ease-in-out;
-        &:hover {
-          transform: rotate(180deg);
-        }
-        &::before {
-          content: '';
-          position: absolute;
-          top: 16px;
-          right: 18px;
-          height: 50px;
-          width: 50px;
-          border-top: 2px solid #15534e;
-          transform: rotate(45deg);
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          top: 16px;
-          left: 15px;
-          height: 50px;
-          width: 50px;
-          border-top: 2px solid #15534e;
-          transform: rotate(-45deg);
-        }
-      }
-    }
-    .contact-form__contact-us {
-      color: #15534e;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-    .contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number {
-      input {
-        border: none;
-        border-bottom: solid 2px #15534e;
-        background-color: transparent;
-        color: #15534e;
-        border-radius: 0;
-        padding-left: 0;
-        &::placeholder {
-          color: #15534e;
-        }
-      }
-      .wpforms-error {
-        color: #ff0f0f;
-        font-size: 13px;
-        margin-top: 5px;
-        font-weight: 200; 
-      }
-    }
-    .contact-form__message {
-      textarea {
-        background-color: transparent;
-        border: solid 2px #15534e;
-        color: #15534e;
-        border-radius: 0;
-        -webkit-appearance: none;
-        &::placeholder {
-          color: #15534e;
-        }
-      }
-      .wpforms-error {
-        color: #ff0f0f;
-        font-size: 13px;
-        margin-top: 5px;
-        font-weight: 200; 
-      }
-    }
-    .contact-form__submit {
-      background-color: transparent;
-      border: 2px solid #15534e;
-      width: 100%;
-      height: 50px;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 3px;
-      color: #15534e;
-      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-      &:hover {
-        background-color: #15534e;
-        color: #edede8;
-      }
-    }
-
-    .contact-form__information {
-      color: #15534e;
-      font-size: 1.3em;
-      a {
-        color: #15534e;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-      a.contact-form__information-phone {
-        text-decoration: none;
-      }
-    }
-  }
-
-  header {
-    display: flex;
-    flex-direction: row;
-    padding: 4vw 4% 0;
-    .header__logo {
-      flex-grow: 1;
-      width: 80%;
-      z-index: 1;
-      #desktop-logo-svg {
-        display: none;
-      }
-      #mobile-logo-svg {
-        width: 80%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      }
-    }
-    .header__hamburger {
-      flex-grow: 1;
-      width: 20%;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      .hamburger__line {
-        height: 2px;
-        width: 60%;
-        margin: 5px auto;
-        background-color: #edede8;
-      }
-    }
-    .header__contact-us {
-      display: none;
-    }
-  }
-
-  .slogans {
-    position: absolute;
-    bottom: 30px;
-    padding: 0 4%;
-    // overflow: hidden;
-    .slogan {
+    bottom: 4vw;
+    left: 4vw;
+    color: #edede8;
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: 'Druk Wide Web';
+    a {
       color: #edede8;
-      text-transform: capitalize;
-      font-family: 'Druk Wide Web';
-      font-size: 2em;
-      margin: -10px 0;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      position: relative;
-      bottom: -20px;
-      opacity: 0;
-      transition: bottom 1s ease-in-out, opacity 1s ease-in-out;
+      text-decoration: none;
+      font-size: 0.7em;
+      font-family: sans-serif;
     }
-    .slogan__comming-soon {
-      font-weight: 100;
-      font-family: unset;
-      margin-top: 15px;
-      font-size: 1.5em;
+  }
+}
+
+.front-page__content {
+  padding: 50px 4% 0;
+  background-color: #edede8;
+  .front-page__content-image {
+    width: 100%;
+    height: 200px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .front-page__content-description {
+    padding-top: 20px;
+    color: #15534e;
+    .front-page__content-description-header {
+      font-size: 2.2em;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.7em;
+      text-transform: capitalize;
+      color: #15534e;
     }
   }
 }
@@ -217,70 +70,36 @@
 /* ====================================================== */
 
 @media only screen and (min-width: 1050px) {
-  #main {
-    .contact-form {
-      .wpforms-container {
-        width: 50%;
-      }
-      .contact-form__first-name, .contact-form__last-name, .contact-form__email, .contact-form__phone-number {
-        input {
-          width: 100%;
-        }
-      }
-      .contact-form__submit {
-        width: 60%;
-      }
-      .contact-form__information {
-        position: absolute;
-        bottom: 220px;
-        left: 60vw;
-        font-size: 1.2em;
+
+  .front-page__landing-page {
+    .front-page__landing-page-slogans {
+      font-size: 2em;
+      left: 6vw;
+    }
+  }
+
+  .front-page__content {
+    padding: 5vh 6% 0;
+    display: flex;
+    .front-page__content-image {
+      flex-grow: 1;
+      width: 50%;
+      height: 400px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
       }
     }
-    header {
-      .header__logo {
-        width: 50%;
-        #mobile-logo-svg {
-          display: none;
-        }
-        #desktop-logo-svg {
-          display: block;
-          width: 55%;
-          opacity: 0;
-          transition: opacity 1s ease-in-out;
-        }
-      }
-      .header__hamburger {
-        display: none;
-      }
-      .header__contact-us {
-        display: block;
-        flex-grow: 1;
-        width: 50%;
-        color: #edede8;
-        text-transform: uppercase;
-        font-size: 0.8em;
-        text-align: right;
-        font-weight: bold;
-        letter-spacing: 2px;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        span {
-          cursor: pointer;
-        }
-      }
-    }
-    .slogans {
-      bottom: 50px;
-      .slogan {
-        font-size: 2.5em;
-        margin: -15px 0;
-      }
-      .slogan__comming-soon {
-        font-size: 1.5em;
-        margin-top: 30px;
+    .front-page__content-description {
+      flex-grow: 1;
+      width: 50%;
+      padding: 160px 0 0 6vw;
+      .front-page__content-description-header {
+        font-family: 'Druk Wide Web';
+        font-weight: 500;
       }
     }
   }
+
 }
