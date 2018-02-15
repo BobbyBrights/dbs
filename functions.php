@@ -131,7 +131,11 @@ function dbs_scripts() {
 	
 		// Header
 		wp_enqueue_style( 'dbs-header-style', get_template_directory_uri() . '/css/header.css' );	
-		wp_enqueue_script( 'dbs-header-js', get_template_directory_uri() . '/js/header.js', array(), true );	
+		wp_enqueue_script( 'dbs-header-js', get_template_directory_uri() . '/js/header.js', array(), true );
+		
+		// Footer
+		wp_enqueue_style( 'dbs-footer-style', get_template_directory_uri() . '/css/footer.css' );	
+		// wp_enqueue_script( 'dbs-footer-js', get_template_directory_uri() . '/js/footer.js', array(), true );	
 	
 		// front page
 		wp_enqueue_style( 'dbs__front-page-style', get_template_directory_uri() . '/css/front-page.css' );
