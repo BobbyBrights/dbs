@@ -113,13 +113,38 @@ function dbs_widgets_init() {
 }
 add_action( 'widgets_init', 'dbs_widgets_init' );
 
+// Custom post type : Projects
+function create_posttype() {
+
+	register_post_type( 'projects' ,
+	array(
+		'labels' => array(
+			'name' => __( 'Projects' ),
+			'singular_name' => __( 'Project' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'projects'),
+		)
+	);
+}
+add_action('init', 'create_posttype');
+
 /**
  * Enqueue scripts and styles.
  */
 function dbs_scripts() {
-	// font
+
+  // font
 	wp_enqueue_style( 'dbs-font-drukwideweb', get_template_directory_uri() . '/fonts/commercial-type-1801-RRAJAU-web/1801-RRAJAU.css' );
 	wp_enqueue_style( 'dbs-font-typotheque-neutral', 'https://fonts.typotheque.com/WF-030785-010208.css' );	
+  
+	// scroll reveal
+	wp_enqueue_script( 'dbs__scroll-reveal', get_template_directory_uri() . '/js/scrollreveal/dist/scrollreveal.min.js', array(), true );
+
+	// front page
+	wp_enqueue_style( 'dbs__front-page-style', get_template_directory_uri() . '/css/front-page.css' );
+	wp_enqueue_script( 'dbs__front-page-script', get_template_directory_uri() . '/js/front-page.js', array(), true );
 
 	wp_enqueue_style( 'dbs-style', get_stylesheet_uri() );
 
@@ -136,10 +161,6 @@ function dbs_scripts() {
 		// Footer
 		wp_enqueue_style( 'dbs-footer-style', get_template_directory_uri() . '/css/footer.css' );	
 		// wp_enqueue_script( 'dbs-footer-js', get_template_directory_uri() . '/js/footer.js', array(), true );	
-	
-		// front page
-		wp_enqueue_style( 'dbs__front-page-style', get_template_directory_uri() . '/css/front-page.css' );
-		wp_enqueue_script( 'dbs__front-page-script', get_template_directory_uri() . '/js/front-page.js', array(), true );
 	
 		wp_enqueue_script( 'dbs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 }

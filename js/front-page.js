@@ -2,95 +2,46 @@ jQuery(document).ready(function($){
 
   $(window).load(function(){
     setTimeout(() => {
-      $('.slogan__innovation').css({
+      $('.front-page__landing-page-slogan-innovation').css({
         'bottom': '0',
         'opacity': '1',
       });
     }, 500);
     setTimeout(() => {
-      $('.slogan__community').css({
+      $('.front-page__landing-page-slogan-community').css({
         'bottom': '0',
         'opacity': '1',
       });
     }, 800);
     setTimeout(() => {
-      $('.slogan__legacy').css({
+      $('.front-page__landing-page-slogan-legacy').css({
         'bottom': '0',
         'opacity': '1',
       });
     }, 1100);
     setTimeout(() => {
-      $('.slogan__comming-soon').css({
+      $('.front-page__landing-page-slogan-view-projects').css({
         'bottom': '0',
         'opacity': '1',
       });
     }, 1400);
-    if ($(window).width() > 1050) {
-      setTimeout(() => {
-        $('#desktop-logo-svg').css({
-          'opacity': '1',
-        });
-        $('.header__contact-us').css({
-          'opacity': '1',
-        });
-      }, 2400);
-    }
-    if ($(window).width() < 1050) {
-      setTimeout(() => {
-        $('#mobile-logo-svg').css({
-          'opacity': '1',
-        });
-        $('.header__hamburger').css({
-          'opacity': '1',
-        });
-      }, 2400);
-    }
   });
-  
-  // (function closeForm () {
-  //   $('.contact-form__x-button').on('click', () => {
-  //     $('.contact-form').css({
-  //       'right': '-100vw',
-  //     });
-  //   })
-  // })();
 
-  // (function openForm () {
-  //   // $('.header__hamburger').on('click', () => {
-  //   //   $('.contact-form').css({
-  //   //     'right': '0',
-  //   //   });
-  //   // })
-  //   $('.header__contact-us > span').on('click', () => {
-  //     $('.contact-form').css({
-  //       'right': '0',
-  //     });
-  //   })
 
-  // })();
-
-  // change form id to the one provided by the plugin
-  (function redirectAfterSubmit () {
-    if (window.location.href == `${window.location.protocol}//${window.location.hostname}/#wpforms-294`) {
-      document.location.href="/";
+  (function scrollReveal() {
+    window.sr = ScrollReveal();
+    let frontPageScrollReveal = {
+      duration: 900,
+      distance: '100px',
+      easing: 'ease-in-out',
+      scale: 1,
+      reset: false,
+      viewFactor: 0.5
     }
-  })();
-
-  (function styleOnSafari() {
-    let isSafariMobile = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
-
-    if (isSafariMobile) {
-      $('.slogans').css('bottom', '90px');
-    }
-  })();
-
-  (function responsive () {
-    $(window).on('resize', () => {
-      if ($(window).width() < 1050) {
-        $('#mobile-logo-svg').css('opacity', '1');
-        $('.header__hamburger').css('opacity', '1');
-      }
-    })
+    sr.reveal('.front-page__content-image', frontPageScrollReveal);
+    sr.reveal('.front-page__content-description-header', frontPageScrollReveal);
+    sr.reveal('.front-page__content-description-detail', frontPageScrollReveal);
+    sr.reveal('.front-page__content-description-link', frontPageScrollReveal);
   })();
 
 })
