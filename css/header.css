@@ -378,8 +378,8 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    height: 50px;
-    width: 58%;
+    height: 45px;
+    width: 53%;
   }
 
   header .site-branding .header-logo .header-logo-image {

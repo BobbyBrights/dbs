@@ -9,15 +9,16 @@ footer .footer-content {
   font-family: "Neutral Regular";
 }
 
-footer .footer-content .footer-logo {
-  font-family: "Druk Wide Web", sans-serif;
-  font-size: 30px;
-  letter-spacing: 1.5px;
-}
-
 footer .footer-content .footer-line {
   border-bottom: 1px solid #15534e;
   height: 20px;
+}
+
+footer .footer-content .footer-logo-mobile {
+  font-family: "Druk Wide Web", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding: 20px 0;
 }
 
 footer .footer-content .footer-social {
@@ -96,7 +97,7 @@ footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-cont
 }
 
 footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit {
-  border: 1.2px solid #15534e;
+  border: 1.3px solid #15534e;
   border-radius: 0;
   color: #15534e;
   font-size: 14px;
@@ -107,7 +108,11 @@ footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-cont
   width: 100%;
 }
 
-footer .footer-content .footer-copyright {
+footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit:hover {
+  background-color: transparent;
+}
+
+footer .footer-content .footer-desktop-wrapper-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,13 +120,111 @@ footer .footer-content .footer-copyright {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 70%;
   font-size: 13px;
+  line-height: 22px;
 }
 
-footer .footer-content .footer-copyright a,
-footer .footer-content .footer-copyright a:visited,
-footer .footer-content .footer-copyright a:focus,
-footer .footer-content .footer-copyright a:hover {
+footer .footer-content .footer-desktop-wrapper-two .footer-logo-desktop {
+  display: none;
+}
+
+footer .footer-content .footer-desktop-wrapper-two a,
+footer .footer-content .footer-desktop-wrapper-two a:visited,
+footer .footer-content .footer-desktop-wrapper-two a:focus,
+footer .footer-content .footer-desktop-wrapper-two a:hover {
   color: #15534e;
+}
+
+@media screen and (min-width: 1025px) {
+  footer {
+    padding: 30px 0 40px 0;
+  }
+
+  footer .footer-content {
+    margin: 0 4% 0 4%;
+  }
+
+  footer .footer-content .footer-line {
+    display: none;
+  }
+
+  footer .footer-content .footer-logo-mobile {
+    display: none;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-social {
+    width: 30%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-contact {
+    width: 30%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-contact a:nth-child(1) {
+    padding-top: 0;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe {
+    width: 30%;
+    padding-top: 0;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container form div .wpforms-field-email input {
+    max-width: 100%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-two .footer-logo-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Druk Wide Web", sans-serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    width: 30%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-two .footer-copyright {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 30%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-two .footer-design-by {
+    width: 30%;
+  }
 }
