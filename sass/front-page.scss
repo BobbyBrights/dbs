@@ -147,42 +147,42 @@
     }
   }
 
-  header {
-    display: flex;
-    flex-direction: row;
-    padding: 4vw 4% 0;
-    .header__logo {
-      flex-grow: 1;
-      width: 80%;
-      z-index: 1;
-      #desktop-logo-svg {
-        display: none;
-      }
-      #mobile-logo-svg {
-        width: 80%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      }
-    }
-    .header__hamburger {
-      flex-grow: 1;
-      width: 20%;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      .hamburger__line {
-        height: 2px;
-        width: 60%;
-        margin: 5px auto;
-        background-color: #edede8;
-      }
-    }
-    .header__contact-us {
-      display: none;
-    }
-  }
+  // header {
+  //   display: flex;
+  //   flex-direction: row;
+  //   padding: 4vw 4% 0;
+  //   .header__logo {
+  //     flex-grow: 1;
+  //     width: 80%;
+  //     z-index: 1;
+  //     #desktop-logo-svg {
+  //       display: none;
+  //     }
+  //     #mobile-logo-svg {
+  //       width: 80%;
+  //       opacity: 0;
+  //       transition: opacity 1s ease-in-out;
+  //     }
+  //   }
+  //   .header__hamburger {
+  //     flex-grow: 1;
+  //     width: 20%;
+  //     z-index: 1;
+  //     display: flex;
+  //     flex-direction: column;
+  //     opacity: 0;
+  //     transition: opacity 1s ease-in-out;
+  //     .hamburger__line {
+  //       height: 2px;
+  //       width: 60%; 
+  //       margin: 5px auto;
+  //       background-color: #edede8;
+  //     }
+  //   }
+  //   .header__contact-us {
+  //     display: none;
+  //   }
+  // }
 
   .slogans {
     position: absolute;
@@ -237,40 +237,40 @@
         font-size: 1.2em;
       }
     }
-    header {
-      .header__logo {
-        width: 50%;
-        #mobile-logo-svg {
-          display: none;
-        }
-        #desktop-logo-svg {
-          display: block;
-          width: 55%;
-          opacity: 0;
-          transition: opacity 1s ease-in-out;
-        }
-      }
-      .header__hamburger {
-        display: none;
-      }
-      .header__contact-us {
-        display: block;
-        flex-grow: 1;
-        width: 50%;
-        color: #edede8;
-        text-transform: uppercase;
-        font-size: 0.8em;
-        text-align: right;
-        font-weight: bold;
-        letter-spacing: 2px;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        span {
-          cursor: pointer;
-        }
-      }
-    }
+    // header {
+    //   .header__logo {
+    //     width: 50%;
+    //     #mobile-logo-svg {
+    //       display: none;
+    //     }
+    //     #desktop-logo-svg {
+    //       display: block;
+    //       width: 55%;
+    //       opacity: 0;
+    //       transition: opacity 1s ease-in-out;
+    //     }
+    //   }
+    //   .header__hamburger {
+    //     display: none;
+    //   }
+    //   .header__contact-us {
+    //     display: block;
+    //     flex-grow: 1;
+    //     width: 50%;
+    //     color: #edede8;
+    //     text-transform: uppercase;
+    //     font-size: 0.8em;
+    //     text-align: right;
+    //     font-weight: bold;
+    //     letter-spacing: 2px;
+    //     z-index: 1;
+    //     opacity: 0;
+    //     transition: opacity 1s ease-in-out;
+    //     span {
+    //       cursor: pointer;
+    //     }
+    //   }
+    // }
     .slogans {
       bottom: 50px;
       .slogan {

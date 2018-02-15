@@ -34,7 +34,7 @@ get_header(); ?>
         </div> -->
       </div>
 
-      <header>
+      <!-- <header>
         <div class="header__logo">
           <object id="desktop-logo-svg" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo.svg">Your browser does not support SVGs</object>
           <object id="mobile-logo-svg" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg">Your browser does not support SVGs</object>
@@ -47,7 +47,7 @@ get_header(); ?>
         <div class="header__contact-us">
           <span>contact us</span>   
         </div>
-      </header>
+      </header> -->
 
       <div class="slogans">
         <div class="slogan__innovation slogan">innovation.</div>

@@ -47,27 +47,27 @@ jQuery(document).ready(function($){
     }
   });
   
-  (function closeForm () {
-    $('.contact-form__x-button').on('click', () => {
-      $('.contact-form').css({
-        'right': '-100vw',
-      });
-    })
-  })();
+  // (function closeForm () {
+  //   $('.contact-form__x-button').on('click', () => {
+  //     $('.contact-form').css({
+  //       'right': '-100vw',
+  //     });
+  //   })
+  // })();
 
-  (function openForm () {
-    $('.header__hamburger').on('click', () => {
-      $('.contact-form').css({
-        'right': '0',
-      });
-    })
-    $('.header__contact-us > span').on('click', () => {
-      $('.contact-form').css({
-        'right': '0',
-      });
-    })
+  // (function openForm () {
+  //   // $('.header__hamburger').on('click', () => {
+  //   //   $('.contact-form').css({
+  //   //     'right': '0',
+  //   //   });
+  //   // })
+  //   $('.header__contact-us > span').on('click', () => {
+  //     $('.contact-form').css({
+  //       'right': '0',
+  //     });
+  //   })
 
-  })();
+  // })();
 
   // change form id to the one provided by the plugin
   (function redirectAfterSubmit () {
