@@ -1,0 +1,107 @@
+@import 'variables-site/variables-site';
+
+footer {
+  padding-bottom: 25px;
+  background: $color__white;
+  .footer-content {
+    margin: $margin__mobile;
+    color: $color__green;
+    font-family: $font__secondary_reg;
+    .footer-logo {
+      font-family: $font__main;
+      font-size: 30px;
+      letter-spacing: 1.5px;
+    }
+    .footer-line {
+      border-bottom: 1px solid $color__green;
+      height: 20px;
+    }
+    .footer-social {
+      font-size: 18px;
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      a,
+      a:visited,
+      a:focus,
+      a:hover {
+        color: $color__green;
+        font-size: 18px;
+        padding: 10px 0;
+      }
+      .footer-contact-address {
+        font-size: 18px;
+        padding: 10px 0;        
+      }
+    }
+    .footer-subscribe {
+      padding: 20px 0 20px 0;
+      span {
+        font-size: 18px;
+      }
+      .wpforms-container {
+        form {
+          div {
+            .wpforms-field-email {
+              input {
+                background: transparent;
+                border: 1.2px solid $color__green;
+                border-radius: 0;
+                height: 50px;
+                &::placeholder {
+                  color: $color__green;
+                  font-family: $font__secondary_reg;
+                  font-size: 15px;
+                  padding-left: 5px;
+                }
+              }
+            }
+          }
+        }
+        .wpforms-submit-container {
+          padding-top: 5px;
+          .wpforms-submit {
+            border: 1.2px solid $color__green;
+            border-radius: 0;
+            color: $color__green;
+            font-size: 14px;
+            font-family: $font__secondary_med;            
+            letter-spacing: 2px;
+            height: 50px;
+            text-transform: uppercase;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      font-size: 13px;
+      a,
+      a:visited,
+      a:focus,
+      a:hover {
+        color: $color__green;
+      }
+    }
+  }
+}
+
+// IPAD
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+// IPAD PRO 10.5"
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+}
+
+// DESKTOP
+@media screen and (min-width: 1025px) {
+}
+
+// EXTRA LARGE
+@media screen and (min-width: 1600px) {
+}

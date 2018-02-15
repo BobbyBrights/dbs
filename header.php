@@ -25,14 +25,58 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dbs' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-	
-		</div><!-- .site-branding -->
+		<section class="site-branding">
+			<div class="header-logo">
+				<object class="header-logo-image" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
+				<object class="header-logo-image-desktop" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo.svg"></object>				
+			</div>
+			<div class="header__hamburger" onclick="openMenu()">
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line"></div>
+			</div>  
+		</section><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-		
+		<section id="menu-overlay" class="main-navigation">
+			<div id="menu-overlay-content">
+				<div id="menu-close-wrapper">
+					<a href="javascript:void(0)" class="menu-close" onclick="closeMenu()"></a>
+				</div>
+				<div id="menu-content">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+					<div class="menu-contact-button" onclick="openForm()">Contact</div>
+					<div class="menu-social">
+						<span>Follow Us</span>
+						<div class="menu-social-icons">
+							<img src=""/>
+							<img src=""/>							
+						</div>
+					</div>
+					<div class="menu-contact">
+						<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
+						<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
+						<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #menu-overlay -->
 
-		</nav><!-- #site-navigation -->
+		<section id="contact-form">
+			<div id="contact-form-content">
+				<div id="contact-close-wrapper">
+					<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
+				</div>
+				<?php echo do_shortcode('[wpforms id="12"]') ?>
+			</div>
+		</section><!-- #contact-form -->
+
+		<div onclick="openForm()">OPEN CONTACT</div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
     }, 1400);
   });
 
+
   (function scrollReveal() {
     window.sr = ScrollReveal();
     let frontPageScrollReveal = {
