@@ -1,5 +1,7 @@
 let windowSize = window.innerWidth;
 
+
+
 function openMenu() {
   if (windowSize > 1025) {
     document.getElementById('menu-overlay').style.width = '40%';    
@@ -30,9 +32,10 @@ function openForm() {
     openMenu();
     setTimeout(function() {
       document.getElementById('contact-form').style.width = '100%';
-      document.getElementById('contact-close-wrapper').style.opacity = '1';
       // document.getElementById('contact-form-content').style.right = '0';  
-      document.getElementById('contact-form-content').style.opacity = '1';        
+      setTimeout(function() {
+        document.getElementById('contact-form-content').style.opacity = '1';        
+      }, 300);
     }, 300);
   } else if (windowSize < 1025) {
   document.getElementById('contact-form').style.width = '100%';
