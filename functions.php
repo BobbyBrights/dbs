@@ -113,6 +113,23 @@ function dbs_widgets_init() {
 }
 add_action( 'widgets_init', 'dbs_widgets_init' );
 
+// Custom post type : Projects
+function create_posttype() {
+
+	register_post_type( 'projects' ,
+	array(
+		'labels' => array(
+			'name' => __( 'Projects' ),
+			'singular_name' => __( 'Project' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'projects'),
+		)
+	);
+}
+add_action('init', 'create_posttype');
+
 /**
  * Enqueue scripts and styles.
  */
