@@ -64,7 +64,7 @@
       .about__our-legacy-large-txt {
         p {
           margin: 20px 0 50px 0;
-        }  
+        }
       }
     }
     .about__innovation {
@@ -77,17 +77,17 @@
       .about__innovation-large-txt {
         p {
           margin: 10px 0 20px 0;
-        }       
+        }
       }
       .about__innovation-small-txt {
         font-size: 19px;
-        line-height: 25px;       
+        line-height: 25px;
         p {
           margin: 30px 0;
-        }         
+        }
       }
       .about__innovation-small-img {
-        padding: 0 0 10px 0;        
+        padding: 0 0 10px 0;
       }
     }
     .about__community {
@@ -100,14 +100,14 @@
       .about__community-large-txt {
         p {
           margin: 10px 0 20px 0;
-        }  
+        }
       }
       .about__community-small-txt {
         font-size: 19px;
-        line-height: 25px;   
+        line-height: 25px;
         p {
           margin: 30px 0 50px 0;
-        }     
+        }
       }
     }
     .about__partnerships-associations {
@@ -118,16 +118,16 @@
         letter-spacing: 1.5px;
       }
       #about__partnerships-associations-carousel {
-        margin-left: -7%;
         margin-right: -7%;
-        margin-top: 25px;        
+        margin-top: 25px;
         .slick-list {
           height: 200px;
+          padding: 0px 30px 0 0;          
           .slick-track {
             height: 100%;
             .slick-slide {
               height: 100%;
-              object-fit: contain;
+              object-fit: cover;
             }
           }
         }
@@ -135,7 +135,7 @@
         //   li {
         //     height: 10px;
         //     padding: 0 5px;
-        //     margin: 0 1px;            
+        //     margin: 0 1px;
         //     button {
         //       background-color: $color__green;
         //       border-radius: 0;
@@ -162,7 +162,9 @@
         margin-top: 25px;
         margin-bottom: 0;
         // height: 150px;
+        margin-right: -7%;
         .slick-list {
+          padding: 0px 30px 0 0;
           .about__publication-wrapper {
             font-family: $font__main;
             .publication-name {
@@ -185,7 +187,7 @@
               font-family: $font__secondary_med;
               font-size: 14px;
               letter-spacing: 1.5px;
-              line-height: 35px;              
+              line-height: 35px;
             }
           }
         }
@@ -222,54 +224,156 @@
 
 // DESKTOP
 @media screen and (min-width: 1025px) {
-  #about__page {
+  #about-page {
     .about__landing-page {
       height: 95vh;
       img {
+        width: 100%;
       }
       .about__landing-page-overlay {
       }
       .about__landing-page-text {
+        font-size: 2.5em;
+        width: 500px;
+        margin: $margin__desktop;
       }
     }
-    .about__opening-text {
-    }
-    .about__our-legacy {
-      .about__our-legacy-large-img {
+    .about-page-body {
+      margin: $margin__desktop;
+      .about__opening-text {
       }
-      span {
+      .about__our-legacy {
+        position: relative;
+        .about__our-legacy-large-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+        }
+        span {
+          position: relative;          
+        }
+        .about__our-legacy-small-txt {
+          position: relative;         
+          width: 45%;
+          height: 800px; 
+          
+        }
+        .about__our-legacy-small-img {
+          position: relative;          
+          width: 50%;
+          
+        }
+        .about__our-legacy-large-txt {
+          position: absolute;          
+          width: 45%;          
+          right: 0;
+          bottom: 0;
+        }
       }
-      .about__our-legacy-small-txt {
+      .about__innovation {
+        position: relative;
+        height: 600px;
+        span {
+          position: absolute;
+          width: 45%;
+          right: 0;
+        }
+        .about__innovation-large-txt {
+          position: absolute;
+          width: 55%;
+          top: 70px;
+          left: 23%;
+          z-index: 1;
+        }
+        .about__innovation-small-txt {
+          position: absolute;
+          width: 45%;
+          right: 0;
+          top: 200px;
+        }
+        .about__innovation-small-img {
+          position: absolute;
+          width: 50%;
+          left: 0;
+          bottom: 0;
+        }
       }
-      .about__our-legacy-small-img {
+      .about__community {
+        position: relative;
+        height: 500px;
+        span {
+          position: absolute;
+          width: 45%;
+          right: 0;
+        }
+        .about__community-large-txt {
+          position: absolute;
+          width: 55%;
+          top: 70px;
+          left: 23%;
+          z-index: 1;
+        }
+        .about__community-small-txt {
+          position: absolute;
+          width: 45%;
+          right: 0;
+          top: 200px;
+        }
       }
-      .about__our-legacy-large-txt {
+      .about__partnerships-associations {
+        span {
+        }
+        #about__partnerships-associations-carousel {
+          margin-right: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;          
+          img {
+            width: 30%;
+            height: 250px;
+            object-fit: contain;
+          }
+        }
+
       }
-    }
-    .about__innovation {
-      span {
-      }
-      .about__innovation-large-txt {
-      }
-      .about__innovation-small-txt {
-      }
-      .about__innovation-small-img {
-      }
-    }
-    .about__community {
-      span {
-      }
-      .about__community-large-txt {
-      }
-      .about__community-small-txt {
-      }
-    }
-    .about__partnerships-associations {
-      span {
-      }
-    }
-    .about__featured-in {
-      span {
+      .about__featured-in {
+        span {
+        }
+        #about__featured-in-carousel {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;                    
+          width: 100%;
+          margin-right: 0;
+          .about__publication-wrapper {
+            font-family: $font__main;      
+            width: 30%;
+            padding: 20px 0;
+            .publication-name {
+              text-transform: uppercase;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 25px;
+            }
+            .publication-headline {
+              color: $color__green;
+              letter-spacing: 1.5px;
+              font-size: 20px;
+              &:visited,
+              &:hover,
+              &:focus {
+                color: $color__green;
+              }
+            }
+            .publication-date {
+              font-family: $font__secondary_med;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 35px;
+            }
+          }
+        }
       }
     }
   }

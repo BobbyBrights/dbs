@@ -142,13 +142,13 @@
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel {
-  margin-left: -7%;
   margin-right: -7%;
   margin-top: 25px;
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list {
   height: 200px;
+  padding: 0px 30px 0 0;
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track {
@@ -157,8 +157,8 @@
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide {
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #about-page .about-page-body .about__featured-in {
@@ -174,6 +174,11 @@
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel {
   margin-top: 25px;
   margin-bottom: 0;
+  margin-right: -7%;
+}
+
+#about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list {
+  padding: 0px 30px 0 0;
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
@@ -207,7 +212,177 @@
 }
 
 @media screen and (min-width: 1025px) {
-  #about__page .about__landing-page {
+  #about-page .about__landing-page {
     height: 95vh;
+  }
+
+  #about-page .about__landing-page img {
+    width: 100%;
+  }
+
+  #about-page .about__landing-page .about__landing-page-text {
+    font-size: 2.5em;
+    width: 500px;
+    margin: 0 4% 0 4%;
+  }
+
+  #about-page .about-page-body {
+    margin: 0 4% 0 4%;
+  }
+
+  #about-page .about-page-body .about__our-legacy {
+    position: relative;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
+
+  #about-page .about-page-body .about__our-legacy span {
+    position: relative;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-small-txt {
+    position: relative;
+    width: 45%;
+    height: 800px;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img {
+    position: relative;
+    width: 50%;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-txt {
+    position: absolute;
+    width: 45%;
+    right: 0;
+    bottom: 0;
+  }
+
+  #about-page .about-page-body .about__innovation {
+    position: relative;
+    height: 600px;
+  }
+
+  #about-page .about-page-body .about__innovation span {
+    position: absolute;
+    width: 45%;
+    right: 0;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-large-txt {
+    position: absolute;
+    width: 55%;
+    top: 70px;
+    left: 23%;
+    z-index: 1;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-small-txt {
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 200px;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-small-img {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+  }
+
+  #about-page .about-page-body .about__community {
+    position: relative;
+    height: 500px;
+  }
+
+  #about-page .about-page-body .about__community span {
+    position: absolute;
+    width: 45%;
+    right: 0;
+  }
+
+  #about-page .about-page-body .about__community .about__community-large-txt {
+    position: absolute;
+    width: 55%;
+    top: 70px;
+    left: 23%;
+    z-index: 1;
+  }
+
+  #about-page .about-page-body .about__community .about__community-small-txt {
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 200px;
+  }
+
+  #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel img {
+    width: 30%;
+    height: 250px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper {
+    font-family: "Druk Wide Web", sans-serif;
+    width: 30%;
+    padding: 20px 0;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline {
+    color: #15534e;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:visited,
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:hover,
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:focus {
+    color: #15534e;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-date {
+    font-family: "Neutral Medium";
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 35px;
   }
 }

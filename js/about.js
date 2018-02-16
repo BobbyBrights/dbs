@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
       $('#about__partnerships-associations-carousel').slick({
         arrows: false,
         // centerMode: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         centerPadding: '30px',
         dots: true,
@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
         arrows: false,
         // centerMode: true,
         adaptiveHeight: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         centerPadding: '30px',
         dots: true,
