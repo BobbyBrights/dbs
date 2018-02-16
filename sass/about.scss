@@ -1,20 +1,20 @@
 @import 'variables-site/variables-site';
 
 #about-page {
-  margin: $margin__mobile;
+  background-color: $color__white;
   .about__landing-page {
     height: 75vh;
     width: 100%;
     position: relative;
     img {
       height: 100%;
-      width: 100%;
+      max-width: 100%;
       object-fit: cover;
     }
     .about__landing-page-overlay {
       height: 100%;
-      width: 100%;
       position: absolute;
+      width: 100%;
       top: 0;
       left: 0;
       background-color: #15534e;
@@ -24,63 +24,190 @@
       color: $color__white;
       font-family: $font__main;
       font-size: 2em;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       position: absolute;
-      bottom: 5px;
+      bottom: 30px;
+      margin: $margin__mobile;
     }
   }
-  .about__opening-text {
-
-  }
-  .about__our-legacy {
-    .about__our-legacy-large-img {
-
+  .about-page-body {
+    margin: $margin__mobile;
+    font-size: 22px;
+    font-family: $font__secondary_reg;
+    .about__opening-text {
+      color: $color__green;
+      padding-top: 20px;
+      p {
+        margin-bottom: 30px;
+      }
     }
-    span {
-
+    .about__our-legacy {
+      color: $color__green;
+      .about__our-legacy-large-img {
+        margin-bottom: 20px;
+      }
+      span {
+        font-family: $font__main;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+      }
+      .about__our-legacy-small-txt {
+        font-size: 19px;
+        line-height: 25px;
+        p {
+          margin: 10px 0 20px 0;
+        }
+      }
+      .about__our-legacy-small-img {
+        padding: 10px 0;
+      }
+      .about__our-legacy-large-txt {
+        p {
+          margin: 20px 0 50px 0;
+        }  
+      }
     }
-    .about__our-legacy-small-txt {
-
+    .about__innovation {
+      color: $color__green;
+      span {
+        font-family: $font__main;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+      }
+      .about__innovation-large-txt {
+        p {
+          margin: 10px 0 20px 0;
+        }       
+      }
+      .about__innovation-small-txt {
+        font-size: 19px;
+        line-height: 25px;       
+        p {
+          margin: 30px 0;
+        }         
+      }
+      .about__innovation-small-img {
+        padding: 0 0 10px 0;        
+      }
     }
-    .about__our-legacy-small-img {
-
+    .about__community {
+      color: $color__green;
+      span {
+        font-family: $font__main;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+      }
+      .about__community-large-txt {
+        p {
+          margin: 10px 0 20px 0;
+        }  
+      }
+      .about__community-small-txt {
+        font-size: 19px;
+        line-height: 25px;   
+        p {
+          margin: 30px 0 50px 0;
+        }     
+      }
     }
-    .about__our-legacy-large-txt {
-
+    .about__partnerships-associations {
+      color: $color__green;
+      span {
+        font-family: $font__main;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+      }
+      #about__partnerships-associations-carousel {
+        margin-left: -7%;
+        margin-right: -7%;
+        margin-top: 25px;        
+        .slick-list {
+          height: 200px;
+          .slick-track {
+            height: 100%;
+            .slick-slide {
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+        // .slick-dots {
+        //   li {
+        //     height: 10px;
+        //     padding: 0 5px;
+        //     margin: 0 1px;            
+        //     button {
+        //       background-color: $color__green;
+        //       border-radius: 0;
+        //       width: 100%;
+        //       height: 100%;
+        //       opacity: 0.25;
+        //       &:before {
+        //         content: '';
+        //         color: $color__green;
+        //       }
+        //     }
+        //   }
+        // }
+      }
     }
-  }
-  .about__innovation {
-    span {
-
-    }
-    .about__innovation-large-txt {
-
-    }
-    .about__innovation-small-txt {
-
-    }
-    .about__innovation-small-img {
-
-    }
-  }
-  .about__community {
-    span {
-
-    }
-    .about__community-large-txt {
-
-    }
-    .about__community-small-txt {
-    }
-  }
-  .about__partnerships-associations {
-    span {
-
-    }
-  }
-  .about__featured-in {
-    span {
-
+    .about__featured-in {
+      color: $color__green;
+      span {
+        font-family: $font__main;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+      }
+      #about__featured-in-carousel {
+        margin-top: 25px;
+        margin-bottom: 0;
+        // height: 150px;
+        .slick-list {
+          .about__publication-wrapper {
+            font-family: $font__main;
+            .publication-name {
+              text-transform: uppercase;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 25px;
+            }
+            .publication-headline {
+              color: $color__green;
+              letter-spacing: 1.5px;
+              font-size: 20px;
+              &:visited,
+              &:hover,
+              &:focus {
+                color: $color__green;
+              }
+            }
+            .publication-date {
+              font-family: $font__secondary_med;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 35px;              
+            }
+          }
+        }
+        // .slick-dots {
+        //   li {
+        //     height: 10px;
+        //     padding: 0 5px;
+        //     margin: 0 1px;
+        //     button {
+        //       background-color: $color__green;
+        //       border-radius: 0;
+        //       width: 100%;
+        //       height: 100%;
+        //       opacity: 0.25;
+        //       &:before {
+        //         content: '';
+        //         color: $color__green;
+        //       }
+        //     }
+        //   }
+        // }
+      }
     }
   }
 }
@@ -95,71 +222,54 @@
 
 // DESKTOP
 @media screen and (min-width: 1025px) {
-  .about__page {
+  #about__page {
     .about__landing-page {
-
+      height: 95vh;
       img {
-
       }
       .about__landing-page-overlay {
-
       }
       .about__landing-page-text {
-  
       }
     }
     .about__opening-text {
-  
     }
     .about__our-legacy {
       .about__our-legacy-large-img {
-  
       }
       span {
-  
       }
       .about__our-legacy-small-txt {
-  
       }
       .about__our-legacy-small-img {
-  
       }
       .about__our-legacy-large-txt {
-  
       }
     }
     .about__innovation {
       span {
-  
       }
       .about__innovation-large-txt {
-  
       }
       .about__innovation-small-txt {
-  
       }
       .about__innovation-small-img {
-  
       }
     }
     .about__community {
       span {
-  
       }
       .about__community-large-txt {
-  
       }
       .about__community-small-txt {
       }
     }
     .about__partnerships-associations {
       span {
-  
       }
     }
     .about__featured-in {
       span {
-  
       }
     }
   }

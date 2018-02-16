@@ -1,7 +1,8 @@
-@import 'variables-s ite/variables-site';
+@import 'variables-site/variables-site';
 
 footer {
   padding-bottom: 25px;
+  padding-top: 50px;
   background: $color__white;
   .footer-content {
     margin: $margin__mobile;

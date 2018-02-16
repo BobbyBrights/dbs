@@ -42,6 +42,8 @@ jQuery(document).ready(function($){
     sr.reveal('.front-page__content-description-header', frontPageScrollReveal);
     sr.reveal('.front-page__content-description-detail', frontPageScrollReveal);
     sr.reveal('.front-page__content-description-link', frontPageScrollReveal);
+
+    sr.reveal('.about__landing-page-text', frontPageScrollReveal);
   })();
 
 })
