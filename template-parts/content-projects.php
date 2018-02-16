@@ -20,8 +20,11 @@
       <div class="project__images-carousel">
         <?php  
           foreach( $projectImages as $projectImage ):
-        ?>
-          <img src="<?php echo $projectImage['url']; ?>" alt="">
+        ?>  
+          <div class="project__image-wrap">
+            <div class="image__overlay"></div>
+            <img src="<?php echo $projectImage['url']; ?>" alt="">
+          </div>
         <?php endforeach; ?>
       </div>
     
@@ -29,6 +32,23 @@
     <?php
       endif;
     ?>
+    <div class="project__status">
+      <?php if ( get_field('project_is_on_going') ) :?>
+        <div>
+          <p>on going</p>
+        </div>
+      <?php endif ?>
+      <?php if ( get_field('project_is_up_coming') ) :?>
+        <div>
+          <p>up coming</p>
+        </div>
+      <?php endif ?>
+      <?php if ( get_field('project_is_completed') ) :?>
+        <div>
+          <p>completed</p>
+        </div>
+      <?php endif ?>
+    </div>
     <div class="project__title">
       <?php
         the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );

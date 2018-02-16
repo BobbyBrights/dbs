@@ -35,7 +35,7 @@ get_header(); ?>
 
       get_template_part( 'template-parts/content', 'none' );
       ?>
-      </div>
+      </div> <!-- end .all-projects -->
 		<?php endif; ?>
      
 		</main><!-- #main -->
