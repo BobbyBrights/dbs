@@ -899,7 +899,14 @@ object {
   display: block;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 html body {
+  width: 100%;
+  overflow-x: hidden;
   color: #15534e;
   margin: 0 6% 0 6%;
 }
