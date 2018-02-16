@@ -1,0 +1,35 @@
+#about-page {
+  margin: 0 6% 0 6%;
+}
+
+#about-page .about__landing-page {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+}
+
+#about-page .about__landing-page img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#about-page .about__landing-page .about__landing-page-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #15534e;
+  opacity: 0.6;
+}
+
+#about-page .about__landing-page .about__landing-page-text {
+  color: #edede8;
+  font-family: "Druk Wide Web", sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 5px;
+}

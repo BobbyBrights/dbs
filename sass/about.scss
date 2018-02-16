@@ -1,0 +1,170 @@
+@import 'variables-site/variables-site';
+
+#about-page {
+  margin: $margin__mobile;
+  .about__landing-page {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .about__landing-page-overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #15534e;
+      opacity: 0.6;
+    }
+    .about__landing-page-text {
+      color: $color__white;
+      font-family: $font__main;
+      font-size: 2em;
+      letter-spacing: 1px;
+      position: absolute;
+      bottom: 5px;
+    }
+  }
+  .about__opening-text {
+
+  }
+  .about__our-legacy {
+    .about__our-legacy-large-img {
+
+    }
+    span {
+
+    }
+    .about__our-legacy-small-txt {
+
+    }
+    .about__our-legacy-small-img {
+
+    }
+    .about__our-legacy-large-txt {
+
+    }
+  }
+  .about__innovation {
+    span {
+
+    }
+    .about__innovation-large-txt {
+
+    }
+    .about__innovation-small-txt {
+
+    }
+    .about__innovation-small-img {
+
+    }
+  }
+  .about__community {
+    span {
+
+    }
+    .about__community-large-txt {
+
+    }
+    .about__community-small-txt {
+    }
+  }
+  .about__partnerships-associations {
+    span {
+
+    }
+  }
+  .about__featured-in {
+    span {
+
+    }
+  }
+}
+
+// IPAD
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+// IPAD PRO 10.5"
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+}
+
+// DESKTOP
+@media screen and (min-width: 1025px) {
+  .about__page {
+    .about__landing-page {
+
+      img {
+
+      }
+      .about__landing-page-overlay {
+
+      }
+      .about__landing-page-text {
+  
+      }
+    }
+    .about__opening-text {
+  
+    }
+    .about__our-legacy {
+      .about__our-legacy-large-img {
+  
+      }
+      span {
+  
+      }
+      .about__our-legacy-small-txt {
+  
+      }
+      .about__our-legacy-small-img {
+  
+      }
+      .about__our-legacy-large-txt {
+  
+      }
+    }
+    .about__innovation {
+      span {
+  
+      }
+      .about__innovation-large-txt {
+  
+      }
+      .about__innovation-small-txt {
+  
+      }
+      .about__innovation-small-img {
+  
+      }
+    }
+    .about__community {
+      span {
+  
+      }
+      .about__community-large-txt {
+  
+      }
+      .about__community-small-txt {
+      }
+    }
+    .about__partnerships-associations {
+      span {
+  
+      }
+    }
+    .about__featured-in {
+      span {
+  
+      }
+    }
+  }
+}
+
+// EXTRA LARGE
+@media screen and (min-width: 1600px) {
+}
