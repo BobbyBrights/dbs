@@ -119,6 +119,7 @@ header {
           font-family: $font__main;
           font-size: 28px;
           line-height: 48px;
+          letter-spacing: 1.5px;
           a,
           a:visited,
           a:hover,
@@ -129,25 +130,35 @@ header {
         .menu-contact-button {
           font-family: $font__main;
           font-size: 28px;
+          letter-spacing: 1.5px;          
         }
       }
     }
 
     .menu-social {
+      padding-top: 50%;
       span {
         font-family: $font__secondary_reg;
+        font-size: 18px;
       }
     }
     .menu-contact {
       font-family: $font__secondary_reg;
+      font-size: 18px; 
+      padding-top: 50px;   
       a,
       a:visited,
       a:hover,
       a:focus {
         color: inherit;
+        padding: 10px 0;
       }
       .menu-contact-email {
         text-decoration: underline;
+
+      }
+      .menu-contact-address {
+        padding: 10px 0;
       }
     }
   }

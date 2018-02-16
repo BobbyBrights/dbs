@@ -170,6 +170,7 @@ header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
   line-height: 48px;
+  letter-spacing: 1.5px;
 }
 
 header #menu-overlay #menu-overlay-content #menu-content #primary-menu a,
@@ -182,14 +183,22 @@ header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:focus {
 header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+header #menu-overlay .menu-social {
+  padding-top: 50%;
 }
 
 header #menu-overlay .menu-social span {
   font-family: "Neutral Regular";
+  font-size: 18px;
 }
 
 header #menu-overlay .menu-contact {
   font-family: "Neutral Regular";
+  font-size: 18px;
+  padding-top: 50px;
 }
 
 header #menu-overlay .menu-contact a,
@@ -197,10 +206,15 @@ header #menu-overlay .menu-contact a:visited,
 header #menu-overlay .menu-contact a:hover,
 header #menu-overlay .menu-contact a:focus {
   color: inherit;
+  padding: 10px 0;
 }
 
 header #menu-overlay .menu-contact .menu-contact-email {
   text-decoration: underline;
+}
+
+header #menu-overlay .menu-contact .menu-contact-address {
+  padding: 10px 0;
 }
 
 header #contact-form {
