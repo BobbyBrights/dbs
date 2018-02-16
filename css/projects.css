@@ -1,3 +1,9 @@
+/* ====================================================== */
+
+/* ======================= MOBILE ======================= */
+
+/* ====================================================== */
+
 #main {
   background-color: #edede8;
 }
@@ -48,6 +54,7 @@
 
 #main .all-projects article .slick-slider .slick-list .slick-track .project__image-wrap img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -93,4 +100,76 @@
 
 #main .all-projects article .project__description p {
   margin: 0;
+}
+
+/* ====================================================== */
+
+/* ======================= DESKTOP ====================== */
+
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+  #main .all-projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #main .all-projects article {
+    width: 50%;
+  }
+
+  #main .all-projects article:nth-child(odd) {
+    padding-right: 2vw;
+  }
+
+  #main .all-projects article:nth-child(odd) .project__status {
+    right: 2vw;
+  }
+
+  #main .all-projects article:nth-child(even) {
+    padding-left: 2vw;
+  }
+
+  #main .all-projects article .slick-slider {
+    height: 350px;
+  }
+
+  #main .all-projects article .slick-slider .slick-dots {
+    position: absolute;
+    top: 360px;
+    text-align: right;
+    right: -5px;
+  }
+
+  #main .all-projects article .slick-slider .slick-dots li {
+    height: 10px;
+    width: 10px;
+  }
+
+  #main .all-projects article .slick-slider .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+  }
+
+  #main .all-projects article .slick-slider .slick-dots li button::before {
+    content: '';
+    background-color: #15534e;
+    height: 10px;
+    width: 10px;
+  }
+
+  #main .all-projects article .project__status {
+    height: 350px;
+  }
+
+  #main .all-projects article .project__status div p {
+    width: 350px;
+    right: -150px;
+    letter-spacing: 2px;
+  }
 }

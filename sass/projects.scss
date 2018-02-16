@@ -1,3 +1,7 @@
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
 #main {
   background-color: #edede8;
   .all-projects {
@@ -29,6 +33,7 @@
               }
               img {
                 height: 100%;
+                width: 100%;
                 object-fit: cover;
               }
             }
@@ -78,4 +83,65 @@
       }
     }
   }
+}
+
+/* ====================================================== */
+/* ======================= DESKTOP ====================== */
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+
+  #main {
+    .all-projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      article {
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 2vw;
+          .project__status {
+            right: 2vw;
+          }
+        }
+        &:nth-child(even) {
+          padding-left: 2vw;
+        }
+        .slick-slider {
+          height: 350px;
+          .slick-dots {
+            position: absolute;
+            top: 360px;
+            text-align: right;
+            right: -5px;
+            li {
+              height: 10px;
+              width: 10px;
+              button {
+                padding: 0;
+                height: 10px;
+                width: 10px;
+                &::before {
+                  content: '';
+                  background-color: #15534e;
+                  height: 10px;
+                  width: 10px;
+                }
+              }
+            }
+          }
+        }
+        .project__status {
+          height: 350px;
+          div {
+            p {
+              width: 350px;
+              right: -150px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
