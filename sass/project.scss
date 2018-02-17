@@ -1,0 +1,28 @@
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
+.single-project {
+  padding: 0 4vw;
+  .single-project__images-carousel {
+    margin: 0 -4vw;
+    height: 200px;
+    .slick-list {
+      height: 100%;
+      .slick-track {
+        height: 100%;
+        .single-project__image-wrap {
+          padding: 0 15px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .single-project__title {
+    font-size: 2em;
+  }
+}

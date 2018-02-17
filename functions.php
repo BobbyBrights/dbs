@@ -152,6 +152,10 @@ function dbs_scripts() {
 	wp_enqueue_style( 'dbs__projects-page-style', get_template_directory_uri() . '/css/projects.css' );
 	wp_enqueue_script( 'dbs__projects-page-script', get_template_directory_uri() . '/js/projects.js', array(), true );
 
+	// single project
+	wp_enqueue_style( 'dbs__project-page-style', get_template_directory_uri() . '/css/project.css' );
+	wp_enqueue_script( 'dbs__project-page-script', get_template_directory_uri() . '/js/project.js', array(), true );
+
 	// font
 	wp_enqueue_style( 'dbs__front-page-font', get_template_directory_uri() . '/fonts/commercial-type-1801-RRAJAU-web/1801-RRAJAU.css' );
 
