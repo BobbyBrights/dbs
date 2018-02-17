@@ -7,6 +7,7 @@ function openMenu() {
     document.getElementById('menu-overlay').style.width = '40%';    
   } else if (windowSize < 1025){
     document.getElementById('menu-overlay').style.width = '100%';
+    document.documentElement.style.overflow = 'hidden';    
   }
   document.getElementById('menu-close-wrapper').style.opacity = '1';
   document.getElementById('menu-content').style.opacity = '1';  
@@ -24,6 +25,7 @@ function closeMenu() {
     document.getElementById('menu-overlay').style.width = '0%';
     document.getElementById('menu-close-wrapper').style.opacity = '0';  
     document.getElementById('menu-content').style.opacity = '0';
+    document.documentElement.style.overflow = '';  
   }
 }
 
@@ -41,7 +43,8 @@ function openForm() {
   document.getElementById('contact-form').style.width = '100%';
   document.getElementById('contact-close-wrapper').style.opacity = '1';
   // document.getElementById('contact-form-content').style.right = '0'; 
-  document.getElementById('contact-form-content').style.opacity = '1';           
+  document.getElementById('contact-form-content').style.opacity = '1';  
+  document.documentElement.style.overflow = 'hidden';           
   }
 }
 
@@ -49,7 +52,8 @@ function closeForm() {
   document.getElementById('contact-form').style.width = '0%';
   document.getElementById('contact-close-wrapper').style.opacity = '0';  
   // document.getElementById('contact-form-content').style.right = '-800px';
-  document.getElementById('contact-form-content').style.opacity = '0';          
+  document.getElementById('contact-form-content').style.opacity = '0';
+  document.documentElement.style.overflow = '';            
 }
 
 
