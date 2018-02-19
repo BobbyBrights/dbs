@@ -72,7 +72,7 @@
 				<div id="contact-close-wrapper">
 					<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
 				</div>
-				<?php echo do_shortcode('[wpforms id="12"]') ?>
+				<?php echo do_shortcode('[wpforms id="101"]') ?>
 			</div>
 		</section><!-- #contact-form -->
 	</header><!-- #masthead -->

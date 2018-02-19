@@ -32,7 +32,7 @@
 				</div>
 				<div class="footer-subscribe">
 					<span>Subscribe to learn more about upcoming developments and updates</span>
-					<?php echo do_shortcode('[wpforms id="13"]') ?>				
+					<?php echo do_shortcode('[wpforms id="100"]') ?>				
 				</div>
 			</div>
 			<div class="footer-desktop-wrapper-two">
