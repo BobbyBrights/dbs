@@ -3,7 +3,7 @@
 }
 
 #about-page .about__landing-page {
-  height: 95vh;
+  height: 80vh;
   width: 100%;
   position: relative;
 }
@@ -212,6 +212,10 @@
 }
 
 @media screen and (min-width: 1025px) {
+  #about-page .about__landing-page {
+    height: 95vh;
+  }
+
   #about-page .about__landing-page img {
     width: 100%;
   }
