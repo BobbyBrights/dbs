@@ -1,0 +1,157 @@
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
+#main {
+  background-color: #edede8;
+  .all-projects {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    padding: 0 6vw;
+    article {
+      flex-grow: 1;
+      width: 100%;
+      color: #15534e;
+      padding-top: 30px;
+      position: relative;
+      .slick-slider {
+        height: 200px;
+        .slick-list {
+          height: 100%;
+          .slick-track {
+            height: 100%;
+            .project__image-wrap {
+              .image__overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(90deg, transparent, #000);
+                opacity: 0.1;
+              }
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .project__status {
+        color: #edede8;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        height: 200px;
+        width: 20%;
+        div {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          p {
+            position: absolute;
+            height: 20px;
+            width: 200px;
+            margin: 0;
+            top: 50%;
+            right: -70px;
+            text-transform: uppercase;
+            text-align: center;
+            transform: translateY(-50%) rotate(90deg);
+            font-family: 'Druk Wide Web';
+            font-size: 0.7em;
+            letter-spacing: 2px;
+          }
+        }
+      }
+      .project__title {
+        padding-top: 10px;
+        a {
+          color: #15534e;
+          text-decoration: none;
+          font-family: 'Druk Wide Web';
+          font-size: 1.5em;
+          text-transform: capitalize;
+          letter-spacing: 2px;
+        }
+      }
+      .project__address {
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-family: 'Druk Wide Web';
+        font-size: 0.7em;
+        letter-spacing: 2px;
+      }
+      .project__description {
+        padding-top: 10px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ====================================================== */
+/* ======================= DESKTOP ====================== */
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+
+  #main {
+    .all-projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+      article {
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 2vw;
+          .project__status {
+            right: 2vw;
+          }
+        }
+        &:nth-child(even) {
+          padding-left: 2vw;
+        }
+        .slick-slider {
+          height: 350px;
+          .slick-dots {
+            position: absolute;
+            top: 360px;
+            text-align: right;
+            right: -5px;
+            li {
+              height: 10px;
+              width: 10px;
+              button {
+                padding: 0;
+                height: 10px;
+                width: 10px;
+                &::before {
+                  content: '';
+                  background-color: #15534e;
+                  height: 10px;
+                  width: 10px;
+                }
+              }
+            }
+          }
+        }
+        .project__status {
+          height: 350px;
+          div {
+            p {
+              width: 350px;
+              right: -150px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
