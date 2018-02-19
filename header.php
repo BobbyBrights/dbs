@@ -29,7 +29,7 @@
 			<div class="header-logo">
 				<object class="header-logo-image" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
 				<object class="header-logo-image-desktop" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo.svg"></object>			
-				<a class="header-logo-button"></a>	
+				<a href="/" class="header-logo-button"></a>	
 			</div>
 			<div class="header__hamburger" onclick="openMenu()">
 				<div class="hamburger__line"></div>
@@ -75,9 +75,6 @@
 				<?php echo do_shortcode('[wpforms id="12"]') ?>
 			</div>
 		</section><!-- #contact-form -->
-
-		<div onclick="openForm()">OPEN CONTACT</div>
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

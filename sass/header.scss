@@ -181,6 +181,7 @@ header {
     width: 0%;
     z-index: 101;
     transition: width 0.7s ease-in-out;
+    overflow-y: scroll;
     #contact-form-content {
       position: relative;
       margin: $margin__mobile;
@@ -234,7 +235,7 @@ header {
           .wpforms-field-container {
             display: flex;
             flex-direction: column;
-            height: 90%;
+            // height: 90%;
             align-items: space-between;
             .wpforms-field-medium {
               border: none;
@@ -247,6 +248,9 @@ header {
               &::placeholder {
                 color: $color__green;
               }
+            }
+            .wpforms-error {
+              color: $color__green;
             }
             // .contact__first-name,
             // .contact__last-name,
@@ -279,6 +283,18 @@ header {
           }
         }
       }
+      .wpforms-confirmation-container-full {
+        background: transparent;
+        border: none;
+        font-family: $font__secondary_reg;
+        color: $color__green;
+        font-size: 32px;
+        text-align: center;
+        line-height: 42px;
+        div {
+          padding: 10px 0 10px 0;
+        }
+      }
     }
   }
 }
@@ -294,10 +310,12 @@ header {
 // DESKTOP
 @media screen and (min-width: 1025px) {
   header {
-    height: 100px;
+    height: 150px;
     .site-branding {
       margin: $margin__desktop;
-      margin-top: 4%;
+      // margin-top: 4%;
+      // height: 150px;
+      padding-top: 40px;
       .header-logo {
         height: 80px;
         .header-logo-image-desktop {
@@ -305,15 +323,19 @@ header {
           display: flex;
           justify-content: flex-start;
           height: 45px;
-          width: 53%;
         }
         .header-logo-image {
           display: none;
+        }
+        .header-logo-button {
+          width: 500px;
+          height: 50px;
         }
       }
     }
 
     #menu-overlay {
+      overflow-y: scroll;
       #menu-overlay-content {
         margin-right: 10%;
 
@@ -329,7 +351,7 @@ header {
           }
         }
         #menu-content {
-          margin-top: -90px;
+          margin-top: -70px;
           #primary-menu {
             font-size: 40px;
             line-height: 70px;
@@ -351,15 +373,18 @@ header {
         }
         .wpforms-container {
           form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             .wpforms-field-container {
               display: block;
-              height: 95%;
-              padding-top: 35%;
+              // height: 95%;
+              padding-top: 150px;
               .wpforms-field-medium {
                 max-width: 100%;
               }
               .contact__message {
-                height: 300px;
+                // height: 300px;
                 textarea {
                   height: 100%;
                 }
@@ -372,6 +397,12 @@ header {
             }
           }
         }
+        .wpforms-confirmation-container-full {
+          margin-top: 20%;
+          font-size: 40px;
+          line-height: 50px;
+          padding: 50px 0;
+        }        
       }
     }
   }

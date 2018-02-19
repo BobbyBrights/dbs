@@ -3,7 +3,7 @@
 }
 
 #about-page .about__landing-page {
-  height: 80vh;
+  height: 95vh;
   width: 100%;
   position: relative;
 }
@@ -212,10 +212,6 @@
 }
 
 @media screen and (min-width: 1025px) {
-  #about-page .about__landing-page {
-    height: 95vh;
-  }
-
   #about-page .about__landing-page img {
     width: 100%;
   }
@@ -239,6 +235,7 @@
     top: 0;
     right: 0;
     width: 50%;
+    max-width: 800px;
   }
 
   #about-page .about-page-body .about__our-legacy span {
@@ -254,6 +251,7 @@
   #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img {
     position: relative;
     width: 50%;
+    max-width: 800px;
   }
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-large-txt {
@@ -294,6 +292,7 @@
     width: 50%;
     left: 0;
     bottom: 0;
+    max-width: 800px;
   }
 
   #about-page .about-page-body .about__community {

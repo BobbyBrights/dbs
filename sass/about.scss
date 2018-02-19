@@ -3,7 +3,7 @@
 #about-page {
   background-color: $color__white;
   .about__landing-page {
-    height: 80vh;
+    height: 95vh;
     width: 100%;
     position: relative;
     img {
@@ -226,7 +226,6 @@
 @media screen and (min-width: 1025px) {
   #about-page {
     .about__landing-page {
-      height: 95vh;
       img {
         width: 100%;
       }
@@ -249,6 +248,7 @@
           top: 0;
           right: 0;
           width: 50%;
+          max-width: 800px;
         }
         span {
           position: relative;          
@@ -257,12 +257,11 @@
           position: relative;         
           width: 45%;
           height: 800px; 
-          
         }
         .about__our-legacy-small-img {
           position: relative;          
           width: 50%;
-          
+          max-width: 800px;
         }
         .about__our-legacy-large-txt {
           position: absolute;          
@@ -297,6 +296,7 @@
           width: 50%;
           left: 0;
           bottom: 0;
+          max-width: 800px;          
         }
       }
       .about__community {
