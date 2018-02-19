@@ -119,8 +119,8 @@ function create_posttype() {
 	register_post_type( 'projects' ,
 	array(
 		'labels' => array(
-			'name' => __( 'Projects' ),
-			'singular_name' => __( 'Project' )
+		'name' => __( 'Projects' ),
+		'singular_name' => __( 'Project' )
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -142,15 +142,37 @@ function dbs_scripts() {
 	// scroll reveal
 	wp_enqueue_script( 'dbs__scroll-reveal', get_template_directory_uri() . '/js/scrollreveal/dist/scrollreveal.min.js', array(), true );
 
+
+	// slick
+	wp_enqueue_script( 'dbs__slick-js', get_template_directory_uri() . '/js/slick/slick/slick.min.js', array(), true );
+	wp_enqueue_style( 'dbs__slick-css', get_template_directory_uri() . '/js/slick/slick/slick.css');
+	wp_enqueue_style( 'dbs__slick-css-theme', get_template_directory_uri() . '/js/slick/slick/slick-theme.css');
+
 	wp_enqueue_style( 'dbs-style', get_stylesheet_uri() );
+
 
 	// front page
 	wp_enqueue_style( 'dbs__front-page-style', get_template_directory_uri() . '/css/front-page.css' );
 	wp_enqueue_script( 'dbs__front-page-script', get_template_directory_uri() . '/js/front-page.js', array(), true );
 
+
+	// projects page
+	wp_enqueue_style( 'dbs__projects-page-style', get_template_directory_uri() . '/css/projects.css' );
+	wp_enqueue_script( 'dbs__projects-page-script', get_template_directory_uri() . '/js/projects.js', array(), true );
+
+	// single project
+	wp_enqueue_style( 'dbs__project-page-style', get_template_directory_uri() . '/css/project.css' );
+	wp_enqueue_script( 'dbs__project-page-script', get_template_directory_uri() . '/js/project.js', array(), true );
+
+	// font
+	wp_enqueue_style( 'dbs__front-page-font', get_template_directory_uri() . '/fonts/commercial-type-1801-RRAJAU-web/1801-RRAJAU.css' );
+
+	wp_enqueue_script( 'dbs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
 	// About Page
 	wp_enqueue_style( 'dbs-about-style', get_template_directory_uri() . '/css/about.css' );
 	wp_enqueue_script( 'dbs-about-js', get_template_directory_uri() . '/js/about.js', array(), true );
+
 
 	wp_enqueue_script( 'dbs-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
