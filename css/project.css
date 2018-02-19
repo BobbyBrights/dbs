@@ -6,6 +6,7 @@
 
 .single-project {
   padding: 0 4vw;
+  color: #15534e;
 }
 
 .single-project .single-project__images-carousel {
@@ -33,5 +34,72 @@
 }
 
 .single-project .single-project__title {
-  font-size: 2em;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  padding-top: 15px;
+  font-family: 'Druk Wide Web';
+}
+
+.single-project .single-project__address {
+  font-family: 'Druk Wide Web';
+  font-size: 0.7em;
+}
+
+.single-project .single-project__specs-and-about .single-project__specs {
+  padding-top: 30px;
+}
+
+.single-project .single-project__specs-and-about .single-project__specs span {
+  text-transform: capitalize;
+  font-family: 'Druk Wide Web';
+}
+
+.single-project .single-project__specs-and-about .single-project__specs p {
+  margin: 0;
+}
+
+.single-project .single-project__specs-and-about .single-project__description {
+  padding-top: 30px;
+}
+
+.single-project .single-project__specs-and-about .single-project__description span {
+  text-transform: capitalize;
+  font-family: 'Druk Wide Web';
+}
+
+.single-project .single-project__specs-and-about .single-project__description p {
+  margin: 0;
+}
+
+.single-project .single-project__featured-in {
+  padding-top: 30px;
+}
+
+.single-project .single-project__featured-in .single-project__featured-in-title {
+  text-transform: capitalize;
+  font-family: 'Druk Wide Web';
+}
+
+.single-project .single-project__featured-in .single-project__featued-in-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article-newspaper-name {
+  text-transform: uppercase;
+  font-family: 'Druk Wide Web';
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article-title a {
+  text-transform: capitalize;
+  font-family: 'Druk Wide Web';
+  font-size: 1.2em;
+  color: #15534e;
 }

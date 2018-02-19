@@ -40,10 +40,13 @@
   </div> 
   <div class="single-project__specs-and-about">
     <div class="single-project__specs">
+      <span>specs.</span>
       <?php 
         the_field('project_specs');
       ?>
-    </div> <div class="single-project__description">
+    </div> 
+    <div class="single-project__description">
+      <span>about.</span>
       <?php 
         the_field('project_description');
       ?>
