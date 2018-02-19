@@ -103,3 +103,126 @@
   font-size: 1.2em;
   color: #15534e;
 }
+
+/* ====================================================== */
+
+/* ======================= DESKTOP ====================== */
+
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+  .single-project {
+    padding: 0 6vw;
+  }
+
+  .single-project .single-project__images-carousel {
+    height: 80vh;
+    margin: 0;
+  }
+
+  .single-project .single-project__images-carousel .slick-list .slick-track .single-project__image-wrap {
+    padding: 0;
+  }
+
+  .single-project .single-project__images-carousel .slick-dots {
+    text-align: right;
+  }
+
+  .single-project .single-project__images-carousel .slick-dots li {
+    height: 10px;
+    width: 10px;
+  }
+
+  .single-project .single-project__images-carousel .slick-dots li:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  .single-project .single-project__images-carousel .slick-dots li button {
+    padding: 0;
+    height: 10px;
+    width: 10px;
+  }
+
+  .single-project .single-project__images-carousel .slick-dots li button::before {
+    content: '';
+    background-color: #15534e;
+    height: 10px;
+    width: 10px;
+  }
+
+  .single-project .single-project__title {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .single-project .single-project__address {
+    font-size: 1.1em;
+  }
+
+  .single-project .single-project__specs-and-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .single-project .single-project__specs-and-about .single-project__specs {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .single-project .single-project__specs-and-about .single-project__specs span {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .single-project .single-project__specs-and-about .single-project__specs p {
+    font-size: 1.5em;
+  }
+
+  .single-project .single-project__specs-and-about .single-project__description {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .single-project .single-project__specs-and-about .single-project__description span {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .single-project .single-project__featured-in {
+    padding-top: 30px;
+  }
+
+  .single-project .single-project__featured-in .single-project__featured-in-title {
+    font-size: 1.5em;
+  }
+
+  .single-project .single-project__featured-in .single-project__featued-in-articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: calc( 100% / 3);
+  }
+}

@@ -81,3 +81,94 @@
     }
   }
 }
+
+/* ====================================================== */
+/* ======================= DESKTOP ====================== */
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+
+  .single-project {
+    padding: 0 6vw;
+    .single-project__images-carousel {
+      height: 80vh;
+      margin: 0;
+      .slick-list {
+        .slick-track {
+          .single-project__image-wrap {
+            padding: 0;
+          }
+        }
+      }
+      .slick-dots {
+        text-align: right;
+        li {
+          height: 10px;
+          width: 10px;
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+          button {
+            padding: 0;
+            height: 10px;
+            width: 10px;
+            &::before {
+              content: '';
+              background-color: #15534e;
+              height: 10px;
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+    .single-project__title {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+    .single-project__address {
+      font-size: 1.1em;
+    }
+    .single-project__specs-and-about {
+      display: flex;
+      flex-direction: row;
+      .single-project__specs {
+        flex-grow: 1;
+        width: 50%;
+        span {
+          font-size: 1.5em;
+          margin-bottom: 20px;
+          display: block;
+        }
+        p {
+          font-size: 1.5em;
+        }
+      }
+      .single-project__description {
+        flex-grow: 1;
+        width: 50%;
+        span {
+          font-size: 1.5em;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .single-project__featured-in {
+      padding-top: 30px;
+      .single-project__featured-in-title {
+        font-size: 1.5em;
+      }
+      .single-project__featued-in-articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .single-project__featured-in-article {
+          flex-grow: 1;
+          width: calc( 100% / 3);
+        }
+      }
+    }
+  }
+
+}
