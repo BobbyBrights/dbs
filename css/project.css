@@ -38,11 +38,13 @@
   text-transform: capitalize;
   padding-top: 15px;
   font-family: 'Druk Wide Web';
+  letter-spacing: 2px;
 }
 
 .single-project .single-project__address {
   font-family: 'Druk Wide Web';
   font-size: 0.7em;
+  letter-spacing: 2px;
 }
 
 .single-project .single-project__specs-and-about .single-project__specs {
@@ -52,6 +54,7 @@
 .single-project .single-project__specs-and-about .single-project__specs span {
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
+  letter-spacing: 2px;
 }
 
 .single-project .single-project__specs-and-about .single-project__specs p {
@@ -65,6 +68,7 @@
 .single-project .single-project__specs-and-about .single-project__description span {
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
+  letter-spacing: 2px;
 }
 
 .single-project .single-project__specs-and-about .single-project__description p {
@@ -78,6 +82,7 @@
 .single-project .single-project__featured-in .single-project__featured-in-title {
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
+  letter-spacing: 2px;
 }
 
 .single-project .single-project__featured-in .single-project__featued-in-articles {
@@ -90,18 +95,20 @@
   flex-direction: column;
 }
 
-.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article-newspaper-name {
+.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article .single-project__featured-in-article-newspaper-name {
   text-transform: uppercase;
   font-family: 'Druk Wide Web';
   font-size: 0.8em;
   margin-top: 20px;
+  letter-spacing: 2px;
 }
 
-.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article-title a {
+.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article .single-project__featured-in-article-title a {
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
   font-size: 1.2em;
   color: #15534e;
+  letter-spacing: 2px;
 }
 
 /* ====================================================== */
@@ -224,5 +231,6 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     width: calc( 100% / 3);
+    padding-right: 10px;
   }
 }

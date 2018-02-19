@@ -85,17 +85,34 @@
   text-align: center;
   -webkit-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
+  font-family: 'Druk Wide Web';
+  font-size: 0.7em;
+  letter-spacing: 2px;
+}
+
+#main .all-projects article .project__title {
+  padding-top: 10px;
 }
 
 #main .all-projects article .project__title a {
   color: #15534e;
   text-decoration: none;
-  font-size: 1.7em;
+  font-family: 'Druk Wide Web';
+  font-size: 1.5em;
   text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 #main .all-projects article .project__address {
+  padding-top: 10px;
   text-transform: uppercase;
+  font-family: 'Druk Wide Web';
+  font-size: 0.7em;
+  letter-spacing: 2px;
+}
+
+#main .all-projects article .project__description {
+  padding-top: 10px;
 }
 
 #main .all-projects article .project__description p {
