@@ -1,0 +1,470 @@
+header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+header .site-branding {
+  margin: 0 6% 0 6%;
+  margin-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .site-branding .header-logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 55px;
+  width: 70%;
+}
+
+header .site-branding .header-logo .header-logo-image-desktop {
+  display: none;
+}
+
+header .site-branding .header-logo .header-logo-image {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  width: 80%;
+  z-index: 1;
+}
+
+header .site-branding .header__hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+header .site-branding .header__hamburger .hamburger__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background-color: #edede8;
+}
+
+header #menu-overlay {
+  background: #edede8;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 0%;
+  z-index: 99;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header #menu-overlay #menu-overlay-content {
+  position: relative;
+  margin: 0 6% 0 6%;
+  height: 100%;
+}
+
+header #menu-overlay #menu-overlay-content #menu-close-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  height: 70px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.1em;
+  height: 2.1em;
+  cursor: pointer;
+  outline: none;
+}
+
+header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close:before {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  border-top: 1.3px solid #15534e;
+  -webkit-transform: rotate(-45deg) translate(0px, 14px);
+  transform: rotate(-45deg) translate(0px, 14px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close:after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  border-top: 1.3px solid #15534e;
+  -webkit-transform: rotate(45deg) translate(-5px, 20px);
+  transform: rotate(45deg) translate(-5px, 20px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+header #menu-overlay #menu-overlay-content #menu-content {
+  position: absolute;
+  opacity: 0;
+  color: #15534e;
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
+  list-style: none;
+  color: #15534e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Druk Wide Web", sans-serif;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 1.5px;
+}
+
+header #menu-overlay #menu-overlay-content #menu-content #primary-menu a,
+header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:visited,
+header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:hover,
+header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:focus {
+  color: inherit;
+}
+
+header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
+  font-family: "Druk Wide Web", sans-serif;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+header #menu-overlay .menu-social {
+  padding-top: 50%;
+}
+
+header #menu-overlay .menu-social span {
+  font-family: "Neutral Regular";
+  font-size: 18px;
+}
+
+header #menu-overlay .menu-contact {
+  font-family: "Neutral Regular";
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+header #menu-overlay .menu-contact a,
+header #menu-overlay .menu-contact a:visited,
+header #menu-overlay .menu-contact a:hover,
+header #menu-overlay .menu-contact a:focus {
+  color: inherit;
+  padding: 10px 0;
+}
+
+header #menu-overlay .menu-contact .menu-contact-email {
+  text-decoration: underline;
+}
+
+header #menu-overlay .menu-contact .menu-contact-address {
+  padding: 10px 0;
+}
+
+header #contact-form {
+  background: #edede8;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 0%;
+  z-index: 101;
+  -webkit-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+
+header #contact-form #contact-form-content {
+  position: relative;
+  margin: 0 6% 0 6%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+header #contact-form #contact-form-content #contact-close-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  height: 70px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+header #contact-form #contact-form-content #contact-close-wrapper .contact-close {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.1em;
+  height: 2.1em;
+  cursor: pointer;
+  outline: none;
+}
+
+header #contact-form #contact-form-content #contact-close-wrapper .contact-close:before {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  border-top: 1.3px solid #15534e;
+  -webkit-transform: rotate(-45deg) translate(0px, 18px);
+  transform: rotate(-45deg) translate(0px, 18px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+header #contact-form #contact-form-content #contact-close-wrapper .contact-close:after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  border-top: 1.3px solid #15534e;
+  -webkit-transform: rotate(45deg) translate(-2px, 20px);
+  transform: rotate(45deg) translate(-2px, 20px);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+header #contact-form #contact-form-content .wpforms-container {
+  height: 85%;
+}
+
+header #contact-form #contact-form-content .wpforms-container form {
+  height: 100%;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 90%;
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium {
+  border: none;
+  border-bottom: 1.2px solid #15534e;
+  border-radius: 0;
+  background: transparent;
+  color: #15534e;
+  font-family: "Neutral Regular";
+  padding: 0;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium::-webkit-input-placeholder {
+  color: #15534e;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium:-ms-input-placeholder {
+  color: #15534e;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium::-ms-input-placeholder {
+  color: #15534e;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium::placeholder {
+  color: #15534e;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message {
+  height: 260px;
+  margin: 10px 0 5px 0;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message textarea {
+  border: 1.2px solid #15534e;
+  height: 100%;
+  padding: 15px 15px;
+  resize: none;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container {
+  height: 50px;
+}
+
+header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit {
+  border: 1.2px solid #15534e;
+  color: #15534e;
+  height: 50px;
+  font-size: 14px;
+  font-family: "Neutral Medium";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    height: 100px;
+  }
+
+  header .site-branding {
+    margin: 0 4% 0 4%;
+    margin-top: 4%;
+  }
+
+  header .site-branding .header-logo {
+    height: 80px;
+  }
+
+  header .site-branding .header-logo .header-logo-image-desktop {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 45px;
+    width: 53%;
+  }
+
+  header .site-branding .header-logo .header-logo-image {
+    display: none;
+  }
+
+  header #menu-overlay #menu-overlay-content {
+    margin-right: 10%;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-close-wrapper {
+    height: 140px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-close-wrapper:hover .menu-close {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content {
+    margin-top: -90px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
+    font-size: 40px;
+  }
+
+  header #contact-form {
+    z-index: 98;
+  }
+
+  header #contact-form #contact-form-content {
+    margin: 0 4% 0 4%;
+    width: 45%;
+  }
+
+  header #contact-form #contact-form-content #contact-close-wrapper {
+    display: none;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container {
+    display: block;
+    height: 95%;
+    padding-top: 35%;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium {
+    max-width: 100%;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message {
+    height: 300px;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message textarea {
+    height: 100%;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit {
+    width: 65%;
+  }
+}

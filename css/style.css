@@ -271,7 +271,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Druk Wide Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -899,6 +899,18 @@ object {
   display: block;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+html body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #15534e;
+  margin: 0 6% 0 6%;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
@@ -906,5 +918,11 @@ object {
 
   .main-navigation ul {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  html body {
+    margin: 0 4% 0 4%;
   }
 }

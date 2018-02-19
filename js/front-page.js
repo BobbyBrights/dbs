@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
     }, 1400);
   });
 
+
   (function scrollReveal() {
     console.log('asdasd');
     window.sr = ScrollReveal();
@@ -44,6 +45,7 @@ jQuery(document).ready(function($){
     sr.reveal('.front-page__content-description-detail', frontPageScrollReveal);
     sr.reveal('.front-page__content-description-link', frontPageScrollReveal);
 
+
     // projects page
     sr.reveal('.project__images-carousel', frontPageScrollReveal);
     sr.reveal('.project__status', frontPageScrollReveal);
@@ -59,6 +61,9 @@ jQuery(document).ready(function($){
     sr.reveal('.single-project__featured-in-article-newspaper-name', frontPageScrollReveal);
     sr.reveal('.single-project__featured-in-article-title', frontPageScrollReveal);
     sr.reveal('.single-project__featured-in-article-date', frontPageScrollReveal);
+
+    sr.reveal('.about__landing-page-text', frontPageScrollReveal);
+
   })();
 
 })

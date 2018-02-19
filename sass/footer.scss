@@ -1,0 +1,179 @@
+@import 'variables-site/variables-site';
+
+footer {
+  padding-bottom: 25px;
+  padding-top: 50px;
+  background: $color__white;
+  .footer-content {
+    margin: $margin__mobile;
+    color: $color__green;
+    font-family: $font__secondary_reg;
+    .footer-line {
+      border-bottom: 1px solid $color__green;
+      height: 20px;
+    }
+    .footer-logo-mobile {
+      font-family: $font__main;
+      font-size: 30px;
+      letter-spacing: 1.5px;
+      padding: 20px 0;
+    }
+    .footer-social {
+      font-size: 18px;
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      a,
+      a:visited,
+      a:focus,
+      a:hover {
+        color: $color__green;
+        font-size: 18px;
+        padding: 10px 0;
+      }
+      .footer-contact-address {
+        font-size: 18px;
+        padding: 10px 0;        
+      }
+    }
+    .footer-subscribe {
+      padding: 20px 0 20px 0;
+      span {
+        font-size: 18px;
+      }
+      .wpforms-container {
+        form {
+          div {
+            .wpforms-field-email {
+              input {
+                background: transparent;
+                border: 1.2px solid $color__green;
+                border-radius: 0;
+                height: 50px;
+                &::placeholder {
+                  color: $color__green;
+                  font-family: $font__secondary_reg;
+                  font-size: 15px;
+                  padding-left: 5px;
+                }
+              }
+            }
+          }
+        }
+        .wpforms-submit-container {
+          padding-top: 5px;
+          .wpforms-submit {
+            border: 1.3px solid $color__green;
+            border-radius: 0;
+            color: $color__green;
+            font-size: 14px;
+            font-family: $font__secondary_med;            
+            letter-spacing: 2px;
+            height: 50px;
+            text-transform: uppercase;
+            width: 100%;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .footer-desktop-wrapper-two {
+      .footer-logo-desktop {
+        display: none;
+      }
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      line-height: 22px;
+      a,
+      a:visited,
+      a:focus,
+      a:hover {
+        color: $color__green;
+      }
+    }
+  }
+}
+
+// IPAD
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+// IPAD PRO 10.5"
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+}
+
+// DESKTOP
+@media screen and (min-width: 1025px) {
+  footer {
+    padding: 80px 0 40px 0;
+    .footer-content {
+      margin: $margin__desktop;     
+      .footer-line {
+        display: none;
+      } 
+      .footer-logo-mobile {
+        display: none;
+      }
+      .footer-desktop-wrapper-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .footer-social {
+          width: 30%;
+        }
+        .footer-contact {
+          width: 30%;
+          a:nth-child(1) {
+            padding-top: 0;
+          }
+        }
+        .footer-subscribe {
+          width: 30%;
+          padding-top: 0;
+          .wpforms-container {
+            form {
+              div {
+                .wpforms-field-email {
+                  input {
+                    max-width: 100%;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+      .footer-desktop-wrapper-two {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        .footer-logo-desktop {
+          display: flex;
+          font-family: $font__main;
+          font-size: 40px;
+          margin-bottom: 5px;
+          letter-spacing: 1.5px;
+          width: 30%;
+        }
+        .footer-copyright {
+          flex-direction: row;
+          align-items: flex-end;
+          width: 30%;
+        }
+        .footer-design-by {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+// EXTRA LARGE
+@media screen and (min-width: 1600px) {
+}

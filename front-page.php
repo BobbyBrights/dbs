@@ -76,7 +76,6 @@ get_header(); ?>
             <a href="">contact us +</a>
           </div>
         </div>
-
         <?php endif; ?>
       </div>
       
