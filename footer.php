@@ -19,9 +19,10 @@
 			<div class="footer-logo-mobile">DBS</div>
 			<div class="footer-desktop-wrapper-one">
 				<div class="footer-social">
-					<span>Follow Us<span>
-					<a href=""><img src=""/></a>
-					<a href=""><img src=""/></a>				
+					<span>Follow Us</span>
+					<br/>
+					<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+					<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 				</div> 
 				<div class="footer-contact">
 					<a href="mailto:info@dbsdevelopments.ca" class="footer-contact-email">info@dbsdevelopments.ca</a>

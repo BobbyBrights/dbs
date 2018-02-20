@@ -71,6 +71,7 @@ header .site-branding .header__hamburger {
   height: 25px;
   z-index: 1;
   opacity: 1;
+  cursor: pointer;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -207,7 +208,7 @@ header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
 }
 
 header #menu-overlay .menu-social {
-  padding-top: 50%;
+  padding-top: 45%;
 }
 
 header #menu-overlay .menu-social span {
@@ -215,10 +216,21 @@ header #menu-overlay .menu-social span {
   font-size: 18px;
 }
 
+header #menu-overlay .menu-social a {
+  display: inline-block;
+}
+
+header #menu-overlay .menu-social a img {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
 header #menu-overlay .menu-contact {
   font-family: "Neutral Regular";
   font-size: 18px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 header #menu-overlay .menu-contact a,
@@ -453,7 +465,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
   }
 
   header #menu-overlay #menu-overlay-content #menu-close-wrapper {
-    height: 140px;
+    height: 100px;
   }
 
   header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close {
@@ -469,7 +481,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
   }
 
   header #menu-overlay #menu-overlay-content #menu-content {
-    margin-top: -70px;
+    margin-top: -20px;
   }
 
   header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
