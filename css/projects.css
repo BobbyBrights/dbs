@@ -16,7 +16,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 6vw;
+  padding: 80px 6vw 0;
 }
 
 #main .all-projects article {
@@ -133,10 +133,14 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 150px 4vw 0;
   }
 
   #main .all-projects article {
     width: 50%;
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
   }
 
   #main .all-projects article:nth-child(odd) {

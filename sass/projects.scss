@@ -7,8 +7,7 @@
   .all-projects {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    padding: 0 6vw;
+    padding: 80px 6vw 0;
     article {
       flex-grow: 1;
       width: 100%;
@@ -105,8 +104,10 @@
     .all-projects {
       flex-direction: row;
       flex-wrap: wrap;
+      padding: 150px 4vw 0;
       article {
         width: 50%;
+        flex-grow: unset;
         &:nth-child(odd) {
           padding-right: 2vw;
           .project__status {

@@ -3,7 +3,7 @@
 /* ====================================================== */
 
 .front-page__landing-page {
-  height: 95vh;
+  height: 85vh;
   width: 100vw;
   position: relative;
   img {
@@ -23,7 +23,7 @@
   .front-page__landing-page-slogans {
     position: absolute;
     bottom: 4vw;
-    left: 4vw;
+    left: 6vw;
     color: #edede8;
     font-size: 2em;
     text-transform: capitalize;
@@ -44,7 +44,7 @@
 }
 
 .front-page__content {
-  padding: 50px 4% 0;
+  padding: 80px 6vw 0;
   background-color: #edede8;
   .front-page__content-image {
     width: 100%;
@@ -82,14 +82,15 @@
 @media only screen and (min-width: 1050px) {
 
   .front-page__landing-page {
+    height: 95vh;
     .front-page__landing-page-slogans {
       font-size: 2em;
-      left: 6vw;
+      left: 4vw;
     }
   }
 
   .front-page__content {
-    padding: 5vh 6% 0;
+    padding: 150px 4vw 0;
     display: flex;
     .front-page__content-image {
       flex-grow: 1;
