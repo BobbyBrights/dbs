@@ -107,6 +107,7 @@
       flex-wrap: wrap;
       article {
         width: 50%;
+        flex-grow: unset;
         &:nth-child(odd) {
           padding-right: 2vw;
           .project__status {

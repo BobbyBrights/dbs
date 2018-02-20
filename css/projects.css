@@ -137,6 +137,9 @@
 
   #main .all-projects article {
     width: 50%;
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
   }
 
   #main .all-projects article:nth-child(odd) {
