@@ -106,13 +106,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'media/media';
 
 html {
-	overflow-x: hidden;
 	width: 100vw;
+	overflow-x: hidden;
   body {
 		width: 100%;
 		overflow-x: hidden;  
     color: $color__green;
-		margin: $margin__mobile;
   }
 }
 
@@ -128,7 +127,6 @@ html {
 @media screen and (min-width: 1025px) {
   html {
     body {
-			margin: $margin__desktop;
 		}
   }
 }

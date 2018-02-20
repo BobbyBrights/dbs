@@ -21,71 +21,82 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dbs' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<section class="site-branding">
-			<div class="header-logo">
-				<?php if(is_page( array('home', 'about') ) ) { ?>
-					<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
-					<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>			
-				<?php } else { ?>
-					<object class="header-logo-image-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
-					<object class="header-logo-image-desktop-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-green.svg"></object>			
-				<?php } ?>				
-				<a href="/" class="header-logo-button"></a>	
-			</div>
-			<div class="header__hamburger" onclick="openMenu()">
-				<?php if(is_page( array('home', 'about') ) ) { ?>				
-					<div class="hamburger__line"></div>
-					<div class="hamburger__line"></div>
-					<div class="hamburger__line"></div>
-				<?php } else { ?>
-					<div class="hamburger__line-green"></div>
-					<div class="hamburger__line-green"></div>
-					<div class="hamburger__line-green"></div>
-				<?php } ?>								
-			</div>  
-		</section><!-- .site-branding -->
+	<div id="loader">
+		<div id="loader-letters">
+			<div class="loader-letters-box">
+				<div id="loader-d">D<br/>D</div>
+				<div id="loader-b">B<br/>B</div>
+				<div id="loader-s">S<br/>S</div>	
+			</div>	
+		</div>
+	</div>
 
-		<section id="menu-overlay" class="main-navigation">
-			<div id="menu-overlay-content">
-				<div id="menu-close-wrapper">
-					<a href="javascript:void(0)" class="menu-close" onclick="closeMenu()"></a>
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dbs' ); ?></a>
+
+		<header id="masthead" class="site-header">
+			<section class="site-branding">
+				<div class="header-logo">
+					<?php if(is_page( array('home', 'about') ) ) { ?>
+						<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
+						<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>			
+					<?php } else { ?>
+						<object class="header-logo-image-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
+						<object class="header-logo-image-desktop-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-green.svg"></object>			
+					<?php } ?>				
+					<a href="/" class="header-logo-button"></a>	
 				</div>
-				<div id="menu-content">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						) );
-					?>
-					<div class="menu-contact-button" onclick="openForm()">Contact</div>
-					<div class="menu-social">
-						<span>Follow Us</span>
-						<div class="menu-social-icons">
-							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
-							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+				<div class="header__hamburger" onclick="openMenu()">
+					<?php if(is_page( array('home', 'about') ) ) { ?>				
+						<div class="hamburger__line"></div>
+						<div class="hamburger__line"></div>
+						<div class="hamburger__line"></div>
+					<?php } else { ?>
+						<div class="hamburger__line-green"></div>
+						<div class="hamburger__line-green"></div>
+						<div class="hamburger__line-green"></div>
+					<?php } ?>								
+				</div>  
+			</section><!-- .site-branding -->
+
+			<section id="menu-overlay" class="main-navigation">
+				<div id="menu-overlay-content">
+					<div id="menu-close-wrapper">
+						<a href="javascript:void(0)" class="menu-close" onclick="closeMenu()"></a>
+					</div>
+					<div id="menu-content">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							) );
+						?>
+						<div class="menu-contact-button" onclick="openForm()">Contact</div>
+						<div class="menu-social">
+							<span>Follow Us</span>
+							<div class="menu-social-icons">
+								<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+								<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+							</div>
+						</div>
+						<div class="menu-contact">
+							<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
+							<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
+							<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
 						</div>
 					</div>
-					<div class="menu-contact">
-						<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
-						<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
-						<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
+				</div>
+			</section><!-- #menu-overlay -->
+
+			<section id="contact-form">
+				<div id="contact-form-content">
+					<div id="contact-close-wrapper">
+						<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
 					</div>
+					<?php echo do_shortcode('[wpforms id="101"]') ?>
 				</div>
-			</div>
-		</section><!-- #menu-overlay -->
+			</section><!-- #contact-form -->
+		</header><!-- #masthead -->
 
-		<section id="contact-form">
-			<div id="contact-form-content">
-				<div id="contact-close-wrapper">
-					<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
-				</div>
-				<?php echo do_shortcode('[wpforms id="101"]') ?>
-			</div>
-		</section><!-- #contact-form -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+		<div id="content" class="site-content">

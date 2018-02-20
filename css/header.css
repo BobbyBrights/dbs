@@ -1,3 +1,69 @@
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #edede8;
+  cursor: wait;
+}
+
+#loader #loader-letters {
+  color: #15534e;
+  cursor: wait;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Druk Wide Web", sans-serif;
+  font-size: 35px;
+  height: 40px;
+  left: 50%;
+  letter-spacing: 2px;
+  line-height: 35px;
+  opacity: 1;
+  position: absolute;
+  top: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  width: 120px;
+}
+
+#loader #loader-letters .loader-letters-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 38px;
+}
+
+#loader #loader-letters .loader-letters-box #loader-d {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
+}
+
+#loader #loader-letters .loader-letters-box #loader-b {
+  position: absolute;
+  left: 52%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  top: 0;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
+}
+
+#loader #loader-letters .loader-letters-box #loader-s {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -98,6 +164,7 @@ header #menu-overlay {
   background: #edede8;
   position: fixed;
   height: 100vh;
+  overflow-x: hidden;
   top: 0;
   right: 0;
   width: 0%;
@@ -202,6 +269,7 @@ header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:focus {
 }
 
 header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
+  padding-top: 5px;
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
   letter-spacing: 1.5px;
@@ -257,6 +325,7 @@ header #contact-form {
   right: 0;
   width: 0%;
   z-index: 101;
+  overflow-x: hidden;
   -webkit-transition: width 0.7s ease-in-out;
   transition: width 0.7s ease-in-out;
   overflow-y: scroll;
@@ -421,6 +490,17 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
 }
 
 @media screen and (min-width: 1025px) {
+  #loader #loader-letters {
+    font-size: 45px;
+    width: 160px;
+    height: 43px;
+    line-height: 40px;
+  }
+
+  #loader #loader-letters .loader-letters-box {
+    height: 43px;
+  }
+
   header {
     height: 150px;
   }

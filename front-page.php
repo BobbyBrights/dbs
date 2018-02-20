@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-      
+    
       <div class="front-page__landing-page">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-toronto-skyline.jpg" alt="">
         <div class="front-page__landing-page-overlay"></div>

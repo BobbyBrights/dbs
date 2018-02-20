@@ -900,15 +900,14 @@ object {
 }
 
 html {
-  overflow-x: hidden;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 html body {
   width: 100%;
   overflow-x: hidden;
   color: #15534e;
-  margin: 0 6% 0 6%;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -918,11 +917,5 @@ html body {
 
   .main-navigation ul {
     display: block;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  html body {
-    margin: 0 4% 0 4%;
   }
 }
