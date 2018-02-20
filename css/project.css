@@ -227,9 +227,9 @@
   }
 
   .single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
     width: calc( 100% / 3);
     padding-right: 10px;
   }

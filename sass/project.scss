@@ -173,7 +173,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         .single-project__featured-in-article {
-          flex-grow: 1;
+          flex-grow: unset;
           width: calc( 100% / 3);
           padding-right: 10px;
         }
