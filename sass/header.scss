@@ -50,6 +50,7 @@ header {
       height: 25px;
       z-index: 1;
       opacity: 1;
+      cursor: pointer;
       transition: opacity 1s ease-in-out;
       .hamburger__line {
         display: flex;
@@ -152,16 +153,25 @@ header {
     }
 
     .menu-social {
-      padding-top: 50%;
+      padding-top: 45%;
       span {
         font-family: $font__secondary_reg;
         font-size: 18px;
+      }
+      a {
+        display: inline-block;
+        img {
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;   
+          padding-right: 5px;  
+        }
       }
     }
     .menu-contact {
       font-family: $font__secondary_reg;
       font-size: 18px; 
-      padding-top: 50px;   
+      padding-top: 20px;   
       a,
       a:visited,
       a:hover,
@@ -348,7 +358,7 @@ header {
         margin-right: 10%;
 
         #menu-close-wrapper {
-          height: 140px;
+          height: 100px;
           .menu-close {
             transition: transform 0.3s ease-in-out;
           }
@@ -359,7 +369,7 @@ header {
           }
         }
         #menu-content {
-          margin-top: -70px;
+          margin-top: -20px;
           #primary-menu {
             font-size: 40px;
             line-height: 70px;

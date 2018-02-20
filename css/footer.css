@@ -26,6 +26,17 @@ footer .footer-content .footer-social {
   font-size: 18px;
 }
 
+footer .footer-content .footer-social a {
+  display: inline-block;
+}
+
+footer .footer-content .footer-social a img {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
 footer .footer-content .footer-contact {
   display: -webkit-box;
   display: -ms-flexbox;

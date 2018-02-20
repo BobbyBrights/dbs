@@ -65,8 +65,8 @@
 					<div class="menu-social">
 						<span>Follow Us</span>
 						<div class="menu-social-icons">
-							<img src=""/>
-							<img src=""/>							
+							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 						</div>
 					</div>
 					<div class="menu-contact">

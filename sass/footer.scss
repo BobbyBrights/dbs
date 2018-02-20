@@ -20,6 +20,15 @@ footer {
     }
     .footer-social {
       font-size: 18px;
+      a {
+        display: inline-block;
+        img {
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;   
+          padding-right: 5px;  
+        }
+      }
     }
     .footer-contact {
       display: flex;
