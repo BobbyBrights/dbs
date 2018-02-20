@@ -27,8 +27,13 @@
 	<header id="masthead" class="site-header">
 		<section class="site-branding">
 			<div class="header-logo">
-				<object class="header-logo-image" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
-				<object class="header-logo-image-desktop" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo.svg"></object>			
+				<?php if(is_page('about')) { ?>
+					<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
+					<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>			
+				<?php } else { ?>
+					<object class="header-logo-image-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
+					<object class="header-logo-image-desktop-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-green.svg"></object>			
+				<?php } ?>				
 				<a href="/" class="header-logo-button"></a>	
 			</div>
 			<div class="header__hamburger" onclick="openMenu()">

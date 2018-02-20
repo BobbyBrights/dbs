@@ -21,10 +21,12 @@ header {
       justify-content: flex-start;
       height: 55px;
       width: 70%;
-      .header-logo-image-desktop {
+      .header-logo-image-desktop-white,
+      .header-logo-image-desktop-green {
         display: none;
       }
-      .header-logo-image {
+      .header-logo-image-white,
+      .header-logo-image-green {
         position: absolute;
         left: 0;
         background: transparent;
@@ -318,13 +320,13 @@ header {
       padding-top: 40px;
       .header-logo {
         height: 80px;
-        .header-logo-image-desktop {
+        .header-logo-image-desktop-white, .header-logo-desktop-green {
           position: relative;
           display: flex;
           justify-content: flex-start;
           height: 45px;
         }
-        .header-logo-image {
+        .header-logo-image-white, .header-logo-image-green {
           display: none;
         }
         .header-logo-button {

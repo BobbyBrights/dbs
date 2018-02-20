@@ -33,11 +33,13 @@ header .site-branding .header-logo {
   width: 70%;
 }
 
-header .site-branding .header-logo .header-logo-image-desktop {
+header .site-branding .header-logo .header-logo-image-desktop-white,
+header .site-branding .header-logo .header-logo-image-desktop-green {
   display: none;
 }
 
-header .site-branding .header-logo .header-logo-image {
+header .site-branding .header-logo .header-logo-image-white,
+header .site-branding .header-logo .header-logo-image-green {
   position: absolute;
   left: 0;
   background: transparent;
@@ -411,7 +413,8 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 80px;
   }
 
-  header .site-branding .header-logo .header-logo-image-desktop {
+  header .site-branding .header-logo .header-logo-image-desktop-white,
+  header .site-branding .header-logo .header-logo-desktop-green {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -422,7 +425,8 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 45px;
   }
 
-  header .site-branding .header-logo .header-logo-image {
+  header .site-branding .header-logo .header-logo-image-white,
+  header .site-branding .header-logo .header-logo-image-green {
     display: none;
   }
 

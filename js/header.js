@@ -1,7 +1,5 @@
 let windowSize = window.innerWidth;
 
-
-
 function openMenu() {
   if (windowSize > 1025) {
     document.getElementById('menu-overlay').style.width = '40%';    
@@ -81,6 +79,7 @@ jQuery(document).ready(function($) {
     contactFormMediaQuery();
   });
 
+  // Confirmation message from WPFORMS
   if ($('.wpforms-confirmation-container-full').length) {
     document.getElementById('contact-form').style.transition = 'none';
     openForm();
@@ -88,10 +87,5 @@ jQuery(document).ready(function($) {
       document.getElementById('contact-form').style.transition = 'width 0.7s ease-in-out';      
       closeMenu();
     }, 3000);
-    // $('.contact-close').click(function() {
-    //   $('.wpforms-confirmation-container-full').remove();
-    //   document.getElementById('contact-form').style.transition = '0.5s';
-    //   $('.contact-post-confirmation').css({'display':'block', 'opacity':1});
-    // });
   }
 });
