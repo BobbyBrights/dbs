@@ -5,7 +5,7 @@
 /* ====================================================== */
 
 .single-project {
-  padding: 0 4vw;
+  padding: 80px 4vw 0;
   color: #15534e;
 }
 
@@ -119,7 +119,7 @@
 
 @media only screen and (min-width: 1050px) {
   .single-project {
-    padding: 0 6vw;
+    padding: 150px 6vw 0;
   }
 
   .single-project .single-project__images-carousel {

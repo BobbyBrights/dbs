@@ -3,7 +3,7 @@
 /* ====================================================== */
 
 .single-project {
-  padding: 0 4vw;
+  padding: 80px 4vw 0;
   color: #15534e;
   .single-project__images-carousel {
     margin: 0 -4vw;
@@ -98,7 +98,7 @@
 @media only screen and (min-width: 1050px) {
 
   .single-project {
-    padding: 0 6vw;
+    padding: 150px 6vw 0;
     .single-project__images-carousel {
       height: 80vh;
       margin: 0;
