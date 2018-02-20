@@ -142,7 +142,7 @@ function dbs_scripts() {
 	// scroll reveal
 	wp_enqueue_script( 'dbs__scroll-reveal', get_template_directory_uri() . '/js/scrollreveal/dist/scrollreveal.min.js', array(), true );
 
-	wp_enqueue_style( 'dbs-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'dbs-style', get_template_directory_uri() . '/css/style.css');
 
 
 	// front page
