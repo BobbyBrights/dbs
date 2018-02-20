@@ -89,6 +89,7 @@ jQuery(document).ready(function($){
     sr.reveal('.single-project__address', frontPageScrollReveal);
     sr.reveal('.single-project__specs', frontPageScrollReveal);
     sr.reveal('.single-project__description', frontPageScrollReveal);
+    sr.reveal('.single-project__featured-in-title', frontPageScrollReveal);
     sr.reveal('.single-project__featured-in-article-newspaper-name', frontPageScrollReveal);
     sr.reveal('.single-project__featured-in-article-title', frontPageScrollReveal);
     sr.reveal('.single-project__featured-in-article-date', frontPageScrollReveal);
