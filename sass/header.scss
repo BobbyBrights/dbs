@@ -21,13 +21,23 @@ header {
       justify-content: flex-start;
       height: 55px;
       width: 70%;
-      .header-logo-image-desktop {
+      .header-logo-image-desktop-white,
+      .header-logo-image-desktop-green {
         display: none;
       }
-      .header-logo-image {
+      .header-logo-image-white,
+      .header-logo-image-green {
         position: absolute;
         left: 0;
         background: transparent;
+        width: 80%;
+        z-index: 1;
+      }
+      .header-logo-button {
+        position: absolute;
+        left: 0;
+        background: transparent;
+        height: 100%;
         width: 80%;
         z-index: 1;
       }
@@ -40,12 +50,19 @@ header {
       height: 25px;
       z-index: 1;
       opacity: 1;
+      cursor: pointer;
       transition: opacity 1s ease-in-out;
       .hamburger__line {
         display: flex;
         height: 1px;
         width: 100%;
         background-color: $color__white;
+      }
+      .hamburger__line-green {
+        display: flex;
+        height: 1px;
+        width: 100%;
+        background-color: $color__green;
       }
     }
   }
@@ -136,16 +153,25 @@ header {
     }
 
     .menu-social {
-      padding-top: 50%;
+      padding-top: 45%;
       span {
         font-family: $font__secondary_reg;
         font-size: 18px;
+      }
+      a {
+        display: inline-block;
+        img {
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;   
+          padding-right: 5px;  
+        }
       }
     }
     .menu-contact {
       font-family: $font__secondary_reg;
       font-size: 18px; 
-      padding-top: 50px;   
+      padding-top: 20px;   
       a,
       a:visited,
       a:hover,
@@ -173,6 +199,7 @@ header {
     width: 0%;
     z-index: 101;
     transition: width 0.7s ease-in-out;
+    overflow-y: scroll;
     #contact-form-content {
       position: relative;
       margin: $margin__mobile;
@@ -226,7 +253,7 @@ header {
           .wpforms-field-container {
             display: flex;
             flex-direction: column;
-            height: 90%;
+            // height: 90%;
             align-items: space-between;
             .wpforms-field-medium {
               border: none;
@@ -239,6 +266,9 @@ header {
               &::placeholder {
                 color: $color__green;
               }
+            }
+            .wpforms-error {
+              color: $color__green;
             }
             // .contact__first-name,
             // .contact__last-name,
@@ -271,6 +301,18 @@ header {
           }
         }
       }
+      .wpforms-confirmation-container-full {
+        background: transparent;
+        border: none;
+        font-family: $font__secondary_reg;
+        color: $color__green;
+        font-size: 32px;
+        text-align: center;
+        line-height: 42px;
+        div {
+          padding: 10px 0 10px 0;
+        }
+      }
     }
   }
 }
@@ -286,31 +328,37 @@ header {
 // DESKTOP
 @media screen and (min-width: 1025px) {
   header {
-    height: 100px;
+    height: 150px;
     .site-branding {
       margin: $margin__desktop;
-      margin-top: 4%;
+      // margin-top: 4%;
+      // height: 150px;
+      padding-top: 40px;
       .header-logo {
         height: 80px;
-        .header-logo-image-desktop {
+        .header-logo-image-desktop-white, .header-logo-image-desktop-green {
           position: relative;
           display: flex;
           justify-content: flex-start;
           height: 45px;
-          width: 53%;
         }
-        .header-logo-image {
+        .header-logo-image-white, .header-logo-image-green {
           display: none;
+        }
+        .header-logo-button {
+          width: 500px;
+          height: 50px;
         }
       }
     }
 
     #menu-overlay {
+      overflow-y: scroll;
       #menu-overlay-content {
         margin-right: 10%;
 
         #menu-close-wrapper {
-          height: 140px;
+          height: 100px;
           .menu-close {
             transition: transform 0.3s ease-in-out;
           }
@@ -321,7 +369,7 @@ header {
           }
         }
         #menu-content {
-          margin-top: -90px;
+          margin-top: -20px;
           #primary-menu {
             font-size: 40px;
             line-height: 70px;
@@ -343,15 +391,18 @@ header {
         }
         .wpforms-container {
           form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             .wpforms-field-container {
               display: block;
-              height: 95%;
-              padding-top: 35%;
+              // height: 95%;
+              padding-top: 150px;
               .wpforms-field-medium {
                 max-width: 100%;
               }
               .contact__message {
-                height: 300px;
+                // height: 300px;
                 textarea {
                   height: 100%;
                 }
@@ -364,6 +415,12 @@ header {
             }
           }
         }
+        .wpforms-confirmation-container-full {
+          margin-top: 20%;
+          font-size: 40px;
+          line-height: 50px;
+          padding: 50px 0;
+        }        
       }
     }
   }

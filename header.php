@@ -27,13 +27,25 @@
 	<header id="masthead" class="site-header">
 		<section class="site-branding">
 			<div class="header-logo">
-				<object class="header-logo-image" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
-				<object class="header-logo-image-desktop" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo.svg"></object>				
+				<?php if(is_page( array('home', 'about') ) ) { ?>
+					<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
+					<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>			
+				<?php } else { ?>
+					<object class="header-logo-image-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-green.svg"></object>
+					<object class="header-logo-image-desktop-green" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-green.svg"></object>			
+				<?php } ?>				
+				<a href="/" class="header-logo-button"></a>	
 			</div>
 			<div class="header__hamburger" onclick="openMenu()">
-				<div class="hamburger__line"></div>
-				<div class="hamburger__line"></div>
-				<div class="hamburger__line"></div>
+				<?php if(is_page( array('home', 'about') ) ) { ?>				
+					<div class="hamburger__line"></div>
+					<div class="hamburger__line"></div>
+					<div class="hamburger__line"></div>
+				<?php } else { ?>
+					<div class="hamburger__line-green"></div>
+					<div class="hamburger__line-green"></div>
+					<div class="hamburger__line-green"></div>
+				<?php } ?>								
 			</div>  
 		</section><!-- .site-branding -->
 
@@ -53,8 +65,8 @@
 					<div class="menu-social">
 						<span>Follow Us</span>
 						<div class="menu-social-icons">
-							<img src=""/>
-							<img src=""/>							
+							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+							<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 						</div>
 					</div>
 					<div class="menu-contact">
@@ -71,12 +83,9 @@
 				<div id="contact-close-wrapper">
 					<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
 				</div>
-				<?php echo do_shortcode('[wpforms id="12"]') ?>
+				<?php echo do_shortcode('[wpforms id="101"]') ?>
 			</div>
 		</section><!-- #contact-form -->
-
-		<div onclick="openForm()">OPEN CONTACT</div>
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

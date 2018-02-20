@@ -33,14 +33,25 @@ header .site-branding .header-logo {
   width: 70%;
 }
 
-header .site-branding .header-logo .header-logo-image-desktop {
+header .site-branding .header-logo .header-logo-image-desktop-white,
+header .site-branding .header-logo .header-logo-image-desktop-green {
   display: none;
 }
 
-header .site-branding .header-logo .header-logo-image {
+header .site-branding .header-logo .header-logo-image-white,
+header .site-branding .header-logo .header-logo-image-green {
   position: absolute;
   left: 0;
   background: transparent;
+  width: 80%;
+  z-index: 1;
+}
+
+header .site-branding .header-logo .header-logo-button {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  height: 100%;
   width: 80%;
   z-index: 1;
 }
@@ -60,6 +71,7 @@ header .site-branding .header__hamburger {
   height: 25px;
   z-index: 1;
   opacity: 1;
+  cursor: pointer;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -71,6 +83,15 @@ header .site-branding .header__hamburger .hamburger__line {
   height: 1px;
   width: 100%;
   background-color: #edede8;
+}
+
+header .site-branding .header__hamburger .hamburger__line-green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background-color: #15534e;
 }
 
 header #menu-overlay {
@@ -187,7 +208,7 @@ header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
 }
 
 header #menu-overlay .menu-social {
-  padding-top: 50%;
+  padding-top: 45%;
 }
 
 header #menu-overlay .menu-social span {
@@ -195,10 +216,21 @@ header #menu-overlay .menu-social span {
   font-size: 18px;
 }
 
+header #menu-overlay .menu-social a {
+  display: inline-block;
+}
+
+header #menu-overlay .menu-social a img {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
 header #menu-overlay .menu-contact {
   font-family: "Neutral Regular";
   font-size: 18px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 header #menu-overlay .menu-contact a,
@@ -227,6 +259,7 @@ header #contact-form {
   z-index: 101;
   -webkit-transition: width 0.7s ease-in-out;
   transition: width 0.7s ease-in-out;
+  overflow-y: scroll;
 }
 
 header #contact-form #contact-form-content {
@@ -311,7 +344,6 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-fiel
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 90%;
   -webkit-box-align: space-between;
   -ms-flex-align: space-between;
   align-items: space-between;
@@ -343,6 +375,10 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-fiel
   color: #15534e;
 }
 
+header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-error {
+  color: #15534e;
+}
+
 header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message {
   height: 260px;
   margin: 10px 0 5px 0;
@@ -370,21 +406,36 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
   width: 100%;
 }
 
+header #contact-form #contact-form-content .wpforms-confirmation-container-full {
+  background: transparent;
+  border: none;
+  font-family: "Neutral Regular";
+  color: #15534e;
+  font-size: 32px;
+  text-align: center;
+  line-height: 42px;
+}
+
+header #contact-form #contact-form-content .wpforms-confirmation-container-full div {
+  padding: 10px 0 10px 0;
+}
+
 @media screen and (min-width: 1025px) {
   header {
-    height: 100px;
+    height: 150px;
   }
 
   header .site-branding {
     margin: 0 4% 0 4%;
-    margin-top: 4%;
+    padding-top: 40px;
   }
 
   header .site-branding .header-logo {
     height: 80px;
   }
 
-  header .site-branding .header-logo .header-logo-image-desktop {
+  header .site-branding .header-logo .header-logo-image-desktop-white,
+  header .site-branding .header-logo .header-logo-image-desktop-green {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -393,11 +444,20 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
     -ms-flex-pack: start;
     justify-content: flex-start;
     height: 45px;
-    width: 53%;
   }
 
-  header .site-branding .header-logo .header-logo-image {
+  header .site-branding .header-logo .header-logo-image-white,
+  header .site-branding .header-logo .header-logo-image-green {
     display: none;
+  }
+
+  header .site-branding .header-logo .header-logo-button {
+    width: 500px;
+    height: 50px;
+  }
+
+  header #menu-overlay {
+    overflow-y: scroll;
   }
 
   header #menu-overlay #menu-overlay-content {
@@ -405,7 +465,7 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
   }
 
   header #menu-overlay #menu-overlay-content #menu-close-wrapper {
-    height: 140px;
+    height: 100px;
   }
 
   header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close {
@@ -421,7 +481,7 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
   }
 
   header #menu-overlay #menu-overlay-content #menu-content {
-    margin-top: -90px;
+    margin-top: -20px;
   }
 
   header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
@@ -446,18 +506,26 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
     display: none;
   }
 
+  header #contact-form #contact-form-content .wpforms-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
   header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container {
     display: block;
-    height: 95%;
-    padding-top: 35%;
+    padding-top: 150px;
   }
 
   header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .wpforms-field-medium {
     max-width: 100%;
-  }
-
-  header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message {
-    height: 300px;
   }
 
   header #contact-form #contact-form-content .wpforms-container form .wpforms-field-container .contact__message textarea {
@@ -466,5 +534,12 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
 
   header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit {
     width: 65%;
+  }
+
+  header #contact-form #contact-form-content .wpforms-confirmation-container-full {
+    margin-top: 20%;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 50px 0;
   }
 }
