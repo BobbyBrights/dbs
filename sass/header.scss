@@ -57,6 +57,12 @@ header {
         width: 100%;
         background-color: $color__white;
       }
+      .hamburger__line-green {
+        display: flex;
+        height: 1px;
+        width: 100%;
+        background-color: $color__green;
+      }
     }
   }
 
@@ -320,7 +326,7 @@ header {
       padding-top: 40px;
       .header-logo {
         height: 80px;
-        .header-logo-image-desktop-white, .header-logo-desktop-green {
+        .header-logo-image-desktop-white, .header-logo-image-desktop-green {
           position: relative;
           display: flex;
           justify-content: flex-start;

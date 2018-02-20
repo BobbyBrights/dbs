@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<section class="site-branding">
 			<div class="header-logo">
-				<?php if(is_page('about')) { ?>
+				<?php if(is_page( array('home', 'about') ) ) { ?>
 					<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
 					<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>			
 				<?php } else { ?>
@@ -37,9 +37,15 @@
 				<a href="/" class="header-logo-button"></a>	
 			</div>
 			<div class="header__hamburger" onclick="openMenu()">
-				<div class="hamburger__line"></div>
-				<div class="hamburger__line"></div>
-				<div class="hamburger__line"></div>
+				<?php if(is_page( array('home', 'about') ) ) { ?>				
+					<div class="hamburger__line"></div>
+					<div class="hamburger__line"></div>
+					<div class="hamburger__line"></div>
+				<?php } else { ?>
+					<div class="hamburger__line-green"></div>
+					<div class="hamburger__line-green"></div>
+					<div class="hamburger__line-green"></div>
+				<?php } ?>								
 			</div>  
 		</section><!-- .site-branding -->
 
