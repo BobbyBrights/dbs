@@ -16,7 +16,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 80px 4vw 0;
+  padding: 80px 6vw 0;
 }
 
 #main .all-projects article {
@@ -133,7 +133,7 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 150px 6vw 0;
+    padding: 150px 4vw 0;
   }
 
   #main .all-projects article {
