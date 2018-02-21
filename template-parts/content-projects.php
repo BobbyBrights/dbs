@@ -21,10 +21,12 @@
         <?php  
           foreach( $projectImages as $projectImage ):
         ?>  
-          <div class="project__image-wrap">
-            <div class="image__overlay"></div>
-            <img src="<?php echo $projectImage['url']; ?>" alt="">
-          </div>
+          <a href="<?php echo get_permalink(); ?>">
+            <div class="project__image-wrap">
+              <div class="image__overlay"></div>
+              <img src="<?php echo $projectImage['url']; ?>" alt="">
+            </div>
+          </a>
         <?php endforeach; ?>
       </div>
     

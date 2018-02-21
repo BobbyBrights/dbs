@@ -107,4 +107,10 @@ jQuery(document).ready(function($){
     }, 2000);    
   })();
 
+  (function rellax () {
+    var rellax = new Rellax('.rellax', {
+      center: true
+    });
+  })()
+
 })
