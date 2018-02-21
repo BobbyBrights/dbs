@@ -271,6 +271,7 @@ header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-co
   font-size: 28px;
   letter-spacing: 1.5px;
   line-height: 38px;
+  cursor: pointer;
 }
 
 header #menu-overlay .menu-bottom-wrap .menu-social {
