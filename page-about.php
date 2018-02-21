@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
       <div id="about-page">
         <div class="about__landing-page">
-          <img src="<?php echo get_field('landing_image'); ?>" alt="">
+          <img class="rellax" src="<?php echo get_field('landing_image'); ?>" alt="" data-rellax-speed="-3">
           <div class="about__landing-page-overlay"></div>
           <div class="about__landing-page-text"><?php echo get_field('landing_text'); ?></div>
         </div>
