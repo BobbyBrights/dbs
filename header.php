@@ -73,25 +73,31 @@
 						<a href="javascript:void(0)" class="menu-close" onclick="closeMenu()"></a>
 					</div>
 					<div id="menu-content">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							) );
-						?>
-						<div class="menu-contact-button" onclick="openForm()">Contact</div>
-						<div class="menu-social">
-							<span>Follow Us</span>
-							<div class="menu-social-icons">
-								<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
-								<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+						<div class="menu-top-wrap">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-1',
+									'menu_id'        => 'primary-menu',
+								) );
+							?>
+							<div class="menu-contact-button" onclick="openForm()">Contact</div>
+						</div>
+
+						<div class="menu-bottom-wrap">
+							<div class="menu-social">
+								<span>Follow Us</span>
+								<div class="menu-social-icons">
+									<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+									<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+								</div>
+							</div>
+							<div class="menu-contact">
+								<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
+								<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
+								<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
 							</div>
 						</div>
-						<div class="menu-contact">
-							<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
-							<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
-							<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
-						</div>
+
 					</div>
 				</div>
 			</section><!-- #menu-overlay -->

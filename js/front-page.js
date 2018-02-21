@@ -103,7 +103,14 @@ jQuery(document).ready(function($){
       sr.reveal('.about__landing-page-text', frontPageScrollReveal);
       sr.reveal('.about__our-legacy-large-img', aboutPageScrollReveal);
       sr.reveal('.about__our-legacy-small-img', aboutPageScrollReveal);
-      sr.reveal('.about__innovation-small-img', aboutPageScrollReveal);
+      sr.reveal('.about__innovation-small-img', {
+        duration: 900,
+        distance: '20px',
+        easing: 'ease-in-out',
+        scale: 1,
+        reset: false,
+        viewFactor: 0.3
+      });
     }, 2000);    
   })();
 

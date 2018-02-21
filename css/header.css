@@ -176,7 +176,6 @@ header #menu-overlay {
 header #menu-overlay #menu-overlay-content {
   position: relative;
   margin: 0 6% 0 6%;
-  height: 100%;
 }
 
 header #menu-overlay #menu-overlay-content #menu-close-wrapper {
@@ -240,12 +239,11 @@ header #menu-overlay #menu-overlay-content #menu-content {
   position: absolute;
   opacity: 0;
   color: #15534e;
-  height: 100%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu {
   list-style: none;
   color: #15534e;
   display: -webkit-box;
@@ -257,63 +255,63 @@ header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
   flex-direction: column;
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
-  line-height: 48px;
+  line-height: 38px;
   letter-spacing: 1.5px;
 }
 
-header #menu-overlay #menu-overlay-content #menu-content #primary-menu a,
-header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:visited,
-header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:hover,
-header #menu-overlay #menu-overlay-content #menu-content #primary-menu a:focus {
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a,
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:visited,
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:hover,
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:focus {
   color: inherit;
 }
 
-header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
-  padding-top: 5px;
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
   letter-spacing: 1.5px;
+  line-height: 38px;
 }
 
-header #menu-overlay .menu-social {
+header #menu-overlay .menu-bottom-wrap .menu-social {
   padding-top: 45%;
 }
 
-header #menu-overlay .menu-social span {
+header #menu-overlay .menu-bottom-wrap .menu-social span {
   font-family: "Neutral Regular";
   font-size: 18px;
 }
 
-header #menu-overlay .menu-social a {
+header #menu-overlay .menu-bottom-wrap .menu-social a {
   display: inline-block;
 }
 
-header #menu-overlay .menu-social a img {
+header #menu-overlay .menu-bottom-wrap .menu-social a img {
   height: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-right: 5px;
 }
 
-header #menu-overlay .menu-contact {
+header #menu-overlay .menu-bottom-wrap .menu-contact {
   font-family: "Neutral Regular";
   font-size: 18px;
   padding-top: 20px;
 }
 
-header #menu-overlay .menu-contact a,
-header #menu-overlay .menu-contact a:visited,
-header #menu-overlay .menu-contact a:hover,
-header #menu-overlay .menu-contact a:focus {
+header #menu-overlay .menu-bottom-wrap .menu-contact a,
+header #menu-overlay .menu-bottom-wrap .menu-contact a:visited,
+header #menu-overlay .menu-bottom-wrap .menu-contact a:hover,
+header #menu-overlay .menu-bottom-wrap .menu-contact a:focus {
   color: inherit;
   padding: 10px 0;
 }
 
-header #menu-overlay .menu-contact .menu-contact-email {
+header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-email {
   text-decoration: underline;
 }
 
-header #menu-overlay .menu-contact .menu-contact-address {
+header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-address {
   padding: 10px 0;
 }
 
@@ -465,6 +463,7 @@ header #contact-form #contact-form-content .wpforms-container form .wpforms-subm
 }
 
 header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit {
+  background-color: transparent;
   border: 1.2px solid #15534e;
   color: #15534e;
   height: 50px;
@@ -523,7 +522,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    height: 45px;
+    height: 35px;
   }
 
   header .site-branding .header-logo .header-logo-image-white,
@@ -534,10 +533,6 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
   header .site-branding .header-logo .header-logo-button {
     width: 500px;
     height: 50px;
-  }
-
-  header #menu-overlay {
-    overflow-y: scroll;
   }
 
   header #menu-overlay #menu-overlay-content {
@@ -562,15 +557,53 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
 
   header #menu-overlay #menu-overlay-content #menu-content {
     margin-top: -20px;
+    height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  header #menu-overlay #menu-overlay-content #menu-content #primary-menu {
-    font-size: 40px;
-    line-height: 70px;
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap {
+    height: calc(50%);
   }
 
-  header #menu-overlay #menu-overlay-content #menu-content .menu-contact-button {
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu {
     font-size: 40px;
+    line-height: 60px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  header #menu-overlay .menu-bottom-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-social {
+    padding-top: 0;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-contact a,
+  header #menu-overlay .menu-bottom-wrap .menu-contact a:visited,
+  header #menu-overlay .menu-bottom-wrap .menu-contact a:hover,
+  header #menu-overlay .menu-bottom-wrap .menu-contact a:focus {
+    padding: 5px 0;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-address {
+    padding: 5px 0;
   }
 
   header #contact-form {
@@ -614,6 +647,13 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
 
   header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit {
     width: 65%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header #contact-form #contact-form-content .wpforms-container form .wpforms-submit-container .wpforms-submit:hover {
+    background-color: #15534e;
+    color: #edede8;
   }
 
   header #contact-form #contact-form-content .wpforms-confirmation-container-full {

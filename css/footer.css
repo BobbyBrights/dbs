@@ -45,6 +45,7 @@ footer .footer-content .footer-contact {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 footer .footer-content .footer-contact a,
@@ -109,6 +110,7 @@ footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-cont
 }
 
 footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit {
+  background-color: transparent;
   border: 1.3px solid #15534e;
   border-radius: 0;
   color: #15534e;
@@ -118,10 +120,6 @@ footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-cont
   height: 50px;
   text-transform: uppercase;
   width: 100%;
-}
-
-footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit:hover {
-  background-color: transparent;
 }
 
 footer .footer-content .footer-desktop-wrapper-two {
@@ -175,14 +173,20 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-top: 70px;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-social {
-    width: 30%;
+    width: 33.33%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-social a img {
+    height: 35px;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-contact {
-    width: 30%;
+    width: 33.33%;
+    padding-top: 0;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-contact a:nth-child(1) {
@@ -190,12 +194,27 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-subscribe {
-    width: 30%;
+    width: 33.33%;
     padding-top: 0;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container form div .wpforms-field-email input {
+    color: #15534e;
     max-width: 100%;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container form div .wpforms-error {
+    color: #15534e;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit:hover {
+    background-color: #15534e;
+    color: #edede8;
   }
 
   footer .footer-content .footer-desktop-wrapper-two {
@@ -222,7 +241,7 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
     font-size: 40px;
     margin-bottom: 5px;
     letter-spacing: 1.5px;
-    width: 30%;
+    width: 33.33%;
   }
 
   footer .footer-content .footer-desktop-wrapper-two .footer-copyright {
@@ -233,10 +252,10 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    width: 30%;
+    width: 33.33%;
   }
 
   footer .footer-content .footer-desktop-wrapper-two .footer-design-by {
-    width: 30%;
+    width: 33.33%;
   }
 }
