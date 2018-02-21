@@ -578,7 +578,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
 
   header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
     font-size: 40px;
-    padding: 0;
+    padding-top: 10px;
   }
 
   header #menu-overlay .menu-bottom-wrap {

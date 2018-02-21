@@ -33,5 +33,4 @@ jQuery(document).ready(function($) {
     let newDate = date.replace(/\//g, '.');
     $(this).text(newDate);
   });
-
 });

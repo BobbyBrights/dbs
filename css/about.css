@@ -6,6 +6,7 @@
   height: 80vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #about-page .about__landing-page img {
