@@ -111,7 +111,7 @@ jQuery(document).ready(function($){
         reset: false,
         viewFactor: 0.3
       });
-    }, 2000);    
+    }, 4000);    
   })();
 
   (function rellax () {
