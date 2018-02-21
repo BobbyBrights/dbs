@@ -242,6 +242,8 @@
     .about-page-body {
       margin: $margin__desktop;
       .about__opening-text {
+        color: $color__green;
+        padding: 60px 0;
       }
       .about__our-legacy {
         position: relative;
@@ -302,6 +304,7 @@
         }
       }
       .about__community {
+        margin-top: 50px;
         position: relative;
         height: 500px;
         span {
@@ -332,7 +335,7 @@
           flex-wrap: wrap;
           justify-content: space-between;
           img {
-            width: 30%;
+            width: 33.33%;
             height: 250px;
             object-fit: contain;
           }
@@ -349,7 +352,8 @@
           margin-right: 0;
           .about__publication-wrapper {
             font-family: $font__main;
-            width: 30%;
+            
+            width: 33.33%;
             padding: 20px 0;
             .publication-name {
               text-transform: uppercase;

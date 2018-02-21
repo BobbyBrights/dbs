@@ -230,6 +230,11 @@
     margin: 0 4% 0 4%;
   }
 
+  #about-page .about-page-body .about__opening-text {
+    color: #15534e;
+    padding: 60px 0;
+  }
+
   #about-page .about-page-body .about__our-legacy {
     position: relative;
   }
@@ -300,6 +305,7 @@
   }
 
   #about-page .about-page-body .about__community {
+    margin-top: 50px;
     position: relative;
     height: 500px;
   }
@@ -338,7 +344,7 @@
   }
 
   #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel img {
-    width: 30%;
+    width: 33.33%;
     height: 250px;
     -o-object-fit: contain;
     object-fit: contain;
@@ -359,7 +365,7 @@
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper {
     font-family: "Druk Wide Web", sans-serif;
-    width: 30%;
+    width: 33.33%;
     padding: 20px 0;
   }
 

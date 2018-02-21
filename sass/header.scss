@@ -39,19 +39,19 @@
       #loader-b {
         position: absolute;
         left: 52%;
-        transform: translate(-50%);        
-        top: 0;        
-        transition: top 0.5s ease-in-out;       
+        transform: translate(-50%);
+        top: 0;
+        transition: top 0.5s ease-in-out;
       }
       #loader-s {
-        position: absolute;  
-        right: 0;    
-        top: 0;        
-        transition: top 0.5s ease-in-out;    
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: top 0.5s ease-in-out;
       }
       // .letter-animation {
-      //   transition: top 0.5s ease-in-out;            
-      //   animation: Letters 1s infinite s;              
+      //   transition: top 0.5s ease-in-out;
+      //   animation: Letters 1s infinite s;
       // }
     }
   }
@@ -59,9 +59,8 @@
 
 // @keyframes Letters {
 //   from {top: 0px;}
-//   to {top: -35px;} 
+//   to {top: -35px;}
 // }
-
 
 header {
   width: 100%;
@@ -144,7 +143,7 @@ header {
     #menu-overlay-content {
       position: relative;
       margin: $margin__mobile;
-      height: 100%;
+      // height: 100%;
       #menu-close-wrapper {
         position: relative;
         display: flex;
@@ -153,7 +152,7 @@ header {
         justify-content: flex-end;
         align-items: center;
         transition: opacity 0.5s ease-in-out;
-        .menu-close {          
+        .menu-close {
           background: transparent;
           border: none;
           display: flex;
@@ -190,66 +189,69 @@ header {
         // left: 800px;
         opacity: 0;
         color: $color__green;
-        height: 100%;
+        // height: 100%;
         transition: 0.5s ease-in-out;
-        #primary-menu {
-          list-style: none;
-          color: $color__green;
-          display: flex;
-          flex-direction: column;
-          font-family: $font__main;
-          font-size: 28px;
-          line-height: 48px;
-          letter-spacing: 1.5px;
-          a,
-          a:visited,
-          a:hover,
-          a:focus {
-            color: inherit;
+        .menu-top-wrap {
+          #primary-menu {
+            list-style: none;
+            color: $color__green;
+            display: flex;
+            flex-direction: column;
+            font-family: $font__main;
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: 1.5px;
+            a,
+            a:visited,
+            a:hover,
+            a:focus {
+              color: inherit;
+            }
+          }
+          .menu-contact-button {
+            font-family: $font__main;
+            font-size: 28px;
+            letter-spacing: 1.5px;
+            line-height: 38px;
           }
         }
-        .menu-contact-button {
-          padding-top: 5px;
-          font-family: $font__main;
-          font-size: 28px;
-          letter-spacing: 1.5px;          
-        }
       }
     }
 
-    .menu-social {
-      padding-top: 45%;
-      span {
+    .menu-bottom-wrap {
+      .menu-social {
+        padding-top: 45%;
+        span {
+          font-family: $font__secondary_reg;
+          font-size: 18px;
+        }
+        a {
+          display: inline-block;
+          img {
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-right: 5px;
+          }
+        }
+      }
+      .menu-contact {
         font-family: $font__secondary_reg;
         font-size: 18px;
-      }
-      a {
-        display: inline-block;
-        img {
-          height: 50px;
-          margin-top: 10px;
-          margin-bottom: 10px;   
-          padding-right: 5px;  
+        padding-top: 20px;
+        a,
+        a:visited,
+        a:hover,
+        a:focus {
+          color: inherit;
+          padding: 10px 0;
         }
-      }
-    }
-    .menu-contact {
-      font-family: $font__secondary_reg;
-      font-size: 18px; 
-      padding-top: 20px;   
-      a,
-      a:visited,
-      a:hover,
-      a:focus {
-        color: inherit;
-        padding: 10px 0;
-      }
-      .menu-contact-email {
-        text-decoration: underline;
-
-      }
-      .menu-contact-address {
-        padding: 10px 0;
+        .menu-contact-email {
+          text-decoration: underline;
+        }
+        .menu-contact-address {
+          padding: 10px 0;
+        }
       }
     }
   }
@@ -355,6 +357,7 @@ header {
           .wpforms-submit-container {
             height: 50px;
             .wpforms-submit {
+              background-color: transparent;
               border: 1.2px solid $color__green;
               color: $color__green;
               height: 50px;
@@ -414,13 +417,15 @@ header {
       padding-top: 40px;
       .header-logo {
         height: 80px;
-        .header-logo-image-desktop-white, .header-logo-image-desktop-green {
+        .header-logo-image-desktop-white,
+        .header-logo-image-desktop-green {
           position: relative;
           display: flex;
           justify-content: flex-start;
-          height: 45px;
+          height: 35px;
         }
-        .header-logo-image-white, .header-logo-image-green {
+        .header-logo-image-white,
+        .header-logo-image-green {
           display: none;
         }
         .header-logo-button {
@@ -431,7 +436,7 @@ header {
     }
 
     #menu-overlay {
-      overflow-y: scroll;
+      // overflow-y: scroll;
       #menu-overlay-content {
         margin-right: 10%;
 
@@ -448,12 +453,39 @@ header {
         }
         #menu-content {
           margin-top: -20px;
-          #primary-menu {
-            font-size: 40px;
-            line-height: 70px;
+          // height: auto;
+          height: 85vh;
+          display: flex;
+          flex-direction: column;
+          .menu-top-wrap {
+            height: calc(50%);
+            #primary-menu {
+              font-size: 40px;
+              line-height: 60px;
+            }
+            .menu-contact-button {
+              font-size: 40px;
+              padding: 0;
+            }
           }
-          .menu-contact-button {
-            font-size: 40px;
+        }
+      }
+      .menu-bottom-wrap {
+        display: flex;
+        flex-direction: column;
+        // height: 70%;
+        .menu-social {
+          padding-top: 0;
+        }
+        .menu-contact {
+          a,
+          a:visited,
+          a:hover,
+          a:focus {
+            padding: 5px 0;
+          }
+          .menu-contact-address {
+            padding: 5px 0;
           }
         }
       }
@@ -489,6 +521,11 @@ header {
             .wpforms-submit-container {
               .wpforms-submit {
                 width: 65%;
+                transition: all 0.3s ease-in-out;     
+                &:hover {
+                  background-color: $color__green;
+                  color: $color__white;
+                }
               }
             }
           }
@@ -498,7 +535,7 @@ header {
           font-size: 40px;
           line-height: 50px;
           padding: 50px 0;
-        }        
+        }
       }
     }
   }

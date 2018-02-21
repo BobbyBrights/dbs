@@ -33,6 +33,7 @@ footer {
     .footer-contact {
       display: flex;
       flex-direction: column;
+      padding-top: 20px;
       a,
       a:visited,
       a:focus,
@@ -73,6 +74,7 @@ footer {
         .wpforms-submit-container {
           padding-top: 5px;
           .wpforms-submit {
+            background-color: transparent;
             border: 1.3px solid $color__green;
             border-radius: 0;
             color: $color__green;
@@ -82,9 +84,6 @@ footer {
             height: 50px;
             text-transform: uppercase;
             width: 100%;
-            &:hover {
-              background-color: transparent;
-            }
           }
         }
       }
@@ -131,27 +130,46 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 70px;
         .footer-social {
-          width: 30%;
+          width: 33.33%;
+          a {
+            img {
+              height: 35px;
+            }
+          }
         }
         .footer-contact {
-          width: 30%;
+          width: 33.33%;
+          padding-top: 0;
           a:nth-child(1) {
             padding-top: 0;
           }
         }
         .footer-subscribe {
-          width: 30%;
+          width: 33.33%;
           padding-top: 0;
           .wpforms-container {
             form {
               div {
                 .wpforms-field-email {
                   input {
+                    color: $color__green;
                     max-width: 100%;
                   }
                 }
-
+                .wpforms-error {
+                  color: $color__green;
+                }
+              }
+            }
+            .wpforms-submit-container {
+              .wpforms-submit {
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  background-color: $color__green;
+                  color: $color__white;
+                }
               }
             }
           }
@@ -168,15 +186,15 @@ footer {
           font-size: 40px;
           margin-bottom: 5px;
           letter-spacing: 1.5px;
-          width: 30%;
+          width: 33.33%;
         }
         .footer-copyright {
           flex-direction: row;
           align-items: flex-end;
-          width: 30%;
+          width: 33.33%;
         }
         .footer-design-by {
-          width: 30%;
+          width: 33.33%;
         }
       }
     }
