@@ -25,7 +25,7 @@ get_header(); ?>
           <div class="front-page__landing-page-slogan front-page__landing-page-slogan-innovation">innovation.</div>
           <div class="front-page__landing-page-slogan front-page__landing-page-slogan-community">community.</div>
           <div class="front-page__landing-page-slogan front-page__landing-page-slogan-legacy">legacy.</div>
-          <a href="" class="front-page__landing-page-slogan front-page__landing-page-slogan-view-projects">view projects +</a>
+          <a href="<?php echo get_site_url() . '/projects' ?>" class="front-page__landing-page-slogan front-page__landing-page-slogan-view-projects">view projects +</a>
         </div>
       </div>
       
@@ -47,7 +47,7 @@ get_header(); ?>
             <?php echo $aboutUsContent['front_page_about_us_detail']?>
           </div>
           <div class="front-page__content-description-link">
-            <a href="">about us +</a>
+            <a href="<?php echo get_site_url() . '/about' ?>">about us +</a>
           </div>
          
         </div>
@@ -73,7 +73,7 @@ get_header(); ?>
             <?php echo $contactUsContent['front_page_contact_us_detail']?>
           </div>
           <div class="front-page__content-description-link">
-            <a href="">contact us +</a>
+            <span onclick="openForm()" >contact us +</span>
           </div>
         </div>
         <?php endif; ?>

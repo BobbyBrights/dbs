@@ -6,30 +6,28 @@ jQuery(document).ready(function($){
         'bottom': '0',
         'opacity': '1',
       });
-    }, 500);
+    }, 4500);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-community').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 800);
+    }, 4800);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-legacy').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 1100);
+    }, 5100);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-view-projects').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 1400);
+    }, 5400);
   });
 
-
   (function scrollReveal() {
-    console.log('asdasd');
     window.sr = ScrollReveal();
     let frontPageScrollReveal = {
       duration: 900,
@@ -115,9 +113,11 @@ jQuery(document).ready(function($){
   })();
 
   (function rellax () {
-    var rellax = new Rellax('.rellax', {
-      center: true
-    });
+    if ( window.location.pathname == '/dbs/' ) {
+      var rellax = new Rellax('.rellax', {
+        center: true
+      });
+    }
   })()
 
 })
