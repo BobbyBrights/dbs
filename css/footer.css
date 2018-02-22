@@ -70,56 +70,59 @@ footer .footer-content .footer-subscribe span {
   font-size: 18px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container form div .wpforms-field-email input {
+footer .footer-content .footer-subscribe .footer-subscribe-email {
+  padding: 10px 0;
+}
+
+footer .footer-content .footer-subscribe .footer-subscribe-email input {
+  color: #15534e;
   background: transparent;
   border: 1.2px solid #15534e;
   border-radius: 0;
   height: 50px;
+  width: 100%;
+  padding: 0 15px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container form div .wpforms-field-email input::-webkit-input-placeholder {
+footer .footer-content .footer-subscribe .footer-subscribe-email input::-webkit-input-placeholder {
   color: #15534e;
-  font-family: "Neutral Regular";
-  font-size: 15px;
-  padding-left: 5px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container form div .wpforms-field-email input:-ms-input-placeholder {
+footer .footer-content .footer-subscribe .footer-subscribe-email input:-ms-input-placeholder {
   color: #15534e;
-  font-family: "Neutral Regular";
-  font-size: 15px;
-  padding-left: 5px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container form div .wpforms-field-email input::-ms-input-placeholder {
+footer .footer-content .footer-subscribe .footer-subscribe-email input::-ms-input-placeholder {
   color: #15534e;
-  font-family: "Neutral Regular";
-  font-size: 15px;
-  padding-left: 5px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container form div .wpforms-field-email input::placeholder {
+footer .footer-content .footer-subscribe .footer-subscribe-email input::placeholder {
   color: #15534e;
-  font-family: "Neutral Regular";
-  font-size: 15px;
-  padding-left: 5px;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container {
-  padding-top: 5px;
+footer .footer-content .footer-subscribe .footer-subscribe-email input:focus {
+  outline: none;
 }
 
-footer .footer-content .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit {
-  background-color: transparent;
+footer .footer-content .footer-subscribe .footer-subscribe-submit {
+  padding-bottom: 15px;
+}
+
+footer .footer-content .footer-subscribe .footer-subscribe-submit input {
+  background: transparent;
   border: 1.3px solid #15534e;
   border-radius: 0;
   color: #15534e;
   font-size: 14px;
-  font-family: "Neutral Medium";
   letter-spacing: 2px;
+  font-family: "Neutral Medium";
   height: 50px;
-  text-transform: uppercase;
   width: 100%;
+  cursor: pointer;
+}
+
+footer .footer-content .footer-subscribe .footer-subscribe-submit input:focus {
+  outline: none;
 }
 
 footer .footer-content .footer-desktop-wrapper-two {
@@ -198,23 +201,23 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
     padding-top: 0;
   }
 
-  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container form div .wpforms-field-email input {
-    color: #15534e;
-    max-width: 100%;
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .footer-subscribe-email {
+    padding-top: 15px;
   }
 
-  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container form div .wpforms-error {
-    color: #15534e;
-  }
-
-  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit {
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .footer-subscribe-submit input {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
 
-  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .wpforms-container .wpforms-submit-container .wpforms-submit:hover {
-    background-color: #15534e;
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .footer-subscribe-submit input:hover {
     color: #edede8;
+    background: #15534e;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-subscribe .mc4wp-response .mc4wp-alert p {
+    margin: 0;
+    font-size: 14px;
   }
 
   footer .footer-content .footer-desktop-wrapper-two {

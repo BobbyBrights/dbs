@@ -25,8 +25,8 @@ footer {
         img {
           height: 50px;
           margin-top: 10px;
-          margin-bottom: 10px;   
-          padding-right: 5px;  
+          margin-bottom: 10px;
+          padding-right: 5px;
         }
       }
     }
@@ -44,7 +44,7 @@ footer {
       }
       .footer-contact-address {
         font-size: 18px;
-        padding: 10px 0;        
+        padding: 10px 0;
       }
     }
     .footer-subscribe {
@@ -52,38 +52,39 @@ footer {
       span {
         font-size: 18px;
       }
-      .wpforms-container {
-        form {
-          div {
-            .wpforms-field-email {
-              input {
-                background: transparent;
-                border: 1.2px solid $color__green;
-                border-radius: 0;
-                height: 50px;
-                &::placeholder {
-                  color: $color__green;
-                  font-family: $font__secondary_reg;
-                  font-size: 15px;
-                  padding-left: 5px;
-                }
-              }
-            }
+      .footer-subscribe-email {
+        padding: 10px 0;
+        input {
+          color: $color__green;
+          background: transparent;
+          border: 1.2px solid $color__green;
+          border-radius: 0;
+          height: 50px;
+          width: 100%;
+          padding: 0 15px;
+          &::placeholder {
+            color: $color__green;
+          }
+          &:focus {
+            outline: none;
           }
         }
-        .wpforms-submit-container {
-          padding-top: 5px;
-          .wpforms-submit {
-            background-color: transparent;
-            border: 1.3px solid $color__green;
-            border-radius: 0;
-            color: $color__green;
-            font-size: 14px;
-            font-family: $font__secondary_med;            
-            letter-spacing: 2px;
-            height: 50px;
-            text-transform: uppercase;
-            width: 100%;
+      }
+      .footer-subscribe-submit {
+        padding-bottom: 15px;
+        input {
+          background: transparent;
+          border: 1.3px solid $color__green;
+          border-radius: 0;
+          color: $color__green;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-family: $font__secondary_med;
+          height: 50px;
+          width: 100%;
+          cursor: pointer;
+          &:focus {
+            outline: none;
           }
         }
       }
@@ -119,10 +120,10 @@ footer {
   footer {
     padding: 80px 0 40px 0;
     .footer-content {
-      margin: $margin__desktop;     
+      margin: $margin__desktop;
       .footer-line {
         display: none;
-      } 
+      }
       .footer-logo-mobile {
         display: none;
       }
@@ -149,27 +150,23 @@ footer {
         .footer-subscribe {
           width: 33.33%;
           padding-top: 0;
-          .wpforms-container {
-            form {
-              div {
-                .wpforms-field-email {
-                  input {
-                    color: $color__green;
-                    max-width: 100%;
-                  }
-                }
-                .wpforms-error {
-                  color: $color__green;
-                }
+          .footer-subscribe-email {
+            padding-top: 15px;
+          }
+          .footer-subscribe-submit {
+            input {
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: $color__white;
+                background: $color__green;
               }
             }
-            .wpforms-submit-container {
-              .wpforms-submit {
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                  background-color: $color__green;
-                  color: $color__white;
-                }
+          }
+          .mc4wp-response {
+            .mc4wp-alert {
+              p {
+                margin: 0;
+                font-size: 14px;
               }
             }
           }

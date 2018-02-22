@@ -8,7 +8,7 @@
  *
  * @package dbs
  */
-
+ 
 ?>
 
 	</div><!-- #content -->
@@ -33,7 +33,7 @@
 				</div>
 				<div class="footer-subscribe">
 					<span>Subscribe to learn more about upcoming developments and updates</span>
-					<?php echo do_shortcode('[wpforms id="100"]') ?>				
+					<?php echo do_shortcode('[mc4wp_form id="120"]'); ?>				
 				</div>
 			</div>
 			<div class="footer-desktop-wrapper-two">
