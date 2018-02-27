@@ -6,12 +6,14 @@ jQuery(document).ready(function($) {
       $('#about__partnerships-associations-carousel').slick({
         arrows: false,
         // centerMode: true,
+        adaptiveHeight: true,        
         // autoplay: true,
         autoplaySpeed: 2000,
         centerPadding: '30px',
         dots: true,
         easing: 'ease-in-out',
-        slidesToShow: 1
+        slidesToShow: 1,
+        variableWidth: true
       });
 
       $('#about__featured-in-carousel').slick({
@@ -22,8 +24,19 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 2000,
         centerPadding: '30px',
         dots: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        variableWidth: true        
       });
+    })();
+  }
+
+  if (windowSize > 1025) {
+    (function rellaxAboutPage () {
+      if ( window.location.pathname == '/about/' ) {
+        new Rellax('.rellax-about', {
+          center: true
+        });
+      }
     })();
   }
 

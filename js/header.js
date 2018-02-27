@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
     top = '-35px';
   }
   (function loader () {
-    // Loader Animation set on interval of 2s until window loads
+    // Loader Animation set on interval of .5s until window loads
     function loaderAnimation() {
       $('#loader-d, #loader-b, #loader-s').css({'transition': 'none', 'top': '0'});
       setTimeout(function() {
@@ -90,11 +90,9 @@ jQuery(document).ready(function($) {
     // On window load, play animation once and fade out
     $(window).load(function() {
       clearInterval(interval);
+      loaderAnimation();
       setTimeout(function() {
-        loaderAnimation();
-        setTimeout(function() {
-          $('#loader').fadeOut();          
-        }, 2500);
+        $('#loader').fadeOut();      
       }, 1500);
     });
   })()

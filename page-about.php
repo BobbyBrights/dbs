@@ -33,12 +33,18 @@ get_header(); ?>
               if( have_rows('our_legacy') ):
                 while( have_rows('our_legacy') ): the_row();
             ?>
-            <img class="about__our-legacy-large-img" src="<?php echo get_sub_field('large_image'); ?>"/>
-            <span><?php echo get_sub_field('section_title') ?></span>
-            <div class="about__our-legacy-small-txt">
-              <?php echo get_sub_field('small_text'); ?>
+            <div class="about__our-legacy-large-img-wrapper">
+              <img class="about__our-legacy-large-img rellax-about" src="<?php echo get_sub_field('large_image'); ?>" data-rellax-speed="-1"/>
             </div>
-            <img class="about__our-legacy-small-img" src="<?php echo get_sub_field('small_image'); ?>"/>
+            <div class="about__our-legacy-txt-wrap">
+              <span><?php echo get_sub_field('section_title') ?></span>
+              <div class="about__our-legacy-small-txt">
+                <?php echo get_sub_field('small_text'); ?>
+              </div>
+            </div>
+            <div class="about__our-legacy-small-img-wrapper">
+              <img class="about__our-legacy-small-img rellax-about" src="<?php echo get_sub_field('small_image'); ?>" data-rellax-speed="-1"/>
+            </div>
             <div class="about__our-legacy-large-txt">
               <?php echo get_sub_field('large_text'); ?>          
             </div>
@@ -56,7 +62,9 @@ get_header(); ?>
             <span><?php echo get_sub_field('section_title') ?></span>
             <div class="about__innovation-large-txt"><?php echo get_sub_field('large_text'); ?></div>
             <div class="about__innovation-small-txt"><?php echo get_sub_field('small_text'); ?></div>
-            <img class="about__innovation-small-img" src="<?php echo get_sub_field('image'); ?>"/>
+            <div class="about__innovation-small-img-wrapper">
+              <img class="about__innovation-small-img rellax-about" src="<?php echo get_sub_field('image'); ?>" data-rellax-speed="-1"/>
+            </div>
             <?php
                 endwhile;
               endif;
@@ -71,6 +79,9 @@ get_header(); ?>
             <span><?php echo get_sub_field('section_title') ?></span>
             <div class="about__community-large-txt"><?php echo get_sub_field('large_text'); ?></div>
             <div class="about__community-small-txt"><?php echo get_sub_field('small_text'); ?></div>
+            <div class="about__community-small-img-wrapper">
+              <img class="about__community-small-img rellax-about" src="<?php echo get_sub_field('image'); ?>" data-rellax-speed="-1"/>            
+            </div>
             <?php
                 endwhile;
               endif;
@@ -88,7 +99,9 @@ get_header(); ?>
                 $images = get_sub_field('partnership_&_association_logos');
                 if( $images ): 
                   foreach( $images as $image ): ?>
-                  <img class="" src="<?php echo $image['sizes']['thumbnail']; ?>"/>
+                  <div class="about__partnerships-associations-img-wrap">
+                    <img class="" src="<?php echo $image['sizes']['thumbnail']; ?>"/>
+                  </div>
                 <?php
                   endforeach;
                 endif;

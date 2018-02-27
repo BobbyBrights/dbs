@@ -903,6 +903,14 @@ html {
   overflow-x: hidden;
 }
 
+html ::-moz-selection {
+  background: #a0c1bf;
+}
+
+html ::selection {
+  background: #a0c1bf;
+}
+
 html body {
   width: 100%;
   overflow-x: hidden;

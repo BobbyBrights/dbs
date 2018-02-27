@@ -596,6 +596,10 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     padding-top: 0;
   }
 
+  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a img {
+    height: 35px;
+  }
+
   header #menu-overlay .menu-bottom-wrap .menu-contact a,
   header #menu-overlay .menu-bottom-wrap .menu-contact a:visited,
   header #menu-overlay .menu-bottom-wrap .menu-contact a:hover,

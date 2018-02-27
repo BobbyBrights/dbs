@@ -108,6 +108,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	width: 100vw;
 	overflow-x: hidden;
+	::selection {
+		background: #a0c1bf;
+	}
   body {
 		width: 100%;
 		overflow-x: hidden;  
