@@ -13,6 +13,8 @@ jQuery(document).ready(function($){
       $('.single-project__images-carousel').slick({
         dots: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
       });
     }
   })();
