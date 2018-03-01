@@ -42,6 +42,12 @@
             }
           }
         }
+        .slick-dots {
+          position: absolute;
+          top: 210px;
+          text-align: right;
+          right: -5px;
+        }
       }
       .project__status {
         color: #edede8;
@@ -106,7 +112,12 @@
       padding-top: 120px;
       article {
         .slick-slider {
-          height: 400px;
+          height: 400px; 
+          .slick-dots {
+            top: 410px;
+            text-align: right;
+            right: -4px;            
+          }
         }
       }
     }

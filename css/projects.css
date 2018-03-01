@@ -16,7 +16,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 80px 6vw 0;
+  padding: 100px 6vw 0;
 }
 
 #main .all-projects article {
@@ -65,6 +65,13 @@
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+#main .all-projects article .slick-slider .slick-dots {
+  position: absolute;
+  top: 210px;
+  text-align: right;
+  right: -5px;
 }
 
 #main .all-projects article .project__status {
@@ -201,5 +208,21 @@
     width: 350px;
     right: -150px;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #main .all-projects {
+    padding-top: 120px;
+  }
+
+  #main .all-projects article .slick-slider {
+    height: 400px;
+  }
+
+  #main .all-projects article .slick-slider .slick-dots {
+    top: 410px;
+    text-align: right;
+    right: -4px;
   }
 }

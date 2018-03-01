@@ -528,6 +528,10 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 50px;
   }
 
+  header .site-branding .header__hamburger {
+    margin-top: 0;
+  }
+
   header #menu-overlay #menu-overlay-content {
     margin-right: 10%;
   }

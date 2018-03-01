@@ -151,4 +151,8 @@
   .front-page__landing-page .front-page__landing-page-slogans {
     font-size: 3em;
   }
+
+  .front-page__content .front-page__content-image {
+    height: 400px;
+  }
 }

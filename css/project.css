@@ -5,7 +5,7 @@
 /* ====================================================== */
 
 .single-project {
-  padding: 80px 6vw 0;
+  padding: 130px 6vw 0;
   color: #15534e;
 }
 
@@ -233,5 +233,15 @@
     flex-grow: unset;
     width: calc( 100% / 3);
     padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .single-project {
+    padding-top: 150px;
+  }
+
+  .single-project .single-project__images-carousel {
+    height: 400px;
   }
 }
