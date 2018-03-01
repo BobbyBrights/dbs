@@ -146,3 +146,9 @@
     padding: 160px 0 0 4vw;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .front-page__landing-page .front-page__landing-page-slogans {
+    font-size: 3em;
+  }
+}

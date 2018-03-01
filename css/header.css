@@ -102,13 +102,11 @@ header .site-branding .header-logo {
   width: 70%;
 }
 
-header .site-branding .header-logo .header-logo-image-desktop-white,
-header .site-branding .header-logo .header-logo-image-desktop-green {
+header .site-branding .header-logo .header-logo-image-desktop-white {
   display: none;
 }
 
-header .site-branding .header-logo .header-logo-image-white,
-header .site-branding .header-logo .header-logo-image-green {
+header .site-branding .header-logo .header-logo-image-white {
   position: absolute;
   left: 0;
   background: transparent;
@@ -140,6 +138,7 @@ header .site-branding .header__hamburger {
   height: 25px;
   z-index: 1;
   opacity: 1;
+  margin-top: 12px;
   cursor: pointer;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
@@ -152,15 +151,6 @@ header .site-branding .header__hamburger .hamburger__line {
   height: 1px;
   width: 100%;
   background-color: #edede8;
-}
-
-header .site-branding .header__hamburger .hamburger__line-green {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1px;
-  width: 100%;
-  background-color: #15534e;
 }
 
 header #menu-overlay {
@@ -518,8 +508,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 80px;
   }
 
-  header .site-branding .header-logo .header-logo-image-desktop-white,
-  header .site-branding .header-logo .header-logo-image-desktop-green {
+  header .site-branding .header-logo .header-logo-image-desktop-white {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -530,8 +519,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 35px;
   }
 
-  header .site-branding .header-logo .header-logo-image-white,
-  header .site-branding .header-logo .header-logo-image-green {
+  header .site-branding .header-logo .header-logo-image-white {
     display: none;
   }
 
@@ -682,8 +670,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     margin-top: 35px;
   }
 
-  header .site-branding .header-logo .header-logo-image-desktop-white,
-  header .site-branding .header-logo .header-logo-image-desktop-green {
+  header .site-branding .header-logo .header-logo-image-desktop-white {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -694,8 +681,7 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     height: 50px;
   }
 
-  header .site-branding .header-logo .header-logo-image-white,
-  header .site-branding .header-logo .header-logo-image-green {
+  header .site-branding .header-logo .header-logo-image-white {
     display: none;
   }
 

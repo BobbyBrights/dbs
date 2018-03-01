@@ -85,12 +85,10 @@ header {
       justify-content: flex-start;
       height: 55px;
       width: 70%;
-      .header-logo-image-desktop-white,
-      .header-logo-image-desktop-green {
+      .header-logo-image-desktop-white {
         display: none;
       }
-      .header-logo-image-white,
-      .header-logo-image-green {
+      .header-logo-image-white {
         position: absolute;
         left: 0;
         background: transparent;
@@ -114,6 +112,7 @@ header {
       height: 25px;
       z-index: 1;
       opacity: 1;
+      margin-top: 12px;
       cursor: pointer;
       transition: opacity 1s ease-in-out;
       .hamburger__line {
@@ -121,12 +120,6 @@ header {
         height: 1px;
         width: 100%;
         background-color: $color__white;
-      }
-      .hamburger__line-green {
-        display: flex;
-        height: 1px;
-        width: 100%;
-        background-color: $color__green;
       }
     }
   }
@@ -396,15 +389,13 @@ header {
     .site-branding {
       margin-top: 35px;
       .header-logo {
-        .header-logo-image-desktop-white,
-        .header-logo-image-desktop-green {
+        .header-logo-image-desktop-white {
           position: relative;
           display: flex;
           justify-content: flex-start;
           height: 50px;
         }
-        .header-logo-image-white,
-        .header-logo-image-green {
+        .header-logo-image-white {
           display: none;
         }
 
@@ -471,15 +462,13 @@ header {
       padding-top: 40px;
       .header-logo {
         height: 80px;
-        .header-logo-image-desktop-white,
-        .header-logo-image-desktop-green {
+        .header-logo-image-desktop-white {
           position: relative;
           display: flex;
           justify-content: flex-start;
           height: 35px;
         }
-        .header-logo-image-white,
-        .header-logo-image-green {
+        .header-logo-image-white {
           display: none;
         }
         .header-logo-button {
