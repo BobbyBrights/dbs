@@ -57,6 +57,10 @@
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img {
   margin-bottom: 20px;
+  height: 440px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap span {
@@ -76,6 +80,10 @@
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img {
   padding: 10px 0;
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-large-txt p {
@@ -107,6 +115,10 @@
 
 #about-page .about-page-body .about__innovation .about__innovation-small-img {
   padding: 0 0 50px 0;
+  height: 270px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #about-page .about-page-body .about__community {
@@ -134,10 +146,15 @@
 
 #about-page .about-page-body .about__community .about__community-small-img {
   padding: 0 0 50px 0;
+  height: 270px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #about-page .about-page-body .about__partnerships-associations {
   color: #15534e;
+  margin: 25px 0 75px 0;
 }
 
 #about-page .about-page-body .about__partnerships-associations span {
@@ -175,7 +192,7 @@
 
 #about-page .about-page-body .about__featured-in {
   color: #15534e;
-  padding-top: 20px;
+  padding: 20px 0 50px 0;
 }
 
 #about-page .about-page-body .about__featured-in span {
@@ -271,8 +288,6 @@
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img-wrapper .about__our-legacy-large-img {
     padding: 0;
-    -o-object-fit: cover;
-    object-fit: cover;
     height: 110%;
   }
 
