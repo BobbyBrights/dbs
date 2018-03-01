@@ -672,3 +672,52 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     padding: 50px 0;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 110px;
+  }
+
+  header .site-branding {
+    margin-top: 35px;
+  }
+
+  header .site-branding .header-logo .header-logo-image-desktop-white,
+  header .site-branding .header-logo .header-logo-image-desktop-green {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 50px;
+  }
+
+  header .site-branding .header-logo .header-logo-image-white,
+  header .site-branding .header-logo .header-logo-image-green {
+    display: none;
+  }
+
+  header .site-branding .header__hamburger {
+    margin-top: 5px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-close-wrapper {
+    height: 110px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  header #contact-form #contact-form-content #contact-close-wrapper {
+    height: 110px;
+  }
+}

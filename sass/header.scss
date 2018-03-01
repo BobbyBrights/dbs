@@ -391,6 +391,55 @@ header {
 
 // IPAD
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 110px;
+    .site-branding {
+      margin-top: 35px;
+      .header-logo {
+        .header-logo-image-desktop-white,
+        .header-logo-image-desktop-green {
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          height: 50px;
+        }
+        .header-logo-image-white,
+        .header-logo-image-green {
+          display: none;
+        }
+
+      }
+      .header__hamburger {
+        margin-top: 5px;
+      }
+    }
+    #menu-overlay {
+      #menu-overlay-content {
+        #menu-close-wrapper {
+          height: 110px;
+        }
+        #menu-content {
+          .menu-top-wrap {
+            #primary-menu {
+              font-size: 40px;
+              line-height: 50px;
+            }
+            .menu-contact-button {
+              font-size: 40px;
+              line-height: 50px;
+            }
+          }
+        }
+      }
+    }
+    #contact-form {
+      #contact-form-content {
+        #contact-close-wrapper {
+          height: 110px;
+        }
+      }
+    }
+  }
 }
 
 // IPAD PRO 10.5"

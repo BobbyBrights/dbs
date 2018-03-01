@@ -248,6 +248,88 @@
 
 // IPAD
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #about-page {
+    .about__landing-page {
+      .about__landing-page-text {
+        font-size: 3em;
+      }
+    }
+    .about-page-body{
+      .about__our-legacy {
+        .about__our-legacy-large-img {
+          height: 1000px;
+        }
+        .about__our-legacy-small-img {
+          height: 500px;
+        }
+      }
+      .about__innovation {
+        .about__innovation-small-img {
+          height: 500px;
+        }
+      }
+      .about__community {
+        .about__community-small-img {
+          height: 500px;
+        }
+      }
+      .about__partnerships-associations {
+        #about__partnerships-associations-carousel {
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .about__partnerships-associations-img-wrap {
+            width: 50%;
+            height: 200px;
+            padding: 0 20px;
+            img {
+              object-fit: contain;
+              height: 200px;
+            }
+          }
+        }
+      }
+      .about__featured-in {
+        #about__featured-in-carousel {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          margin: 0;
+          .about__publication-wrapper {
+            font-family: $font__main;
+
+            width: 50%;
+            padding: 20px 0;
+            .publication-name {
+              text-transform: uppercase;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 25px;
+            }
+            .publication-headline {
+              color: $color__green;
+              letter-spacing: 1.5px;
+              font-size: 20px;
+              &:visited,
+              &:hover,
+              &:focus {
+                color: $color__green;
+              }
+            }
+            .publication-date {
+              font-family: $font__secondary_med;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              line-height: 35px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
 }
 
 // IPAD PRO 10.5"

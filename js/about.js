@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
   let windowSize = $(window).width();
 
-  if (windowSize < 1025) {
+  if (windowSize < 768) {
     (function aboutPageMobileCarousels() {
       $('#about__partnerships-associations-carousel').slick({
         arrows: false,
