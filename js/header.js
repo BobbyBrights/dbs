@@ -62,7 +62,6 @@ function closeForm() {
   document.documentElement.style.overflow = '';            
 }
 
-
 jQuery(document).ready(function($) {
 
   // Loader
@@ -96,6 +95,23 @@ jQuery(document).ready(function($) {
       }, 1500);
     });
   })()
+
+  // Sticky Header
+  // Keep track of scroll up or down
+  // (function stickyHeader () {
+    let lastScroll = 0;
+    $(window).scroll(function(e) {
+      let st = $(this).scrollTop();
+      if (window.scrollY > 1) {
+        if (st > lastScroll) {
+          $('header').css('top', '-110px');   
+        } else {
+          $('header').css('top', 0);
+        }
+        lastScroll = st;
+      }
+    });
+  // })();
 
   // Add WP Forms classes (built in CSS)for desktop layout 
   function contactFormMediaQuery() {

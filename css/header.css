@@ -65,11 +65,14 @@
 }
 
 header {
-  width: 100%;
-  height: 80px;
-  position: absolute;
+  background-color: #15534e;
+  height: 100px;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 100%;
+  z-index: 2;
 }
 
 header .site-branding {
@@ -502,7 +505,8 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
   }
 
   header {
-    height: 150px;
+    height: 110px;
+    top: 0;
   }
 
   header .site-branding {
