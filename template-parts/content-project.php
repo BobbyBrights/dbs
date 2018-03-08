@@ -53,10 +53,12 @@
     </div> 
   </div>
   <div class="single-project__featured-in">
+    <?php 
+      if ( have_rows('project_featured_in') ):    
+    ?>
     <div class="single-project__featured-in-title">featured in.</div>
     <div class="single-project__featued-in-articles">
       <?php
-        if ( have_rows('project_featured_in') ):
           while ( have_rows('project_featured_in') ) : the_row();
       ?>    
             <div class="single-project__featured-in-article">

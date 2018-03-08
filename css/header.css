@@ -573,9 +573,24 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     line-height: 60px;
   }
 
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a {
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:hover {
+    opacity: 0.7;
+  }
+
   header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
     font-size: 40px;
     padding-top: 10px;
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+  }
+
+  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button:hover {
+    opacity: 0.7;
   }
 
   header #menu-overlay .menu-bottom-wrap {

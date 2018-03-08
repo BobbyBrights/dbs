@@ -476,12 +476,20 @@
     color: #15534e;
     letter-spacing: 1.5px;
     font-size: 20px;
+    -webkit-transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
   }
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:visited,
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:hover,
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:focus {
     color: #15534e;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:hover {
+    text-decoration: none;
   }
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-date {
