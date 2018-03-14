@@ -5,7 +5,7 @@
 /* ====================================================== */
 
 #main {
-  background-color: #edede8;
+  background-color: #e8ede9;
 }
 
 #main .all-projects {
@@ -83,13 +83,17 @@
   width: 20%;
 }
 
-#main .all-projects article .project__status div {
+#main .all-projects article .project__status a {
+  color: #fff;
+}
+
+#main .all-projects article .project__status a div {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-#main .all-projects article .project__status div p {
+#main .all-projects article .project__status a div p {
   position: absolute;
   height: 20px;
   width: 200px;

@@ -3,7 +3,7 @@
 /* ====================================================== */
 
 #main {
-  background-color: #edede8;
+  background-color: #e8ede9;
   .all-projects {
     display: flex;
     flex-direction: column;
@@ -56,23 +56,26 @@
         right: 0;
         height: 200px;
         width: 20%;
-        div {
-          position: relative;
-          height: 100%;
-          width: 100%;
-          p {
-            position: absolute;
-            height: 20px;
-            width: 200px;
-            margin: 0;
-            top: 50%;
-            right: -70px;
-            text-transform: uppercase;
-            text-align: center;
-            transform: translateY(-50%) rotate(90deg);
-            font-family: 'Druk Wide Web';
-            font-size: 0.7em;
-            letter-spacing: 2px;
+        a {
+          color: #fff;
+          div {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            p {
+              position: absolute;
+              height: 20px;
+              width: 200px;
+              margin: 0;
+              top: 50%;
+              right: -70px;
+              text-transform: uppercase;
+              text-align: center;
+              transform: translateY(-50%) rotate(90deg);
+              font-family: 'Druk Wide Web';
+              font-size: 0.7em;
+              letter-spacing: 2px;
+            }
           }
         }
       }

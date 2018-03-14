@@ -66,7 +66,7 @@
                 <?php echo the_sub_field('newspaper_name'); ?>
               </div>
               <div class="single-project__featured-in-article-title">
-                <a href="<?php echo the_sub_field('article_link'); ?>">
+                <a href="<?php echo the_sub_field('article_link'); ?>" target="_blank">
                   <?php echo the_sub_field('article_title'); ?>
                 </a>
               </div>
