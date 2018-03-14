@@ -40,6 +40,21 @@
       text-decoration: none;
       font-size: 0.7em;
       font-family: sans-serif;
+      span {
+        display: inline-block;
+        transition: all 1s ease-in-out;
+        font-size: 35px;
+        font-weight: 100;
+        height: 50px;
+        width: 30px;
+        line-height: 43px;
+        text-align: center;
+      }
+      &:hover {
+        span {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
@@ -66,6 +81,27 @@
     }
     .front-page__content-description-detail {
       font-size: 1.2em;
+    }
+    .front-page__content-description-link {
+      a, span {
+        span {
+          display: inline-block;
+          transition: all 1s ease-in-out;
+          font-size: 40px;
+          font-weight: 100;
+          height: 50px;
+          width: 30px;
+          line-height: 43px;
+          text-align: center;
+        }
+      }
+      &:hover {
+        a, span {
+          span {
+            transform: rotate(360deg);
+          }
+        }
+      }
     }
     span {
       cursor: pointer;
