@@ -376,7 +376,7 @@
         }
         .about__our-legacy-txt-wrap {
           position: relative;
-          top: 140px;
+          top: 30px;
           height: 800px;          
           .about__our-legacy-small-txt {
             padding-top: 20px;
@@ -489,13 +489,12 @@
           margin: 0;
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
           .about__partnerships-associations-img-wrap {
             width: 33.33%;
             height: 250px;
             img {
               object-fit: contain;
-              height: 275px;
+              height: 100%;
             }
           }
         }
@@ -505,7 +504,6 @@
         #about__featured-in-carousel {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
           width: 100%;
           margin: 0;
           .about__publication-wrapper {
