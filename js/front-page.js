@@ -6,25 +6,25 @@ jQuery(document).ready(function($){
         'bottom': '0',
         'opacity': '1',
       });
-    }, 4500);
+    }, 3000);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-community').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 4800);
+    }, 3300);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-legacy').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 5100);
+    }, 3600);
     setTimeout(() => {
       $('.front-page__landing-page-slogan-view-projects').css({
         'bottom': '0',
         'opacity': '1',
       });
-    }, 5400);
+    }, 3900);
   });
 
   (function scrollReveal() {
