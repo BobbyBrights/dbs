@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
     
       <div class="front-page__landing-page">
-        <img class="rellax" data-rellax-speed="-3" src="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-toronto-skyline.jpg" alt="">
+        <img class="rellax" data-rellax-speed="-3" src="<?php the_field('front_page_landing_image') ?>" alt="">
         <div class="front-page__landing-page-overlay"></div>
    
         <div class="front-page__landing-page-slogans">

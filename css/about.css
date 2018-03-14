@@ -24,7 +24,7 @@
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#15534e));
   background: linear-gradient(transparent, transparent, #15534e);
-  opacity: 1;
+  opacity: 0.6;
 }
 
 #about-page .about__landing-page .about__landing-page-text {
