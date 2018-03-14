@@ -293,7 +293,7 @@
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap {
     position: relative;
-    top: 140px;
+    top: 30px;
     height: 800px;
   }
 
@@ -437,7 +437,6 @@
     -o-object-fit: contain;
     object-fit: contain;
     height: 100%;
-    width: 100%;
   }
 
   #about-page .about-page-body .about__featured-in {
@@ -450,9 +449,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     width: 100%;
     margin: 0;
   }

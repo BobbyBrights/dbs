@@ -100,7 +100,7 @@ get_header(); ?>
                 if( $images ): 
                   foreach( $images as $image ): ?>
                   <div class="about__partnerships-associations-img-wrap">
-                    <img class="" src="<?php echo $image['sizes']['thumbnail']; ?>"/>
+                    <img class="" src="<?php echo $image['sizes']['medium']; ?>"/>
                   </div>
                 <?php
                   endforeach;
