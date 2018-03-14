@@ -183,8 +183,17 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
     width: 33.33%;
   }
 
+  footer .footer-content .footer-desktop-wrapper-one .footer-social a {
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+  }
+
   footer .footer-content .footer-desktop-wrapper-one .footer-social a img {
     height: 35px;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-social a:hover {
+    opacity: 0.8;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-contact {
@@ -194,6 +203,17 @@ footer .footer-content .footer-desktop-wrapper-two a:hover {
 
   footer .footer-content .footer-desktop-wrapper-one .footer-contact a:nth-child(1) {
     padding-top: 0;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-contact a {
+    -webkit-transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
+  }
+
+  footer .footer-content .footer-desktop-wrapper-one .footer-contact a:hover {
+    text-decoration: none;
   }
 
   footer .footer-content .footer-desktop-wrapper-one .footer-subscribe {

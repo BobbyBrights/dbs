@@ -537,8 +537,12 @@ header {
           padding-top: 0;
           .menu-social-icons {
             a {
+              transition: opacity 0.1s ease-in;
               img {
                 height: 35px;
+              }
+              &:hover {
+                opacity: 0.8;
               }
             }
           }
@@ -552,6 +556,12 @@ header {
           }
           .menu-contact-address {
             padding: 5px 0;
+          }
+          a {
+            transition: text-decoration 0.1s ease-in-out;
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }

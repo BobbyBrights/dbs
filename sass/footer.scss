@@ -133,10 +133,14 @@ footer {
         justify-content: space-between;
         margin-top: 70px;
         .footer-social {
-          width: 33.33%;
+          width: 33.33%; 
           a {
+            transition: opacity 0.1s ease-in;
             img {
               height: 35px;
+            }
+            &:hover {
+              opacity: 0.8;
             }
           }
         }
@@ -145,6 +149,12 @@ footer {
           padding-top: 0;
           a:nth-child(1) {
             padding-top: 0;
+          }
+          a {
+            transition: text-decoration 0.1s ease-in-out;
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
         .footer-subscribe {

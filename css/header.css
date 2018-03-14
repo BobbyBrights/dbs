@@ -612,8 +612,17 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     padding-top: 0;
   }
 
+  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a {
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+  }
+
   header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a img {
     height: 35px;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a:hover {
+    opacity: 0.8;
   }
 
   header #menu-overlay .menu-bottom-wrap .menu-contact a,
@@ -625,6 +634,17 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
 
   header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-address {
     padding: 5px 0;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-contact a {
+    -webkit-transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: -webkit-text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
+  }
+
+  header #menu-overlay .menu-bottom-wrap .menu-contact a:hover {
+    text-decoration: none;
   }
 
   header #contact-form {
