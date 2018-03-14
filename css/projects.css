@@ -29,6 +29,17 @@
   position: relative;
 }
 
+#main .all-projects article:hover .project__title a {
+  font-size: 1.8em;
+}
+
+#main .all-projects article:hover .slick-slider .slick-list .slick-track a .project__image-wrap img {
+  height: 110%;
+  width: 110%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 #main .all-projects article .slick-slider {
   height: 200px;
 }
@@ -65,6 +76,8 @@
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #main .all-projects article .slick-slider .slick-dots {
@@ -122,10 +135,6 @@
   letter-spacing: 2px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-#main .all-projects article .project__title a:hover {
-  font-size: 1.8em;
 }
 
 #main .all-projects article .project__address {

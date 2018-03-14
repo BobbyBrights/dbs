@@ -14,6 +14,28 @@
       color: #15534e;
       padding-top: 30px;
       position: relative;
+      &:hover {
+        .project__title {
+          a {
+            font-size: 1.8em;
+          }
+        }
+        .slick-slider {
+          .slick-list {
+            .slick-track {
+              a {
+                .project__image-wrap {
+                  img {
+                    height: 110%;
+                    width: 110%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       .slick-slider {
         height: 200px;
         .slick-list {
@@ -37,6 +59,7 @@
                   height: 100%;
                   width: 100%;
                   object-fit: cover;
+                  transition: all 0.5s ease-in-out;
                 }
               }
             }
@@ -89,9 +112,6 @@
           text-transform: capitalize;
           letter-spacing: 2px;
           transition: all 0.5s ease-in-out; 
-          &:hover {
-            font-size: 1.8em;
-          }
         }
       }
       .project__address {
