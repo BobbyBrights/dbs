@@ -67,11 +67,19 @@ jQuery(document).ready(function($){
     setTimeout(function() {
       // If home, delay and lengthen Header Logo Scrollreveal
       if (window.location.pathname == '/') {
-        sr.reveal('.header-logo', headerFrontPageScrollReveal);
-        sr.reveal('.header__hamburger', headerFrontPageScrollReveal);
+        // sr.reveal('.header-logo', headerFrontPageScrollReveal);
+        // sr.reveal('.header__hamburger', headerFrontPageScrollReveal);
+        setTimeout( () => {
+          $('.header-logo').css('opacity', '1');
+          $('.header__hamburger').css('opacity', '1');
+        }, 1000 )
       } else {
-        sr.reveal('.header-logo', headerScrollReveal);
-        sr.reveal('.header__hamburger', headerScrollReveal);        
+        // sr.reveal('.header-logo', headerScrollReveal);
+        // sr.reveal('.header__hamburger', headerScrollReveal);  
+        setTimeout( () => {
+          $('.header-logo').css('opacity', '1');
+          $('.header__hamburger').css('opacity', '1');
+        }, 800 )      
       }
 
       // front page

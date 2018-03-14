@@ -39,7 +39,7 @@
 			<div class="footer-desktop-wrapper-two">
 				<div class="footer-logo-desktop">DBS</div>			
 				<div class="footer-copyright">DBS Developments &copy; 2018</div>
-				<div class="footer-design-by">Design and code by <a href="https://pivotandpilot.com">Pivot & Pilot</a></div>
+				<div class="footer-design-by">Design and code by <a href="https://pivotandpilot.com" target="_blank">Pivot & Pilot</a></div>
 			</div>
 			</div>
 		</div><!-- .site-info -->
