@@ -18,8 +18,8 @@
       width: 100%;
       top: 0;
       left: 0;
-      background-color: #15534e;
-      opacity: 0.4;
+      background: linear-gradient(transparent, transparent, #15534e) ;
+      opacity: 1;
     }
     .about__landing-page-text {
       color: $color__white;

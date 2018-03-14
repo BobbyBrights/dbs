@@ -24,8 +24,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #15534e;
-  opacity: 0.4;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#15534e));
+  background: linear-gradient(transparent, transparent, #15534e);
+  opacity: 1;
 }
 
 .front-page__landing-page .front-page__landing-page-slogans {
