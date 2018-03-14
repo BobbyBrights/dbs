@@ -97,10 +97,11 @@ get_header(); ?>
             <div id="about__partnerships-associations-carousel">
               <?php
                 $images = get_sub_field('partnership_&_association_logos');
+                $size = 'full';
                 if( $images ): 
                   foreach( $images as $image ): ?>
                   <div class="about__partnerships-associations-img-wrap">
-                    <img class="" src="<?php echo $image['sizes']['medium']; ?>"/>
+                    <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
                   </div>
                 <?php
                   endforeach;
