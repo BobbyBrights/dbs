@@ -130,7 +130,7 @@ get_header(); ?>
                   if( have_rows('publication') ):
                     while( have_rows('publication') ): the_row(); ?>
                         <div class="publication-name"><?php echo get_sub_field('publication_name'); ?></div>
-                        <a class="publication-headline" href="<?php get_sub_field('publication_url'); ?>"><?php echo get_sub_field('publication_headline'); ?></a>
+                        <a class="publication-headline" href="<?php echo get_sub_field('publication_url'); ?>"><?php echo get_sub_field('publication_headline'); ?></a>
                         <div class="publication-date"><?php echo get_sub_field('publication_date'); ?></div>
                   <?php endwhile;
                   endif; ?>
