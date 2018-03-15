@@ -23,13 +23,14 @@
         .slick-slider {
           .slick-list {
             .slick-track {
-              a {
+              a.slick-active {
                 .project__image-wrap {
                   img {
-                    height: 105%;
-                    width: 105%;
-                    max-width: 110%;
-                    // object-fit: cover;
+                    // height: 105%;
+                    // width: 105%;
+                    transform: scale(1.1);
+                    max-width: 105%;
+                    object-fit: cover;
                   }
                 }
               }

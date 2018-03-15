@@ -33,10 +33,12 @@
   opacity: 0.8;
 }
 
-#main .all-projects article:hover .slick-slider .slick-list .slick-track a .project__image-wrap img {
-  height: 105%;
-  width: 105%;
-  max-width: 110%;
+#main .all-projects article:hover .slick-slider .slick-list .slick-track a.slick-active .project__image-wrap img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  max-width: 105%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #main .all-projects article .slick-slider {
