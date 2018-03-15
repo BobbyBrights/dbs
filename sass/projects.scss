@@ -17,7 +17,7 @@
       &:hover {
         .project__title {
           a {
-            font-size: 1.8em;
+            opacity: 0.8;
           }
         }
         .slick-slider {
@@ -26,9 +26,10 @@
               a {
                 .project__image-wrap {
                   img {
-                    height: 110%;
-                    width: 110%;
-                    object-fit: cover;
+                    height: 105%;
+                    width: 105%;
+                    max-width: 110%;
+                    // object-fit: cover;
                   }
                 }
               }

@@ -30,14 +30,13 @@
 }
 
 #main .all-projects article:hover .project__title a {
-  font-size: 1.8em;
+  opacity: 0.8;
 }
 
 #main .all-projects article:hover .slick-slider .slick-list .slick-track a .project__image-wrap img {
-  height: 110%;
-  width: 110%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: 105%;
+  width: 105%;
+  max-width: 110%;
 }
 
 #main .all-projects article .slick-slider {

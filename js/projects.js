@@ -20,5 +20,15 @@ jQuery(document).ready(function($){
     }
   })();
 
+  // Only show slick dots if more than 1 image in carousel
+  (function toggleSlickDots() {
+    $('.all-projects article').each(function() {
+      var imageCount = $(this).find('div.project__images-carousel').children(0).children(0).length;
+      var dots = $(this).find('div.project__images-carousel').find('ul.slick-dots');
+      if (imageCount <= 2) {
+        $(dots).css('display', 'none');
+      }
+    });
+  })();
  
 })
