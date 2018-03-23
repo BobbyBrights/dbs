@@ -189,7 +189,7 @@ header {
         position: absolute;
         // left: 800px;
         opacity: 0;
-        color: $color__green;
+        color: #404040;
         // height: 100%;
         transition: 0.5s ease-in-out;
         .menu-top-wrap {
@@ -206,7 +206,7 @@ header {
             a:visited,
             a:hover,
             a:focus {
-              color: inherit;
+              color: $color__green;              
             }
           }
           .menu-contact-button {

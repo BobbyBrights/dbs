@@ -240,7 +240,7 @@ header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close:after
 header #menu-overlay #menu-overlay-content #menu-content {
   position: absolute;
   opacity: 0;
-  color: #15534e;
+  color: #404040;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -265,7 +265,7 @@ header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:visited,
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:hover,
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:focus {
-  color: inherit;
+  color: #15534e;
 }
 
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
