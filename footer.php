@@ -16,8 +16,8 @@
 	<footer id="colophon" class="site-footer">
 		<div class="footer-content">
 			<div class="footer-line"></div>
-			<div class="footer-logo-mobile">DBS</div>
-			<div class="footer-desktop-wrapper-one">
+			<div class="footer-logo">DBS</div>
+			<!-- <div class="footer-desktop-wrapper-one"> -->
 				<div class="footer-social">
 					<span>Follow Us</span>
 					<br/>
@@ -27,17 +27,12 @@
 				<div class="footer-contact">
 					<a href="mailto:info@dbsdevelopments.ca" class="footer-contact-email">info@dbsdevelopments.ca</a>
 					<a href="tel:4164290969" class="footer-contact-phone">(416) 429.0969</a>
-					<div class="footer-contact-address">
-						11 Curity Ave.,<br>Toronto, On<br>M4B 1X4
-					</div>
+					<div class="footer-contact-address-mobile">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
+					<div class="footer-contact-address-desktop">11 Curity Ave., Toronto, On, M4B 1X4</div>			
 				</div>
-				<div class="footer-subscribe">
-					<span>Subscribe to learn more about upcoming developments and updates</span>
-					<?php echo do_shortcode('[mc4wp_form id="120"]'); ?>				
-				</div>
-			</div>
-			<div class="footer-desktop-wrapper-two">
-				<div class="footer-logo-desktop">DBS</div>			
+			<!-- </div> -->
+			<div class="footer-copyright-wrapper">
+				<!-- <div class="footer-logo-desktop">DBS</div>			 -->
 				<div class="footer-copyright">DBS Developments &copy; 2018</div>
 				<div class="footer-design-by">Design and code by <a href="https://pivotandpilot.com" target="_blank">Pivot & Pilot</a></div>
 			</div>

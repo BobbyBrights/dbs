@@ -158,6 +158,10 @@ header .site-branding .header__hamburger .hamburger__line {
   background-color: #edede8;
 }
 
+header .site-branding .header__desktop-nav {
+  display: none;
+}
+
 header #menu-overlay {
   background: #edede8;
   position: fixed;
@@ -236,7 +240,7 @@ header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close:after
 header #menu-overlay #menu-overlay-content #menu-content {
   position: absolute;
   opacity: 0;
-  color: #15534e;
+  color: #404040;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -261,15 +265,24 @@ header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:visited,
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:hover,
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:focus {
-  color: inherit;
+  color: #15534e;
 }
 
 header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
+  color: #15534e;
   font-family: "Druk Wide Web", sans-serif;
   font-size: 28px;
   letter-spacing: 1.5px;
   line-height: 38px;
+  text-decoration: none;
   cursor: pointer;
+}
+
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button:visited,
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button:hover,
+header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button:focus {
+  color: #15534e;
+  text-decoration: none;
 }
 
 header #menu-overlay .menu-bottom-wrap .menu-social {
@@ -534,117 +547,64 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
   }
 
   header .site-branding .header__hamburger {
-    margin-top: 0;
+    display: none;
   }
 
-  header #menu-overlay #menu-overlay-content {
-    margin-right: 10%;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-close-wrapper {
-    height: 100px;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-close-wrapper .menu-close {
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-close-wrapper:hover .menu-close {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content {
-    margin-top: -20px;
-    height: 85vh;
+  header .site-branding .header__desktop-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 5px;
   }
 
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap {
-    height: calc(50%);
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a {
-    -webkit-transition: opacity 0.1s ease-in;
-    transition: opacity 0.1s ease-in;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap #primary-menu a:hover {
-    opacity: 0.7;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button {
-    font-size: 40px;
-    padding-top: 10px;
-    -webkit-transition: opacity 0.1s ease-in;
-    transition: opacity 0.1s ease-in;
-  }
-
-  header #menu-overlay #menu-overlay-content #menu-content .menu-top-wrap .menu-contact-button:hover {
-    opacity: 0.7;
-  }
-
-  header #menu-overlay .menu-bottom-wrap {
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul {
+    list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
-  header #menu-overlay .menu-bottom-wrap .menu-social {
-    padding-top: 0;
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul li {
+    padding: 0 15px;
   }
 
-  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a {
-    -webkit-transition: opacity 0.1s ease-in;
-    transition: opacity 0.1s ease-in;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a img {
-    height: 35px;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-social .menu-social-icons a:hover {
-    opacity: 0.8;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-contact a,
-  header #menu-overlay .menu-bottom-wrap .menu-contact a:visited,
-  header #menu-overlay .menu-bottom-wrap .menu-contact a:hover,
-  header #menu-overlay .menu-bottom-wrap .menu-contact a:focus {
-    padding: 5px 0;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-address {
-    padding: 5px 0;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-contact a {
-    -webkit-transition: -webkit-text-decoration 0.1s ease-in-out;
-    transition: -webkit-text-decoration 0.1s ease-in-out;
-    transition: text-decoration 0.1s ease-in-out;
-    transition: text-decoration 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
-  }
-
-  header #menu-overlay .menu-bottom-wrap .menu-contact a:hover {
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul li a,
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul li a:visited,
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul li a:focus {
+    color: #edede8;
     text-decoration: none;
+    font-family: "Neutral Medium";
+  }
+
+  header .site-branding .header__desktop-nav .menu-menu-1-container ul li a:hover {
+    text-decoration: underline;
+  }
+
+  header .site-branding .header__desktop-nav .menu-contact-button {
+    color: #edede8;
+    padding: 0 0 0 15px;
+    text-decoration: none;
+    font-family: "Neutral Medium";
+  }
+
+  header .site-branding .header__desktop-nav .menu-contact-button:visited,
+  header .site-branding .header__desktop-nav .menu-contact-button:focus {
+    color: #edede8;
+    text-decoration: none;
+    font-family: "Neutral Medium";
+  }
+
+  header .site-branding .header__desktop-nav .menu-contact-button:hover {
+    text-decoration: underline;
+  }
+
+  header #menu-overlay {
+    display: none;
   }
 
   header #contact-form {

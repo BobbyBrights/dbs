@@ -35,7 +35,7 @@
 				<div id="loader-d">D<br/>D</div>
 				<div id="loader-b">B<br/>B</div>
 				<div id="loader-s">S<br/>S</div>	
-			</div>	
+			</div>	 
 		</div>
 	</div>
 
@@ -54,6 +54,15 @@
 						<div class="hamburger__line"></div>
 						<div class="hamburger__line"></div>
 				</div>  
+				<div class="header__desktop-nav">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+					<a href="/contact" class="menu-contact-button">Contact</a>					
+				</div>
 			</section><!-- .site-branding -->
 
 			<section id="menu-overlay" class="main-navigation">
@@ -69,7 +78,7 @@
 									'menu_id'        => 'primary-menu',
 								) );
 							?>
-							<div class="menu-contact-button" onclick="openForm()">Contact</div>
+							<a href="/contact" class="menu-contact-button">Contact</a>
 						</div>
 
 						<div class="menu-bottom-wrap">
