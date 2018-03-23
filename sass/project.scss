@@ -5,6 +5,20 @@
 .single-project {
   padding: 130px 6vw 0;
   color: #15534e;
+  .single-project__title {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: 'Druk Wide Web';
+    letter-spacing: 2px;
+  }
+  .single-project__address {
+    // font-family: 'Druk Wide Web';
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    color: #404040;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
   .single-project__images-carousel {
     margin: 0 -4vw;
     height: 200px;
@@ -23,28 +37,20 @@
       }
     }
   }
-  .single-project__title {
-    font-size: 1.5em;
-    text-transform: capitalize;
-    padding-top: 15px;
-    font-family: 'Druk Wide Web';
-    letter-spacing: 2px;
-  }
-  .single-project__address {
-    font-family: 'Druk Wide Web';
-    font-size: 0.7em;
-    letter-spacing: 2px;
-  }
   .single-project__specs-and-about {
     .single-project__specs {
       padding-top: 30px;
-      span {
+      span.spec-title {
         text-transform: capitalize;
         font-family: 'Druk Wide Web';
         letter-spacing: 2px;
       }
       p {
         margin: 0;
+        color: #404040;
+        strong {
+          color: #15534e;
+        }
       }
     }
     .single-project__description {
@@ -56,6 +62,7 @@
       }
       p {
         margin: 0;
+        color: #404040;
       }
     }
   }
@@ -70,6 +77,7 @@
       display: flex;
       flex-direction: column;
       .single-project__featured-in-article {
+        color: #404040;
         .single-project__featured-in-article-newspaper-name {
           text-transform: uppercase;
           font-family: 'Druk Wide Web';
@@ -82,7 +90,7 @@
             text-transform: capitalize;
             font-family: 'Druk Wide Web';
             font-size: 1.2em;
-            color: #15534e;
+            color: #404040;
             letter-spacing: 2px;
           }
         }
@@ -155,13 +163,13 @@
       .single-project__specs {
         flex-grow: 1;
         width: 50%;
-        span {
+        span.spec-title {
           font-size: 1.5em;
           margin-bottom: 20px;
           display: block;
         }
         p {
-          font-size: 1.5em;
+          font-size: 1.3em;
         }
       }
       .single-project__description {
@@ -185,7 +193,7 @@
         flex-wrap: wrap;
         .single-project__featured-in-article {
           flex-grow: unset;
-          width: calc( 100% / 3);
+          width: calc( 100% / 4);
           padding-right: 10px;
           .single-project__featured-in-article-title {
             transition: text-decoration 0.1s ease-in-out;            

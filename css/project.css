@@ -9,6 +9,21 @@
   color: #15534e;
 }
 
+.single-project .single-project__title {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: 'Druk Wide Web';
+  letter-spacing: 2px;
+}
+
+.single-project .single-project__address {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: #404040;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
 .single-project .single-project__images-carousel {
   margin: 0 -4vw;
   height: 200px;
@@ -33,25 +48,11 @@
   object-fit: cover;
 }
 
-.single-project .single-project__title {
-  font-size: 1.5em;
-  text-transform: capitalize;
-  padding-top: 15px;
-  font-family: 'Druk Wide Web';
-  letter-spacing: 2px;
-}
-
-.single-project .single-project__address {
-  font-family: 'Druk Wide Web';
-  font-size: 0.7em;
-  letter-spacing: 2px;
-}
-
 .single-project .single-project__specs-and-about .single-project__specs {
   padding-top: 30px;
 }
 
-.single-project .single-project__specs-and-about .single-project__specs span {
+.single-project .single-project__specs-and-about .single-project__specs span.spec-title {
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
   letter-spacing: 2px;
@@ -59,6 +60,11 @@
 
 .single-project .single-project__specs-and-about .single-project__specs p {
   margin: 0;
+  color: #404040;
+}
+
+.single-project .single-project__specs-and-about .single-project__specs p strong {
+  color: #15534e;
 }
 
 .single-project .single-project__specs-and-about .single-project__description {
@@ -73,6 +79,7 @@
 
 .single-project .single-project__specs-and-about .single-project__description p {
   margin: 0;
+  color: #404040;
 }
 
 .single-project .single-project__featured-in {
@@ -95,6 +102,10 @@
   flex-direction: column;
 }
 
+.single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article {
+  color: #404040;
+}
+
 .single-project .single-project__featured-in .single-project__featued-in-articles .single-project__featured-in-article .single-project__featured-in-article-newspaper-name {
   text-transform: uppercase;
   font-family: 'Druk Wide Web';
@@ -107,7 +118,7 @@
   text-transform: capitalize;
   font-family: 'Druk Wide Web';
   font-size: 1.2em;
-  color: #15534e;
+  color: #404040;
   letter-spacing: 2px;
 }
 
@@ -184,14 +195,14 @@
     width: 50%;
   }
 
-  .single-project .single-project__specs-and-about .single-project__specs span {
+  .single-project .single-project__specs-and-about .single-project__specs span.spec-title {
     font-size: 1.5em;
     margin-bottom: 20px;
     display: block;
   }
 
   .single-project .single-project__specs-and-about .single-project__specs p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .single-project .single-project__specs-and-about .single-project__description {
@@ -231,7 +242,7 @@
     -webkit-box-flex: unset;
     -ms-flex-positive: unset;
     flex-grow: unset;
-    width: calc( 100% / 3);
+    width: calc( 100% / 4);
     padding-right: 10px;
   }
 
