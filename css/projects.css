@@ -8,6 +8,16 @@
   background-color: #e8ede9;
 }
 
+#main .current-projects__title {
+  font-family: 'Druk Wide Web';
+  padding: 100px 6vw 0;
+}
+
+#main .past-projects__title {
+  font-family: 'Druk Wide Web';
+  padding: 50px 6vw 0;
+}
+
 #main .all-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +26,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 100px 6vw 0;
+  padding: 0 6vw;
 }
 
 #main .all-projects article {
@@ -159,6 +169,16 @@
 /* ====================================================== */
 
 @media only screen and (min-width: 1050px) {
+  #main .current-projects__title {
+    padding: 150px 4vw 0;
+    font-size: 1.2em;
+  }
+
+  #main .past-projects__title {
+    padding: 70px 4vw 0;
+    font-size: 1.2em;
+  }
+
   #main .all-projects {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -166,7 +186,7 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 150px 4vw 0;
+    padding: 0 4vw 0;
   }
 
   #main .all-projects article {
