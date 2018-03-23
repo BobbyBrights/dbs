@@ -8,8 +8,12 @@
  */
 
 ?>
+<!-- <?php echo get_field('project_is_on_going'); ?> -->
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php
+if ( get_field('project_is_completed') ) :
+?>
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
     if ( is_singular() ) :
       the_title( '<h1 class="entry-title">', '</h1>' );
@@ -30,7 +34,7 @@
         <?php endforeach; ?>
       </div>
 
-      <div class="project__status">
+      <!-- <div class="project__status">
         <a href="<?php echo get_permalink(); ?>">
           <?php if ( get_field('project_is_on_going') ) :?>
             <div>
@@ -48,7 +52,7 @@
             </div>
           <?php endif ?>
         </a>
-      </div>
+      </div> -->
           
     <?php
       endif;
@@ -64,13 +68,16 @@
         the_field('project_address');
       ?>
     </div> 
-    <div class="project__description">
+    <!-- <div class="project__description">
       <?php 
         the_field('project_description');
       ?>
-    </div> 
+    </div>  -->
       
   <?php
     endif;
   ?>
 </article><!-- #post-<?php the_ID(); ?> -->
+  <?php endif; ?>
+
+

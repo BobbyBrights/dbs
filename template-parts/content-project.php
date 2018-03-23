@@ -10,7 +10,16 @@
 ?>
 
 <article class='single-project' id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+  <div class="single-project__title">
+    <?php
+      the_title();
+    ?>
+  </div>
+  <div class="single-project__address">
+    <?php 
+      the_field('project_address');
+    ?>
+  </div> 
   <?php
     $singleProjectImages = get_field('project_images');
     if ( $singleProjectImages ):
@@ -28,19 +37,10 @@
   <?php 
     endif 
   ?>
-  <div class="single-project__title">
-    <?php
-      the_title();
-    ?>
-  </div>
-  <div class="single-project__address">
-    <?php 
-      the_field('project_address');
-    ?>
-  </div> 
+
   <div class="single-project__specs-and-about">
     <div class="single-project__specs">
-      <span>specs.</span>
+      <span class="spec-title">specs.</span>
       <?php 
         the_field('project_specs');
       ?>

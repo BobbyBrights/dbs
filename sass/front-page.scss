@@ -81,6 +81,7 @@
     }
     .front-page__content-description-detail {
       font-size: 1.2em;
+      color: #404040;
     }
     .front-page__content-description-link {
       a, span {
@@ -163,7 +164,7 @@
     .front-page__content-description {
       flex-grow: 1;
       width: 50%;
-      padding: 160px 0 0 4vw;
+      padding: 0 0 0 4vw;
     }
   }
 

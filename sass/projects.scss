@@ -4,10 +4,18 @@
 
 #main {
   background-color: #e8ede9;
+  .current-projects__title {
+    font-family: 'Druk Wide Web';
+    padding: 100px 6vw 0;
+  }
+  .past-projects__title {
+    font-family: 'Druk Wide Web';
+    padding: 50px 6vw 0;
+  }
   .all-projects {
     display: flex;
     flex-direction: column;
-    padding: 100px 6vw 0;
+    padding: 0 6vw;
     article {
       flex-grow: 1;
       width: 100%;
@@ -160,10 +168,18 @@
 @media only screen and (min-width: 1050px) {
 
   #main {
+    .current-projects__title {
+      padding: 150px 4vw 0;
+      font-size: 1.2em;
+    }
+    .past-projects__title {
+      padding: 70px 4vw 0;
+      font-size: 1.2em;
+    }
     .all-projects {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 150px 4vw 0;
+      padding: 0 4vw 0;
       article {
         width: 50%;
         flex-grow: unset;
