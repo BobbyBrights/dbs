@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
   let lastScroll = 0;
   $(window).scroll(function(e) {
     let st = $(this).scrollTop();
-    if (window.scrollY > 1) {
+    if (window.scrollY > 100) {
       if (st > lastScroll) {
         $('header').css('top', '-110px');   
       } else {

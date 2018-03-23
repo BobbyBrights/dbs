@@ -8,6 +8,8 @@ footer .footer-content {
   margin: 0 6% 0 6%;
   color: #404040;
   font-family: "Neutral Regular";
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 footer .footer-content .footer-line {
