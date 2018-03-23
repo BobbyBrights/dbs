@@ -85,8 +85,8 @@
 							<div class="menu-social">
 								<span>Follow Us</span>
 								<div class="menu-social-icons">
-									<a href="https://www.instagram.com/dbsdevelopments/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
-									<a href="https://www.linkedin.com/company/dbs-developments"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+									<a href="https://www.instagram.com/dbsdevelopments/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+									<a href="https://www.linkedin.com/company/dbs-developments" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 								</div>
 							</div>
 							<div class="menu-contact">

@@ -21,8 +21,8 @@
 				<div class="footer-social">
 					<span>Follow Us</span>
 					<br/>
-					<a href="https://www.instagram.com/dbsdevelopments/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
-					<a href="https://www.linkedin.com/company/dbs-developments"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
+					<a href="https://www.instagram.com/dbsdevelopments/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-instagram.svg"/></a>
+					<a href="https://www.linkedin.com/company/dbs-developments" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 				</div> 
 				<div class="footer-contact">
 					<a href="mailto:info@dbsdevelopments.ca" class="footer-contact-email">info@dbsdevelopments.ca</a>
