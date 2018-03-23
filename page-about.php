@@ -24,68 +24,44 @@ get_header(); ?>
         </div>
 
         <div class="about-page-body">
-          <div class="about__opening-text">
-            <?php echo get_field('opening_text'); ?>
-          </div>
-
           <div class="about__our-legacy">
-            <?php
-              if( have_rows('our_legacy') ):
-                while( have_rows('our_legacy') ): the_row();
-            ?>
-            <div class="about__our-legacy-large-img-wrapper">
-              <img class="about__our-legacy-large-img rellax-about" src="<?php echo get_sub_field('large_image'); ?>" data-rellax-speed="-1"/>
-            </div>
-            <div class="about__our-legacy-txt-wrap">
-              <span><?php echo get_sub_field('section_title') ?></span>
-              <div class="about__our-legacy-small-txt">
-                <?php echo get_sub_field('small_text'); ?>
-              </div>
-            </div>
-            <div class="about__our-legacy-small-img-wrapper">
-              <img class="about__our-legacy-small-img rellax-about" src="<?php echo get_sub_field('small_image'); ?>" data-rellax-speed="-1"/>
-            </div>
-            <div class="about__our-legacy-large-txt">
-              <?php echo get_sub_field('large_text'); ?>          
-            </div>
-            <?php
-                endwhile;
-              endif;
-            ?>
+            <?php if( have_rows('our_legacy') ):
+              while( have_rows('our_legacy') ): the_row(); ?>
+                <div class="about__our-legacy-txt-wrap">
+                  <span><?php echo get_sub_field('section_title') ?></span>
+                  <div class="about__our-legacy-small-txt">
+                    <?php echo get_sub_field('our_legacy_text'); ?> 
+                  </div>
+                </div>
+                <div class="about__our-legacy-small-img-wrapper">
+                  <img class="about__our-legacy-small-img rellax-about" src="<?php echo get_sub_field('our_legacy_image'); ?>" data-rellax-speed="-1"/>
+                </div>
+              <?php endwhile; 
+            endif; ?>
           </div><!-- Our Legacy -->
 
           <div class="about__innovation">
-            <?php
-              if( have_rows('innovation') ):
-                while( have_rows('innovation') ): the_row();
-            ?>
-            <span><?php echo get_sub_field('section_title') ?></span>
-            <div class="about__innovation-large-txt"><?php echo get_sub_field('large_text'); ?></div>
-            <div class="about__innovation-small-txt"><?php echo get_sub_field('small_text'); ?></div>
-            <div class="about__innovation-small-img-wrapper">
-              <img class="about__innovation-small-img rellax-about" src="<?php echo get_sub_field('image'); ?>" data-rellax-speed="-1"/>
-            </div>
-            <?php
-                endwhile;
-              endif;
-            ?>
+            <?php if( have_rows('innovation') ):
+                while( have_rows('innovation') ): the_row(); ?>
+                <span><?php echo get_sub_field('section_title') ?></span>
+                <div class="about__innovation-small-txt"><?php echo get_sub_field('innovation_text'); ?></div>
+                <div class="about__innovation-small-img-wrapper">
+                  <img class="about__innovation-small-img rellax-about" src="<?php echo get_sub_field('innovation_image'); ?>" data-rellax-speed="-1"/>
+                </div>
+              <?php endwhile;
+            endif; ?>
           </div><!-- Innovation -->
 
           <div class="about__community">
-            <?php
-              if( have_rows('community') ):
-                while( have_rows('community') ): the_row();
-            ?>
-            <span><?php echo get_sub_field('section_title') ?></span>
-            <div class="about__community-large-txt"><?php echo get_sub_field('large_text'); ?></div>
-            <div class="about__community-small-txt"><?php echo get_sub_field('small_text'); ?></div>
-            <div class="about__community-small-img-wrapper">
-              <img class="about__community-small-img rellax-about" src="<?php echo get_sub_field('image'); ?>" data-rellax-speed="-1"/>            
-            </div>
-            <?php
-                endwhile;
-              endif;
-            ?>
+            <?php if( have_rows('community') ):
+                while( have_rows('community') ): the_row(); ?>
+                  <span><?php echo get_sub_field('section_title') ?></span>
+                  <div class="about__community-small-txt"><?php echo get_sub_field('community_text'); ?></div>
+                  <div class="about__community-small-img-wrapper">
+                    <img class="about__community-small-img rellax-about" src="<?php echo get_sub_field('community_image'); ?>" data-rellax-speed="-1"/>            
+                  </div>
+              <?php endwhile;
+            endif; ?>
           </div><!-- Community -->
 
           <div class="about__partnerships-associations">

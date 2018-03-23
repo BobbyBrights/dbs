@@ -12,6 +12,7 @@
 #about-page .about__landing-page img {
   height: 100%;
   max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -43,25 +44,12 @@
   font-family: "Neutral Regular";
 }
 
-#about-page .about-page-body .about__opening-text {
-  color: #15534e;
-  padding-top: 20px;
-}
-
-#about-page .about-page-body .about__opening-text p {
-  margin-bottom: 30px;
-}
-
 #about-page .about-page-body .about__our-legacy {
   color: #15534e;
 }
 
-#about-page .about-page-body .about__our-legacy .about__our-legacy-large-img {
-  margin-bottom: 20px;
-  height: 440px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+#about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap {
+  padding-top: 40px;
 }
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap span {
@@ -71,6 +59,7 @@
 }
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap .about__our-legacy-small-txt {
+  color: #404040;
   font-size: 19px;
   line-height: 25px;
 }
@@ -81,18 +70,15 @@
 
 #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img {
   padding: 10px 0;
-  height: 250px;
+  height: 450px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-#about-page .about-page-body .about__our-legacy .about__our-legacy-large-txt p {
-  margin: 20px 0 50px 0;
-}
-
 #about-page .about-page-body .about__innovation {
   color: #15534e;
+  padding-top: 40px;
 }
 
 #about-page .about-page-body .about__innovation span {
@@ -101,17 +87,14 @@
   letter-spacing: 1.5px;
 }
 
-#about-page .about-page-body .about__innovation .about__innovation-large-txt p {
-  margin: 10px 0 20px 0;
-}
-
 #about-page .about-page-body .about__innovation .about__innovation-small-txt {
+  color: #404040;
   font-size: 19px;
   line-height: 25px;
 }
 
 #about-page .about-page-body .about__innovation .about__innovation-small-txt p {
-  margin: 30px 0;
+  margin: 10px 0 30px 0;
 }
 
 #about-page .about-page-body .about__innovation .about__innovation-small-img {
@@ -132,17 +115,14 @@
   letter-spacing: 1.5px;
 }
 
-#about-page .about-page-body .about__community .about__community-large-txt p {
-  margin: 10px 0 20px 0;
-}
-
 #about-page .about-page-body .about__community .about__community-small-txt {
+  color: #404040;
   font-size: 19px;
   line-height: 25px;
 }
 
 #about-page .about-page-body .about__community .about__community-small-txt p {
-  margin: 30px 0 30px 0;
+  margin: 10px 0 30px 0;
 }
 
 #about-page .about-page-body .about__community .about__community-small-img {
@@ -155,7 +135,7 @@
 
 #about-page .about-page-body .about__partnerships-associations {
   color: #15534e;
-  margin: 25px 0 75px 0;
+  margin: 20px 0 75px 0;
 }
 
 #about-page .about-page-body .about__partnerships-associations span {
@@ -179,14 +159,13 @@
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide {
-  padding: 0 0 0 23px;
   height: 100%;
   width: 320px;
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide img {
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -203,6 +182,7 @@
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel {
+  color: #404040;
   margin-top: 25px;
   margin-bottom: 0;
   margin-right: -7%;
@@ -231,7 +211,7 @@
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-headline {
-  color: #15534e;
+  color: #404040;
   letter-spacing: 1.5px;
   font-size: 20px;
 }
@@ -239,7 +219,7 @@
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-headline:visited,
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-headline:hover,
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-headline:focus {
-  color: #15534e;
+  color: #404040;
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-date {
@@ -256,6 +236,8 @@
 
   #about-page .about__landing-page img {
     width: 100%;
+    -o-object-position: top;
+    object-position: top;
   }
 
   #about-page .about__landing-page .about__landing-page-text {
@@ -268,28 +250,8 @@
     margin: 0 4% 0 4%;
   }
 
-  #about-page .about-page-body .about__opening-text {
-    color: #15534e;
-    padding: 60px 0;
-  }
-
   #about-page .about-page-body .about__our-legacy {
     position: relative;
-  }
-
-  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img-wrapper {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    max-width: 800px;
-    height: 800px;
-  }
-
-  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img-wrapper .about__our-legacy-large-img {
-    padding: 0;
-    height: 110%;
   }
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap {
@@ -306,11 +268,11 @@
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img-wrapper {
     width: 50%;
-    max-width: 800px;
-    height: 400px;
-    margin-top: 60px;
+    height: 800px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 70px;
+    right: 0;
   }
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img-wrapper .about__our-legacy-small-img {
@@ -319,13 +281,6 @@
     padding: 0;
     width: 900px;
     height: 110%;
-  }
-
-  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-txt {
-    position: absolute;
-    width: 45%;
-    right: 0;
-    bottom: 70px;
   }
 
   #about-page .about-page-body .about__innovation {
@@ -338,31 +293,22 @@
     position: absolute;
     width: 45%;
     right: 0;
-  }
-
-  #about-page .about-page-body .about__innovation .about__innovation-large-txt {
-    position: absolute;
-    width: 55%;
-    top: 70px;
-    left: 23%;
-    z-index: 1;
+    top: 110px;
   }
 
   #about-page .about-page-body .about__innovation .about__innovation-small-txt {
     position: absolute;
     width: 45%;
     right: 0;
-    top: 200px;
+    top: 180px;
   }
 
   #about-page .about-page-body .about__innovation .about__innovation-small-img-wrapper {
     overflow: hidden;
     padding: 0;
-    position: absolute;
     width: 50%;
     height: 400px;
-    left: 0;
-    bottom: 0;
+    margin-top: 80px;
   }
 
   #about-page .about-page-body .about__innovation .about__innovation-small-img-wrapper .about__innovation-small-img {
@@ -373,37 +319,25 @@
   }
 
   #about-page .about-page-body .about__community {
-    margin-top: 60px;
+    margin-top: 30px;
     position: relative;
-    height: 600px;
+    height: 480px;
   }
 
   #about-page .about-page-body .about__community span {
-    position: absolute;
     width: 45%;
-    right: 0;
-  }
-
-  #about-page .about-page-body .about__community .about__community-large-txt {
-    position: absolute;
-    width: 55%;
-    top: 70px;
-    left: 23%;
-    z-index: 1;
   }
 
   #about-page .about-page-body .about__community .about__community-small-txt {
-    position: absolute;
     width: 45%;
-    right: 0;
-    top: 200px;
+    padding-top: 20px;
   }
 
   #about-page .about-page-body .about__community .about__community-small-img-wrapper {
     position: absolute;
     width: 50%;
-    left: 0;
-    bottom: 0;
+    right: 0;
+    top: 0;
     max-width: 800px;
     overflow: hidden;
     height: 400px;
@@ -416,10 +350,6 @@
     height: 110%;
   }
 
-  #about-page .about-page-body .about__partnerships-associations {
-    padding-top: 110px;
-  }
-
   #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel {
     margin: 0;
     display: -webkit-box;
@@ -430,7 +360,7 @@
   }
 
   #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .about__partnerships-associations-img-wrap {
-    width: 33.33%;
+    width: 25%;
     height: 250px;
   }
 
@@ -441,7 +371,7 @@
   }
 
   #about-page .about-page-body .about__featured-in {
-    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel {
@@ -456,7 +386,7 @@
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper {
     font-family: "Druk Wide Web", sans-serif;
-    width: 33.33%;
+    width: 25%;
     padding: 20px 30px 20px 0;
   }
 
@@ -468,7 +398,7 @@
   }
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline {
-    color: #15534e;
+    color: #404040;
     letter-spacing: 1.5px;
     font-size: 20px;
     -webkit-transition: -webkit-text-decoration 0.1s ease-in-out;
@@ -480,7 +410,7 @@
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:visited,
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:hover,
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:focus {
-    color: #15534e;
+    color: #404040;
   }
 
   #about-page .about-page-body .about__featured-in #about__featured-in-carousel .about__publication-wrapper .publication-headline:hover {
@@ -498,10 +428,6 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #about-page .about__landing-page .about__landing-page-text {
     font-size: 3em;
-  }
-
-  #about-page .about-page-body .about__our-legacy .about__our-legacy-large-img {
-    height: 1000px;
   }
 
   #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img {
