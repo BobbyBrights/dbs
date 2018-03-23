@@ -125,6 +125,9 @@ header {
         background-color: $color__white;
       }
     }
+    .header__desktop-nav {
+      display: none;
+    }
   }
 
   // MENU
@@ -207,11 +210,17 @@ header {
             }
           }
           .menu-contact-button {
+            color: $color__green;            
             font-family: $font__main;
             font-size: 28px;
             letter-spacing: 1.5px;
             line-height: 38px;
+            text-decoration: none;
             cursor: pointer;
+            &:visited, &:hover, &:focus {
+              color: $color__green;
+              text-decoration: none;              
+            }
           }
         }
       }
@@ -480,91 +489,50 @@ header {
         }
       }
       .header__hamburger {
-        margin-top: 0;        
+        display: none;
       }
+      .header__desktop-nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 5px;
+        .menu-menu-1-container {
+          ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li {
+              padding: 0 15px;
+              a, a:visited, a:focus {
+                color: $color__white;
+                text-decoration: none;
+                font-family: $font__secondary_med;
+              }
+              a:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .menu-contact-button {
+          color: $color__white;
+          padding: 0 0 0 15px;          
+          text-decoration: none;
+          font-family: $font__secondary_med;
+          &:visited, &:focus {
+            color: $color__white;
+            text-decoration: none;
+            font-family: $font__secondary_med;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }      
     }
 
     #menu-overlay {
-      // overflow-y: scroll;
-      #menu-overlay-content {
-        margin-right: 10%;
-
-        #menu-close-wrapper {
-          height: 100px;
-          .menu-close {
-            transition: transform 0.3s ease-in-out;
-          }
-          &:hover {
-            .menu-close {
-              transform: rotate(180deg);
-            }
-          }
-        }
-        #menu-content {
-          margin-top: -20px;
-          // height: auto;
-          height: 85vh;
-          display: flex;
-          flex-direction: column;
-          .menu-top-wrap {
-            height: calc(50%);
-            #primary-menu {
-              font-size: 40px;
-              line-height: 60px;
-              a {
-                transition: opacity 0.1s ease-in;                
-                &:hover {
-                  opacity: 0.7;
-                }
-              }
-            }
-            .menu-contact-button {
-              font-size: 40px;
-              padding-top: 10px;
-              transition: opacity 0.1s ease-in;
-              &:hover {
-                opacity: 0.7;
-              }
-            }
-          }
-        }
-      }
-      .menu-bottom-wrap {
-        display: flex;
-        flex-direction: column;
-        // height: 70%;
-        .menu-social {
-          padding-top: 0;
-          .menu-social-icons {
-            a {
-              transition: opacity 0.1s ease-in;
-              img {
-                height: 35px;
-              }
-              &:hover {
-                opacity: 0.8;
-              }
-            }
-          }
-        }
-        .menu-contact {
-          a,
-          a:visited,
-          a:hover,
-          a:focus {
-            padding: 5px 0;
-          }
-          .menu-contact-address {
-            padding: 5px 0;
-          }
-          a {
-            transition: text-decoration 0.1s ease-in-out;
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-      }
+      display: none;
     }
 
     #contact-form {
