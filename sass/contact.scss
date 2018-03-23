@@ -39,6 +39,7 @@
       color: #404040;
       font-size: 18px;
       line-height: 22px;
+      text-decoration: none;      
       &:focus,
       &:hover,
       &:visited {
@@ -67,7 +68,7 @@
 // DESKTOP
 @media screen and (min-width: 1025px) {
   #contact-page {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 230px);
     position: relative;
     padding-top: 15%;
     display: flex;
@@ -84,8 +85,14 @@
         padding: 10px 0 20px 0;        
       }
       .contact__phone {
+        &:hover {
+          text-decoration: underline;
+        }
       }
       .contact__email {
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     .contact__map {

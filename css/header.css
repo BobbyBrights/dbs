@@ -320,7 +320,7 @@ header #menu-overlay .menu-bottom-wrap .menu-contact a:focus {
 }
 
 header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-email {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header #menu-overlay .menu-bottom-wrap .menu-contact .menu-contact-address {
