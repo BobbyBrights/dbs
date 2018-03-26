@@ -73,7 +73,7 @@ get_header(); ?>
             <?php echo $contactUsContent['front_page_contact_us_detail']?>
           </div>
           <div class="front-page__content-description-link">
-            <span onclick="openForm()" >contact us <span>+</span></span>
+            <a href="<?php echo get_site_url() . '/contact' ?>">contact us <span>+</span></a>
           </div>
         </div>
         <?php endif; ?>
