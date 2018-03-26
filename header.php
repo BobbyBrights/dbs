@@ -47,7 +47,7 @@
 				<div class="header-logo">
 					<object class="header-logo-image-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs_developments-mobile-logo-white.svg"></object>
 					<object class="header-logo-image-desktop-white" data="<?php echo get_stylesheet_directory_uri(); ?>/images/dbs-developments-logo-white.svg"></object>						
-					<a href="/" class="header-logo-button"></a>	
+					<a href="<?php echo get_site_url() . '/' ?>" class="header-logo-button"></a>	
 				</div>
 				<div class="header__hamburger" onclick="openMenu()">
 						<div class="hamburger__line"></div>
@@ -61,7 +61,7 @@
 							'menu_id'        => 'primary-menu',
 						) );
 					?>
-					<a href="/contact" class="menu-contact-button">Contact</a>					
+					<a href="<?php echo get_site_url() . '/contact' ?>" class="menu-contact-button">Contact</a>					
 				</div>
 			</section><!-- .site-branding -->
 
@@ -78,7 +78,7 @@
 									'menu_id'        => 'primary-menu',
 								) );
 							?>
-							<a href="/contact" class="menu-contact-button">Contact</a>
+							<a href="<?php echo get_site_url() . '/contact' ?>" class="menu-contact-button">Contact</a>
 						</div>
 
 						<div class="menu-bottom-wrap">
@@ -95,19 +95,9 @@
 								<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</section><!-- #menu-overlay -->
-
-			<section id="contact-form">
-				<div id="contact-form-content">
-					<div id="contact-close-wrapper">
-						<a href="javascript:void(0)" class="contact-close" onclick="closeForm()"></a>
-					</div>
-					<?php echo do_shortcode('[wpforms id="101"]') ?>
-				</div>
-			</section><!-- #contact-form -->
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
