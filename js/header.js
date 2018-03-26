@@ -1,4 +1,3 @@
-let windowSize = window.innerWidth;
 
 // Open Nav Menu 
 function openMenu() {
@@ -16,6 +15,7 @@ function closeMenu() {
 }
 
 jQuery(document).ready(function($) {
+  let windowSize = window.innerWidth;
 
   // Loader
   let top;
