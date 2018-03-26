@@ -41,14 +41,12 @@ jQuery(document).ready(function($) {
     let interval = setInterval(loaderAnimation, 2000);
     // On window load, play animation once and fade out
     $(window).on('load', function() {
-      alert('loaded');
       clearInterval(interval);
       loaderAnimation();
       setTimeout(function() {
         $('#loader').fadeOut();      
       }, 1500);
     });
-    alert('after loaded');
   })();
 
   // Sticky Header
