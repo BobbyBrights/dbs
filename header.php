@@ -24,6 +24,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-114593525-1');
 	</script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf_Wlb9xy9a6gg2xvZ2Wt03-rDM-JzQR4"></script>		
 	<?php wp_head(); ?>
 </head>
 

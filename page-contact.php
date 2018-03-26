@@ -24,7 +24,7 @@ get_header(); ?>
           <a href="tel:14164290969" class="contact__phone">(416) 429.0969</a>
           <a href="mailto:info@dbsdevelopments.ca" class="contact__email">info@dbsdevelopments.ca</a>
         </div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf_Wlb9xy9a6gg2xvZ2Wt03-rDM-JzQR4"></script>	
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf_Wlb9xy9a6gg2xvZ2Wt03-rDM-JzQR4"></script>	 -->
         <div class="contact__map">
           <?php $location = get_field('map'); 
           if( !empty($location) ): ?>
