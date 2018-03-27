@@ -40,7 +40,7 @@
 
   <div class="single-project__specs-and-about">
     <div class="single-project__specs">
-      <span class="spec-title">specs.</span>
+      <span class="spec-title">detail.</span>
       <?php 
         the_field('project_specs');
       ?>
