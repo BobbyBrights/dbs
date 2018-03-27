@@ -113,3 +113,10 @@
     margin: 0;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  #contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
