@@ -425,6 +425,17 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  #about-page .about__landing-page .about__landing-page-text {
+    margin-left: calc((100vw - 1200px) / 2);
+  }
+
+  #about-page .about-page-body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #about-page .about__landing-page .about__landing-page-text {
     font-size: 3em;
