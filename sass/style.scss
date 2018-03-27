@@ -111,10 +111,11 @@ html {
 	::selection {
 		background: #a0c1bf;
 	}
-  body {
+  body {		
 		width: 100%;
 		overflow-x: hidden;  
-    color: $color__green;
+		color: $color__green;
+		background-color: $color__white;	
   }
 }
 
