@@ -63,6 +63,16 @@ jQuery(document).ready(function($){
       reset: false,
       viewFactor: 0.5
     }
+    let projectsScrollReveal = {
+      duration: 1000,
+      distance: '20px',
+      delay: 0,
+      easing: 'ease-in-out',
+      scale: 1,
+      reset: false,
+      viewFactor: 0.2
+    }
+
 
     setTimeout(function() {
       // If home, delay and lengthen Header Logo Scrollreveal
@@ -89,11 +99,11 @@ jQuery(document).ready(function($){
       sr.reveal('.front-page__content-description-link', frontPageScrollReveal);
 
       // projects page
-      sr.reveal('.project__images-carousel', frontPageScrollReveal);
-      sr.reveal('.project__status', frontPageScrollReveal);
-      sr.reveal('.project__title', frontPageScrollReveal);
-      sr.reveal('.project__address', frontPageScrollReveal);
-      sr.reveal('.project__description', frontPageScrollReveal);
+      sr.reveal('.project__images-carousel', projectsScrollReveal);
+      sr.reveal('.project__status', projectsScrollReveal);
+      sr.reveal('.project__title', projectsScrollReveal);
+      sr.reveal('.project__address', projectsScrollReveal);
+      sr.reveal('.project__description', projectsScrollReveal);
 
       // single project page
       sr.reveal('.single-project__title', frontPageScrollReveal);
