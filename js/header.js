@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
   } else {
     top = '-35px';
   }
-  (function loader () {
+
     // Loader Animation set on interval of .5s until window loads
     function loaderAnimation() {
       $('#loader-d, #loader-b, #loader-s').css({'transition': 'none', 'top': '0'});
@@ -41,13 +41,14 @@ jQuery(document).ready(function($) {
     let interval = setInterval(loaderAnimation, 2000);
     // On window load, play animation once and fade out
     $(window).on('load', function() {
+      alert('loaded');
       clearInterval(interval);
       loaderAnimation();
       setTimeout(function() {
         $('#loader').fadeOut();      
       }, 1500);
     });
-  })();
+
 
   // Sticky Header
   // Keep track of scroll up or down
