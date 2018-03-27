@@ -158,4 +158,10 @@ footer {
 
 // EXTRA LARGE
 @media screen and (min-width: 1600px) {
+  footer {
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
 }
