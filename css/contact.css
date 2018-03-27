@@ -74,9 +74,9 @@
 
 @media screen and (min-width: 1025px) {
   #contact-page {
-    height: calc(100vh - 230px);
+    height: calc(100vh - 260px);
     position: relative;
-    padding-top: 15%;
+    padding-top: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
