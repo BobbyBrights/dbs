@@ -48,6 +48,14 @@ jQuery(document).ready(function($) {
       }, 1500);
     });
 
+    $(document).ready( function() {
+      clearInterval(interval);
+      loaderAnimation();
+      setTimeout(function() {
+        $('#loader').fadeOut();      
+      }, 1500);
+    })
+
 
   // Sticky Header
   // Keep track of scroll up or down
