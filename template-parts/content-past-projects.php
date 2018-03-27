@@ -27,7 +27,7 @@ if ( get_field('project_is_completed') ) :
         ?>  
           <a href="<?php echo get_permalink(); ?>">
             <div class="project__image-wrap">
-              <div class="image__overlay"></div>
+              <!-- <div class="image__overlay"></div> -->
               <img src="<?php echo $projectImage['url']; ?>" alt="">
             </div>
           </a>

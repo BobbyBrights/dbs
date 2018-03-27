@@ -77,9 +77,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #000));
-  background: linear-gradient(90deg, transparent, #000 50%);
-  opacity: 0.1;
+  background-image: url("../images/coming-soon.png");
+  background-size: cover;
+  opacity: 1;
 }
 
 #main .all-projects article .slick-slider .slick-list .slick-track a .project__image-wrap img {
@@ -89,6 +89,18 @@
   object-fit: cover;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+#main .all-projects article .slick-slider .slick-list .slick-track a .project__image-wrap .coming-soon-image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 2;
 }
 
 #main .all-projects article .slick-slider .slick-dots {
@@ -149,11 +161,11 @@
 }
 
 #main .all-projects article .project__address {
-  padding-top: 10px;
-  text-transform: uppercase;
-  font-family: 'Druk Wide Web';
-  font-size: 0.7em;
-  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: #000;
 }
 
 #main .all-projects article .project__description {

@@ -11,7 +11,7 @@
 <!-- <?php echo get_field('project_is_on_going'); ?> -->
 
 <?php
-if ( get_field('project_is_on_going') || get_field('project_is_on_up_coming')) :
+if ( get_field('project_is_on_going') || get_field('project_is_up_coming')) :
 ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
@@ -27,7 +27,15 @@ if ( get_field('project_is_on_going') || get_field('project_is_on_up_coming')) :
         ?>  
           <a href="<?php echo get_permalink(); ?>">
             <div class="project__image-wrap">
+         
+            <!-- <?php
+            if (get_field('project_is_up_coming')) :
+            ?>
               <div class="image__overlay"></div>
+            <?php
+            endif;
+            ?> -->
+              
               <img src="<?php echo $projectImage['url']; ?>" alt="">
             </div>
           </a>
