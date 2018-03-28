@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         adaptiveHeight: true,        
         // autoplay: true,
         autoplaySpeed: 2000,
-        centerPadding: '30px',
+        // centerPadding: '30px',
         dots: true,
         easing: 'ease-in-out',
         slidesToShow: 1,
@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
         adaptiveHeight: true,
         // autoplay: true,
         autoplaySpeed: 2000,
-        centerPadding: '30px',
+        // centerPadding: '30px',
         dots: true,
         slidesToShow: 1,
         variableWidth: true        

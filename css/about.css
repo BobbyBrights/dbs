@@ -160,7 +160,6 @@
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide {
   height: 100%;
-  width: 320px;
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide img {
@@ -200,7 +199,7 @@
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
   font-family: "Druk Wide Web", sans-serif;
   padding: 0 0 0 23px;
-  width: 330px;
+  width: 100vw;
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-name {

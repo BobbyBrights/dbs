@@ -125,7 +125,7 @@
             .slick-slide {
               // padding: 0 0 0 23px;              
               height: 100%;
-              width: 320px;
+              // width: 320px;
               img {
                 object-fit: contain;
                 width: 100%;
@@ -177,7 +177,7 @@
           .about__publication-wrapper {
             font-family: $font__main;
             padding: 0 0 0 23px;
-            width: 330px;            
+            width: 100vw;            
             .publication-name {
               text-transform: uppercase;
               font-size: 14px;
