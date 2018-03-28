@@ -48,6 +48,7 @@ footer .footer-content .footer-contact {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 20px;
+  font-size: 15px;
 }
 
 footer .footer-content .footer-contact a,
@@ -55,13 +56,12 @@ footer .footer-content .footer-contact a:visited,
 footer .footer-content .footer-contact a:focus,
 footer .footer-content .footer-contact a:hover {
   color: #404040;
-  font-size: 18px;
   padding: 10px 0;
   text-decoration: none;
 }
 
 footer .footer-content .footer-contact .footer-contact-address-mobile {
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 0;
 }
 
@@ -125,6 +125,10 @@ footer .footer-content .footer-copyright-wrapper a:hover {
     width: 20%;
   }
 
+  footer .footer-content .footer-social > span {
+    font-size: 15px;
+  }
+
   footer .footer-content .footer-social a {
     -webkit-transition: opacity 0.1s ease-in;
     transition: opacity 0.1s ease-in;
@@ -169,7 +173,7 @@ footer .footer-content .footer-copyright-wrapper a:hover {
 
   footer .footer-content .footer-contact .footer-contact-address-desktop {
     display: block;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   footer .footer-content .footer-copyright-wrapper {

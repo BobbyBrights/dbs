@@ -36,17 +36,17 @@ footer {
       display: flex;
       flex-direction: column;
       padding-top: 20px;
+      font-size: 15px;
       a,
       a:visited,
       a:focus,
       a:hover {
         color: #404040;
-        font-size: 18px;
         padding: 10px 0;
         text-decoration: none;
       }
       .footer-contact-address-mobile {
-        font-size: 18px;
+        font-size: 15px;
         padding: 10px 0;
       }
       .footer-contact-address-desktop {
@@ -100,6 +100,9 @@ footer {
 
       .footer-social {
         width: 20%;
+        > span {
+          font-size: 15px;
+        }
         a {
           transition: opacity 0.1s ease-in;
           img {
@@ -132,7 +135,7 @@ footer {
         }
         .footer-contact-address-desktop {
           display: block;
-          font-size: 18px;
+          font-size: 15px;
         }
       }
 
