@@ -9,12 +9,12 @@ jQuery(document).ready(function($){
     
   })();
 
-  (function disableProjects () {
-    $('.slick-track').each( function () {
-      if ($(this)[0].children.length === 1) {
-        $(this).parentsUntil($('.all-projects')).css("pointer-events", "none")
-      }
-    })
+  // (function disableProjects () {
+    // $('.slick-track').each( function () {
+    //   if ($(this)[0].children.length === 1) {
+    //     $(this).parentsUntil($('.all-projects')).css("pointer-events", "none")
+    //   }
+    // })
     // for (let i = 0; i < $('.slick-track').length; i++) {
     //   // console.log($($('.project__description')[i])[0].children.length);
     //   if ($('.slick-track')[i].children.length == 1 || $($('.project__description')[i])[0].children.length == 0) {
@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
     //     // console.log($($('.slick-track')[i]).parentsUntil($('.all-projects')))
     //   }
     // }
-  })();
+  // })();
 
   // Only show slick dots if more than 1 image in carousel
   (function toggleSlickDots() {

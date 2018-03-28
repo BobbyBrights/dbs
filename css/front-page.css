@@ -185,6 +185,20 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .front-page__landing-page .front-page__landing-page-slogans {
+    width: 1200px;
+    padding-left: calc((92vw - 1200px) / 2);
+  }
+
+  .front-page__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .front-page__landing-page .front-page__landing-page-slogans {
     font-size: 3em;

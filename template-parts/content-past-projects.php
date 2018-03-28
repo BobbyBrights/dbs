@@ -24,6 +24,7 @@ if ( get_field('project_is_completed') ) :
       <div class="project__images-carousel">
         <?php  
           foreach( $projectImages as $projectImage ):
+            if (get_field('project_is_clickable')) :
         ?>  
           <a href="<?php echo get_permalink(); ?>">
             <div class="project__image-wrap">
@@ -31,7 +32,16 @@ if ( get_field('project_is_completed') ) :
               <img src="<?php echo $projectImage['url']; ?>" alt="">
             </div>
           </a>
-        <?php endforeach; ?>
+        <?php
+            else :
+        ?>
+          <div class="project__image-wrap">      
+            <img src="<?php echo $projectImage['url']; ?>" alt="">
+          </div>
+        <?php 
+          endif;
+        endforeach; 
+        ?>
       </div>
 
       <!-- <div class="project__status">

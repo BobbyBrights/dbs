@@ -11,9 +11,9 @@
 <!-- <?php echo get_field('project_is_on_going'); ?> -->
 
 <?php
-if ( get_field('project_is_on_going') || get_field('project_is_up_coming')) :
+if ( get_field('project_is_on_going') ) :
 ?>
-  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
   <?php
     if ( is_singular() ) :
       the_title( '<h1 class="entry-title">', '</h1>' );
@@ -24,22 +24,23 @@ if ( get_field('project_is_on_going') || get_field('project_is_up_coming')) :
       <div class="project__images-carousel">
         <?php  
           foreach( $projectImages as $projectImage ):
+            if (get_field('project_is_clickable')) :
         ?>  
           <a href="<?php echo get_permalink(); ?>">
-            <div class="project__image-wrap">
-         
-            <!-- <?php
-            if (get_field('project_is_up_coming')) :
-            ?>
-              <div class="image__overlay"></div>
-            <?php
-            endif;
-            ?> -->
-              
+            <div class="project__image-wrap">      
               <img src="<?php echo $projectImage['url']; ?>" alt="">
             </div>
           </a>
-        <?php endforeach; ?>
+        <?php 
+            else :
+        ?>
+          <div class="project__image-wrap">      
+            <img src="<?php echo $projectImage['url']; ?>" alt="">
+          </div>
+        <?php
+            endif;
+          endforeach; 
+        ?>
       </div>
 
       <!-- <div class="project__status">

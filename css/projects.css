@@ -263,6 +263,23 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  #main .current-projects__title,
+  #main .past-projects__title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #main .all-projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #main .all-projects {
     padding-top: 120px;

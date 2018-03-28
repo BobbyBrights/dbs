@@ -17,6 +17,14 @@
   object-fit: cover;
 }
 
+#about-page .about__landing-page .about-page__desktop-image {
+  display: none;
+}
+
+#about-page .about__landing-page .about-page__mobile-image {
+  display: block;
+}
+
 #about-page .about__landing-page .about__landing-page-overlay {
   height: 100%;
   position: absolute;
@@ -160,7 +168,6 @@
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide {
   height: 100%;
-  width: 320px;
 }
 
 #about-page .about-page-body .about__partnerships-associations #about__partnerships-associations-carousel .slick-list .slick-track .slick-slide img {
@@ -200,7 +207,7 @@
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
   font-family: "Druk Wide Web", sans-serif;
   padding: 0 0 0 23px;
-  width: 330px;
+  width: 100vw;
 }
 
 #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper .publication-name {
@@ -232,6 +239,14 @@
 @media screen and (min-width: 1025px) {
   #about-page .about__landing-page {
     height: 95vh;
+  }
+
+  #about-page .about__landing-page .about-page__desktop-image {
+    display: block;
+  }
+
+  #about-page .about__landing-page .about-page__mobile-image {
+    display: none;
   }
 
   #about-page .about__landing-page img {
@@ -425,7 +440,26 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  #about-page .about__landing-page .about__landing-page-text {
+    margin-left: calc((100vw - 1200px) / 2);
+  }
+
+  #about-page .about-page-body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #about-page .about__landing-page .about-page__desktop-image {
+    display: block;
+  }
+
+  #about-page .about__landing-page .about-page__mobile-image {
+    display: none;
+  }
+
   #about-page .about__landing-page .about__landing-page-text {
     font-size: 3em;
   }

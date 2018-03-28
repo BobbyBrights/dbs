@@ -13,6 +13,12 @@
       width: 100%;
       object-fit: cover;
     }
+    .about-page__desktop-image {
+      display: none;
+    }
+    .about-page__mobile-image {
+      display: block;
+    }
     .about__landing-page-overlay {
       height: 100%;
       position: absolute;
@@ -125,7 +131,7 @@
             .slick-slide {
               // padding: 0 0 0 23px;              
               height: 100%;
-              width: 320px;
+              // width: 320px;
               img {
                 object-fit: contain;
                 width: 100%;
@@ -177,7 +183,7 @@
           .about__publication-wrapper {
             font-family: $font__main;
             padding: 0 0 0 23px;
-            width: 330px;            
+            width: 100vw;            
             .publication-name {
               text-transform: uppercase;
               font-size: 14px;
@@ -211,6 +217,12 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #about-page {
     .about__landing-page { 
+      .about-page__desktop-image {
+        display: block;
+      }
+      .about-page__mobile-image {
+        display: none;
+      }
       .about__landing-page-text {
         font-size: 3em;
       }
@@ -299,7 +311,12 @@
   #about-page {
     .about__landing-page {
       height: 95vh;
-
+      .about-page__desktop-image {
+        display: block;
+      }
+      .about-page__mobile-image {
+        display: none;
+      }
       img {
         width: 100%;
         object-position: top;
@@ -458,4 +475,17 @@
 
 // EXTRA LARGE
 @media screen and (min-width: 1600px) {
+
+  #about-page {
+    .about__landing-page {
+      .about__landing-page-text {
+        margin-left: calc((100vw - 1200px) / 2);
+      }
+    }
+    .about-page-body {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
 }
