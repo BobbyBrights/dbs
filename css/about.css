@@ -17,6 +17,14 @@
   object-fit: cover;
 }
 
+#about-page .about__landing-page .about-page__desktop-image {
+  display: none;
+}
+
+#about-page .about__landing-page .about-page__mobile-image {
+  display: block;
+}
+
 #about-page .about__landing-page .about__landing-page-overlay {
   height: 100%;
   position: absolute;
@@ -233,6 +241,14 @@
     height: 95vh;
   }
 
+  #about-page .about__landing-page .about-page__desktop-image {
+    display: block;
+  }
+
+  #about-page .about__landing-page .about-page__mobile-image {
+    display: none;
+  }
+
   #about-page .about__landing-page img {
     width: 100%;
     -o-object-position: top;
@@ -436,6 +452,14 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #about-page .about__landing-page .about-page__desktop-image {
+    display: block;
+  }
+
+  #about-page .about__landing-page .about-page__mobile-image {
+    display: none;
+  }
+
   #about-page .about__landing-page .about__landing-page-text {
     font-size: 3em;
   }

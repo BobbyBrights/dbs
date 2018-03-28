@@ -13,6 +13,12 @@
       width: 100%;
       object-fit: cover;
     }
+    .about-page__desktop-image {
+      display: none;
+    }
+    .about-page__mobile-image {
+      display: block;
+    }
     .about__landing-page-overlay {
       height: 100%;
       position: absolute;
@@ -211,6 +217,12 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #about-page {
     .about__landing-page { 
+      .about-page__desktop-image {
+        display: block;
+      }
+      .about-page__mobile-image {
+        display: none;
+      }
       .about__landing-page-text {
         font-size: 3em;
       }
@@ -299,7 +311,12 @@
   #about-page {
     .about__landing-page {
       height: 95vh;
-
+      .about-page__desktop-image {
+        display: block;
+      }
+      .about-page__mobile-image {
+        display: none;
+      }
       img {
         width: 100%;
         object-position: top;
