@@ -69,7 +69,11 @@ if ( get_field('project_is_on_going') ) :
 
     <div class="project__title">
       <?php
-        the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
+        if (get_field('project_is_clickable')) :
+          the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
+        else :
+          the_title();
+        endif;
       ?>
     </div>
     <div class="project__address">

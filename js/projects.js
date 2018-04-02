@@ -39,6 +39,9 @@ jQuery(document).ready(function($){
     if ( $('.past-projects')[0].children.length === 0 ) {
       $('.past-projects__title').css("display", "none");
     }
+    if ( $('.current-projects')[0].children.length === 0 ) {
+      $('.current-projects__title').css("display", "none");
+    }
   })();
  
 })

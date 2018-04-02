@@ -42,26 +42,6 @@ if ( get_field('project_is_completed') ) :
         endforeach; 
         ?>
       </div>
-
-      <!-- <div class="project__status">
-        <a href="<?php echo get_permalink(); ?>">
-          <?php if ( get_field('project_is_on_going') ) :?>
-            <div>
-              <p>on going</p>
-            </div>
-          <?php endif ?>
-          <?php if ( get_field('project_is_up_coming') ) :?>
-            <div>
-              <p>up coming</p>
-            </div>
-          <?php endif ?>
-          <?php if ( get_field('project_is_completed') ) :?>
-            <div>
-              <p>completed</p>
-            </div>
-          <?php endif ?>
-        </a>
-      </div> -->
           
     <?php
       endif;
@@ -69,7 +49,11 @@ if ( get_field('project_is_completed') ) :
 
     <div class="project__title">
       <?php
+        if (get_field('project_is_clickable')) :
         the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
+        else :
+        the_title();
+        endif;
       ?>
     </div>
     <div class="project__address">
@@ -77,11 +61,6 @@ if ( get_field('project_is_completed') ) :
         the_field('project_address');
       ?>
     </div> 
-    <!-- <div class="project__description">
-      <?php 
-        the_field('project_description');
-      ?>
-    </div>  -->
       
   <?php
     endif;
