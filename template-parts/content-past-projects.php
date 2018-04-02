@@ -8,7 +8,6 @@
  */
 
 ?>
-<!-- <?php echo get_field('project_is_on_going'); ?> -->
 
 <?php
 if ( get_field('project_is_completed') ) :

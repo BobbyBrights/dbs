@@ -34,5 +34,11 @@ jQuery(document).ready(function($){
       }
     });
   })();
+
+  (function toggleCurrentAndPastTitle () {
+    if ( $('.past-projects')[0].children.length === 0 ) {
+      $('.past-projects__title').css("display", "none");
+    }
+  })();
  
 })

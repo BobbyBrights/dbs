@@ -25,10 +25,10 @@
 					<a href="https://www.linkedin.com/company/dbs-developments" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 				</div> 
 				<div class="footer-contact">
-					<a href="mailto:info@dbsdevelopments.ca" class="footer-contact-email">info@dbsdevelopments.ca</a>
-					<a href="tel:4164290969" class="footer-contact-phone">(416) 429.0969</a>
+					<a href="mailto:<?php the_field("email", 201) ?>" class="footer-contact-email"><?php the_field("email", 201) ?></a>
+					<a href="tel:<?php the_field("phone_number", 201) ?>" class="footer-contact-phone"><?php the_field("phone_number", 201) ?></a>
 					<div class="footer-contact-address-mobile">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
-					<div class="footer-contact-address-desktop">11 Curity Ave., Toronto, On, M4B 1X4</div>			
+					<div class="footer-contact-address-desktop"><?php the_field("address", "203") ?></div>			
 				</div>
 			<!-- </div> -->
 			<div class="footer-copyright-wrapper">

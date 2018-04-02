@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) : ?>
 			<div class="current-projects__title">Current</div>
-      <div class="all-projects">
+      <div class="all-projects current-projects">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -31,7 +31,7 @@ get_header(); ?>
       ?>
       </div> <!-- end .current-projects -->
 			<div class="past-projects__title">Past</div>
-			<div class="all-projects">
+			<div class="all-projects past-projects">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
