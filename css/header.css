@@ -581,10 +581,6 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     font-family: "Neutral Medium";
   }
 
-  header .site-branding .header__desktop-nav .menu-menu-1-container ul li a:hover {
-    text-decoration: underline;
-  }
-
   header .site-branding .header__desktop-nav .menu-contact-button {
     color: #edede8;
     padding: 0 0 0 15px;
@@ -597,10 +593,6 @@ header #contact-form #contact-form-content .wpforms-confirmation-container-full 
     color: #edede8;
     text-decoration: none;
     font-family: "Neutral Medium";
-  }
-
-  header .site-branding .header__desktop-nav .menu-contact-button:hover {
-    text-decoration: underline;
   }
 
   header #menu-overlay {

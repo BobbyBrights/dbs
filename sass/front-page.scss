@@ -7,10 +7,14 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
-  img {
+  img.front-page__landing-page--mobile {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: block;
+  }
+  img.front-page__landing-page--desktop {
+    display: none;
   }
   .front-page__landing-page-overlay {
     height: 100%;
@@ -145,6 +149,15 @@
     .front-page__landing-page-slogans {
       font-size: 2.5em;
       left: 4vw;
+    }
+    img.front-page__landing-page--desktop {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    img.front-page__landing-page--mobile {
+      display: none;
     }
   }
 

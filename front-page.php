@@ -18,7 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main">
     
       <div class="front-page__landing-page">
-        <img class="rellax" data-rellax-speed="-3" src="<?php the_field('front_page_landing_image') ?>" alt="">
+        <img class="rellax front-page__landing-page--desktop" data-rellax-speed="-3" src="<?php the_field('front_page_landing_image') ?>" alt="">
+        <img class="rellax front-page__landing-page--mobile" data-rellax-speed="-3" src="<?php the_field('front_page_landing_image_mobile') ?>" alt="">
         <div class="front-page__landing-page-overlay"></div>
    
         <div class="front-page__landing-page-slogans">

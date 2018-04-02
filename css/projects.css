@@ -71,17 +71,6 @@
   height: 100%;
 }
 
-#main .all-projects article .slick-slider .slick-list .slick-track a .project__image-wrap .image__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/coming-soon.png");
-  background-size: cover;
-  opacity: 1;
-}
-
 #main .all-projects article .slick-slider .slick-list .slick-track a .project__image-wrap img {
   height: 100%;
   width: 100%;
@@ -92,6 +81,31 @@
 }
 
 #main .all-projects article .slick-slider .slick-list .slick-track a .project__image-wrap .coming-soon-image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 2;
+}
+
+#main .all-projects article .slick-slider .slick-list .slick-track .project__image-wrap {
+  height: 100%;
+}
+
+#main .all-projects article .slick-slider .slick-list .slick-track .project__image-wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#main .all-projects article .slick-slider .slick-list .slick-track .project__image-wrap .coming-soon-image {
   position: absolute;
   display: block;
   top: 0;
@@ -155,7 +169,7 @@
   color: #15534e;
   text-decoration: none;
   font-family: 'Druk Wide Web';
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: capitalize;
   letter-spacing: 2px;
   -webkit-transition: all 0.5s ease-in-out;

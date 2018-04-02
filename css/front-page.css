@@ -11,11 +11,16 @@
   overflow: hidden;
 }
 
-.front-page__landing-page img {
+.front-page__landing-page img.front-page__landing-page--mobile {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  display: block;
+}
+
+.front-page__landing-page img.front-page__landing-page--desktop {
+  display: none;
 }
 
 .front-page__landing-page .front-page__landing-page-overlay {
@@ -152,6 +157,18 @@
   .front-page__landing-page .front-page__landing-page-slogans {
     font-size: 2.5em;
     left: 4vw;
+  }
+
+  .front-page__landing-page img.front-page__landing-page--desktop {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+  }
+
+  .front-page__landing-page img.front-page__landing-page--mobile {
+    display: none;
   }
 
   .front-page__content {
