@@ -163,7 +163,6 @@ footer .footer-content .footer-copyright-wrapper a:hover {
   }
 
   footer .footer-content .footer-contact a:hover {
-    text-decoration: underline;
     padding: 0;
   }
 
@@ -194,10 +193,6 @@ footer .footer-content .footer-copyright-wrapper a:hover {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-  }
-
-  footer .footer-content .footer-copyright-wrapper .footer-design-by a:hover {
-    text-decoration: underline;
   }
 }
 

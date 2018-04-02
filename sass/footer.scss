@@ -126,7 +126,7 @@ footer {
           transition: text-decoration 0.1s ease-in-out;
           text-decoration: none;
           &:hover {
-            text-decoration: underline;
+            // text-decoration: underline;
             padding: 0;
           }
         }
@@ -150,7 +150,7 @@ footer {
         .footer-design-by {
           a {
             &:hover {
-              text-decoration: underline;
+              // text-decoration: underline;
             }
           }
         }

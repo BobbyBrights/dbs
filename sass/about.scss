@@ -190,8 +190,9 @@
               letter-spacing: 1.5px;
               line-height: 25px;
             }
-            .publication-headline {
-              color: #404040;              
+            a.publication-headline {
+              color: #404040;   
+              text-decoration: none;           
               letter-spacing: 1.5px;
               font-size: 20px;
               &:visited,
@@ -278,9 +279,10 @@
               letter-spacing: 1.5px;
               line-height: 25px;
             }
-            .publication-headline {
+            a.publication-headline {
               color: $color__green;
               letter-spacing: 1.5px;
+              text-decoration: none;
               font-size: 20px;
               &:visited,
               &:hover,
@@ -446,9 +448,10 @@
               letter-spacing: 1.5px;
               line-height: 25px;
             }
-            .publication-headline {
+            a.publication-headline {
               color: #404040;              
               letter-spacing: 1.5px;
+              text-decoration: none;
               font-size: 20px;
               transition: text-decoration 0.1s ease-in-out;
               &:visited,
