@@ -91,9 +91,9 @@
 								</div>
 							</div>
 							<div class="menu-contact">
-								<a class="menu-contact-email" href="<?php the_field("email", 201) ?>"><?php the_field("email", 201) ?></a>
-								<a class="menu-contact-phone" href="tel:<?php the_field("phone_number", 201) ?>"><?php the_field("phone_number", 201) ?></a>
-								<div class="menu-contact-address" href="">11 Curity Avenue, Unit 1 <br> Toronto, ON, M4B 1X4</div>
+								<a class="menu-contact-email" href="<?php the_field("email", 182) ?>"><?php the_field("email", 182) ?></a>
+								<a class="menu-contact-phone" href="tel:<?php the_field("phone_number", 182) ?>"><?php the_field("phone_number", 182) ?></a>
+								<div class="menu-contact-address" href=""><?php the_field("address", 182) ?></div>
 							</div>
 						</div>
 					</div>
