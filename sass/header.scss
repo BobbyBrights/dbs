@@ -394,6 +394,88 @@ header {
   }
 }
 
+// iPhone 6, 6s, 7, and 8 Landscape
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  header {
+    .site-branding {
+      height: 80px;
+      margin-top: 22px;
+      .header-logo {
+        height: 100%;
+        // width: 100%;
+        .header-logo-image-desktop-white {
+          position: relative;            
+          display: flex;
+          justify-content: flex-start;
+          height: 50px;
+        }
+        .header-logo-image-white {
+          display: none;
+        }            
+      }
+    }
+  }
+}
+
+// iPhone 6+, 7+, 8+ Landscape
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  header {
+    .site-branding {
+      height: 80px;
+      margin-top: 22px;
+      .header-logo {
+        height: 100%;
+        // width: 100%;
+        .header-logo-image-desktop-white {
+          position: relative;            
+          display: flex;
+          justify-content: flex-start;
+          height: 50px;
+        }
+        .header-logo-image-white {
+          display: none;
+        }            
+      }
+    }
+  }
+}
+
+// iPhone X Landscape
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  header {
+    .site-branding {
+      height: 80px;
+      margin-top: 22px;
+      .header-logo {
+        height: 100%;
+        // width: 100%;
+        .header-logo-image-desktop-white {
+          position: relative;            
+          display: flex;
+          justify-content: flex-start;
+          height: 50px;
+        }
+        .header-logo-image-white {
+          display: none;
+        }            
+      }
+    }
+  }
+}
+
+
 // IPAD
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
