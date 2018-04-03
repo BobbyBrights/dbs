@@ -27,8 +27,8 @@
 				<div class="footer-contact">
 					<a href="mailto:<?php the_field("email", 201) ?>" class="footer-contact-email"><?php the_field("email", 201) ?></a>
 					<a href="tel:<?php the_field("phone_number", 201) ?>" class="footer-contact-phone"><?php the_field("phone_number", 201) ?></a>
-					<div class="footer-contact-address-mobile">11 Curity Ave.,<br>Toronto, ON<br>M4B 1X4</div>
-					<div class="footer-contact-address-desktop"><?php the_field("address", "203") ?></div>			
+					<div class="footer-contact-address-mobile"><?php the_field("address", 201) ?></div>
+					<div class="footer-contact-address-desktop"><?php the_field("address", 201) ?></div>			
 				</div>
 			<!-- </div> -->
 			<div class="footer-copyright-wrapper">

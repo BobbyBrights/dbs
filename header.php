@@ -91,9 +91,9 @@
 								</div>
 							</div>
 							<div class="menu-contact">
-								<a class="menu-contact-email" href="mailto:info@dbsdevelopments.com">info@dbsdevelopments.ca</a>
-								<a class="menu-contact-phone" href="tel:4164290969">416.429.0969</a>
-								<div class="menu-contact-address" href="">11 Curity Ave.,<br>Toronto, On<br>M4B 1X4</div>
+								<a class="menu-contact-email" href="<?php the_field("email", 201) ?>"><?php the_field("email", 201) ?></a>
+								<a class="menu-contact-phone" href="tel:<?php the_field("phone_number", 201) ?>"><?php the_field("phone_number", 201) ?></a>
+								<div class="menu-contact-address" href=""><?php the_field("address", 201) ?></div>
 							</div>
 						</div>
 					</div>

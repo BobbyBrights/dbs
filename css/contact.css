@@ -98,14 +98,6 @@
     padding: 10px 0 20px 0;
   }
 
-  #contact-page .contact__text .contact__phone:hover {
-    text-decoration: underline;
-  }
-
-  #contact-page .contact__text .contact__email:hover {
-    text-decoration: underline;
-  }
-
   #contact-page .contact__map {
     width: 60%;
     height: 100%;
