@@ -1,11 +1,14 @@
 jQuery(document).ready(function($) {
   let windowSize = $(window).width();
 
-  if (windowSize < 768) {
+  // $(window).on('orientationchange', function() {
+  // });
+
+  if (windowSize < 813) {
     (function aboutPageMobileCarousels() {
       $('#about__partnerships-associations-carousel').slick({
         arrows: false,
-        // centerMode: true,
+        centerMode: true,
         adaptiveHeight: true,        
         // autoplay: true,
         autoplaySpeed: 2000,

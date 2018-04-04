@@ -548,3 +548,69 @@
     line-height: 35px;
   }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #about-page .about__landing-page {
+    height: 100vh;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img-wrapper .about__our-legacy-small-img {
+    height: 600px;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-small-img {
+    height: 350px;
+  }
+
+  #about-page .about__community .about__community-small-img {
+    height: 350px;
+  }
+
+  #about-page .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
+    padding: 0 0 0 40px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #about-page .about__landing-page {
+    height: 100vh;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-small-img-wrapper .about__our-legacy-small-img {
+    height: 600px;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-small-img {
+    height: 350px;
+  }
+
+  #about-page .about__community .about__community-small-img {
+    height: 350px;
+  }
+
+  #about-page .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
+    padding: 0 0 0 40px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #about-page .about__landing-page {
+    height: 100vh;
+  }
+
+  #about-page .about-page-body .about__our-legacy .about__our-legacy-txt-wrap .about__our-legacy-small-img-wrapper .about__our-legacy-small-img {
+    height: 600px;
+  }
+
+  #about-page .about-page-body .about__innovation .about__innovation-small-img {
+    height: 350px;
+  }
+
+  #about-page .about-page-body .about__community .about__community-small-img {
+    height: 350px;
+  }
+
+  #about-page .about-page-body .about__featured-in #about__featured-in-carousel .slick-list .about__publication-wrapper {
+    padding: 0 0 0 40px;
+  }
+}

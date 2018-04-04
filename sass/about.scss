@@ -25,7 +25,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: linear-gradient(transparent, transparent, #15534e) ;
+      background: linear-gradient(transparent, transparent, #15534e);
       opacity: 0.6;
     }
     .about__landing-page-text {
@@ -76,7 +76,7 @@
         letter-spacing: 1.5px;
       }
       .about__innovation-small-txt {
-        color: #404040;        
+        color: #404040;
         font-size: 19px;
         line-height: 25px;
         p {
@@ -98,7 +98,7 @@
         letter-spacing: 1.5px;
       }
       .about__community-small-txt {
-        color: #404040;        
+        color: #404040;
         font-size: 19px;
         line-height: 25px;
         p {
@@ -112,7 +112,7 @@
         object-fit: cover;
       }
     }
-    .about__partnerships-associations {
+    .about__partnerships-associations { 
       color: $color__green;
       margin: 20px 0 75px 0;
       span {
@@ -129,7 +129,7 @@
           .slick-track {
             height: 100%;
             .slick-slide {
-              // padding: 0 0 0 23px;              
+              // padding: 0 0 0 23px;
               height: 100%;
               // width: 320px;
               img {
@@ -169,12 +169,12 @@
         letter-spacing: 1.5px;
       }
       #about__featured-in-carousel {
-        color: #404040;        
+        color: #404040;
         margin-top: 25px;
         margin-bottom: 0;
         // height: 150px;
         margin-right: -7%;
-        margin-left: -7%;        
+        margin-left: -7%;
         .slick-list {
           padding: 0 30px 0 0;
           .slick-active {
@@ -183,7 +183,7 @@
           .about__publication-wrapper {
             font-family: $font__main;
             padding: 0 0 0 23px;
-            width: 100vw;            
+            width: 100vw;
             .publication-name {
               text-transform: uppercase;
               font-size: 14px;
@@ -191,14 +191,14 @@
               line-height: 25px;
             }
             a.publication-headline {
-              color: #404040;   
-              text-decoration: none;           
+              color: #404040;
+              text-decoration: none;
               letter-spacing: 1.5px;
               font-size: 20px;
               &:visited,
               &:hover,
               &:focus {
-                color: #404040;                
+                color: #404040;
               }
             }
             .publication-date {
@@ -213,11 +213,124 @@
     }
   }
 }
- 
+
+// iPhone 6, 6s, 7, and 8 Landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #about-page {
+    .about__landing-page {
+      height: 100vh;
+    }
+    .about-page-body {
+      .about__our-legacy {
+        .about__our-legacy-small-img-wrapper {
+          .about__our-legacy-small-img {
+            height: 600px;
+          }
+        }
+      }
+      .about__innovation {
+        .about__innovation-small-img {
+          height: 350px;
+        }
+      }
+    }
+    .about__community {
+      .about__community-small-img {
+        height: 350px;
+      }
+    }
+    .about__featured-in {
+      #about__featured-in-carousel {
+        .slick-list {
+          .about__publication-wrapper {
+            padding: 0 0 0 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone 6+, 7+, 8+ Landscape
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #about-page {
+    .about__landing-page {
+      height: 100vh;
+    }
+    .about-page-body {
+      .about__our-legacy {
+        .about__our-legacy-small-img-wrapper {
+          .about__our-legacy-small-img {
+            height: 600px;
+          }
+        }
+      }
+      .about__innovation {
+        .about__innovation-small-img {
+          height: 350px;
+        }
+      }
+    }
+    .about__community {
+      .about__community-small-img {
+        height: 350px;
+      }
+    }
+    .about__featured-in {
+      #about__featured-in-carousel {
+        .slick-list {
+          .about__publication-wrapper {
+            padding: 0 0 0 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPhone X Landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #about-page {
+    .about__landing-page {
+      height: 100vh;
+    }
+    .about-page-body {
+      .about__our-legacy {
+        .about__our-legacy-txt-wrap {
+          .about__our-legacy-small-img-wrapper {
+            .about__our-legacy-small-img {
+              height: 600px;
+            }
+          }
+        }
+      }
+      .about__innovation {
+        .about__innovation-small-img {
+          height: 350px;
+        }
+      }
+      .about__community {
+        .about__community-small-img {
+          height: 350px;
+        }
+      }
+      .about__featured-in {
+        #about__featured-in-carousel {
+          .slick-list {
+            .about__publication-wrapper {
+              padding: 0 0 0 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // IPAD
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #about-page {
-    .about__landing-page { 
+    .about__landing-page {
       .about-page__desktop-image {
         display: block;
       }
@@ -228,7 +341,7 @@
         font-size: 3em;
       }
     }
-    .about-page-body{
+    .about-page-body {
       .about__our-legacy {
         .about__our-legacy-small-img {
           height: 500px;
@@ -298,7 +411,6 @@
             }
           }
         }
-        
       }
     }
   }
@@ -336,7 +448,7 @@
         .about__our-legacy-txt-wrap {
           position: relative;
           top: 30px;
-          height: 800px;          
+          height: 800px;
           .about__our-legacy-small-txt {
             padding-top: 20px;
             position: relative;
@@ -383,9 +495,9 @@
           height: 400px;
           margin-top: 80px;
           .about__innovation-small-img {
-            padding: 0;        
+            padding: 0;
             height: 430px;
-            object-fit: cover;    
+            object-fit: cover;
           }
         }
       }
@@ -449,7 +561,7 @@
               line-height: 25px;
             }
             a.publication-headline {
-              color: #404040;              
+              color: #404040;
               letter-spacing: 1.5px;
               text-decoration: none;
               font-size: 20px;
@@ -478,7 +590,6 @@
 
 // EXTRA LARGE
 @media screen and (min-width: 1600px) {
-
   #about-page {
     .about__landing-page {
       .about__landing-page-text {
@@ -490,5 +601,4 @@
       margin: 0 auto;
     }
   }
-
 }

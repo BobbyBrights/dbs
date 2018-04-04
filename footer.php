@@ -25,7 +25,7 @@
 					<a href="https://www.linkedin.com/company/dbs-developments" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_social_icons-linkedin.svg"/></a>				
 				</div> 
 				<div class="footer-contact">
-					<a href="mailto:<?php the_field("email", 182) ?>" class="footer-contact-email"><?php the_field("email", 182) ?></a>
+					<a href="mailto:<?php the_field("email", 182) ?>" class="footer-contact-email"><?php the_field("email", 182) ?></a> 
 					<a href="tel:<?php the_field("phone_number", 182) ?>" class="footer-contact-phone"><?php the_field("phone_number", 182) ?></a>
 					<div class="footer-contact-address-mobile"><?php the_field("address", 182) ?></div>
 					<div class="footer-contact-address-desktop"><?php the_field("address", 182) ?></div>			

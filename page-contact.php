@@ -20,8 +20,8 @@ get_header(); ?>
         <div class="contact__text">
           <div class="contact__title">Contact</div>
           <div class="contact__head-office">Head Office</div>
-          <!-- <div class="contact__address">11 Curity Avenue, Unit 1</br>Toronto, On M4B 1X4</div> -->
-          <div class="contact__address">11 Curity Avenue, Unit 1 </br> Toronto, ON, M4B 1X4</div>
+          <div class="contact__address"><?php echo the_field("address") ?></div>
+          <!-- <div class="contact__address">11 Curity Avenue, Unit 1 </br> Toronto, ON, M4B 1X4</div> -->
           <a href="tel:<?php the_field("phone_number") ?>" class="contact__phone"><?php the_field("phone_number") ?></a>
           <a href="mailto:<?php the_field("email") ?>" class="contact__email"><?php the_field("email") ?></a>
         </div>
