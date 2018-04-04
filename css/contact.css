@@ -31,7 +31,6 @@
   font-size: 18px;
   line-height: 22px;
   padding: 5px 0 15px 0;
-  width: 200px;
 }
 
 #contact-page .contact__text .contact__phone {
@@ -97,7 +96,6 @@
 
   #contact-page .contact__text .contact__address {
     padding: 10px 0 20px 0;
-    width: 200px;
   }
 
   #contact-page .contact__map {
