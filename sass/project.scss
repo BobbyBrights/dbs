@@ -1,3 +1,5 @@
+@import 'variables-site/variables-site';
+
 /* ====================================================== */
 /* ======================= MOBILE ======================= */
 /* ====================================================== */
@@ -81,9 +83,9 @@
         .single-project__featured-in-article-newspaper-name {
           text-transform: uppercase;
           font-family: 'Druk Wide Web';
-          font-size: 0.7em;
-          margin-top: 20px;
-          letter-spacing: 2px;
+          font-size: 14px;
+          letter-spacing: 1.5px;
+          line-height: 25px;
         }
         .single-project__featured-in-article-title {
           a {
@@ -92,7 +94,14 @@
             font-size: 1.2em;
             color: #404040;
             letter-spacing: 2px;
+            text-decoration: none;
           }
+        }
+        .single-project__featured-in-article-date {
+          font-family: $font__secondary_med;
+          font-size: 14px;
+          letter-spacing: 1.5px;
+          line-height: 35px;
         }
       }
     }
@@ -223,13 +232,20 @@
         .single-project__featured-in-article {
           flex-grow: unset;
           width: calc( 100% / 4);
-          padding-right: 10px;
+          // padding-right: 10px;
+          padding: 20px 30px 20px 0;
           .single-project__featured-in-article-title {
-            transition: text-decoration 0.1s ease-in-out;            
-            &:hover {
-              text-decoration: none;
+            width: 100%;            
+            a {
+              display: inline-block;
             }
           }
+          // .single-project__featured-in-article-title {
+          //   transition: text-decoration 0.1s ease-in-out;            
+          //   &:hover {
+          //     text-decoration: none;
+          //   }
+          // }
         }
       }
     }

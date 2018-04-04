@@ -31,6 +31,7 @@
   font-size: 18px;
   line-height: 22px;
   padding: 5px 0 15px 0;
+  width: 200px;
 }
 
 #contact-page .contact__text .contact__phone {
@@ -111,5 +112,23 @@
   #contact-page {
     max-width: 1200px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #contact-page .contact__map {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #contact-page .contact__map {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #contact-page .contact__map {
+    height: 300px;
   }
 }

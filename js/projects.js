@@ -35,6 +35,16 @@ jQuery(document).ready(function($){
     });
   })();
 
+    // Replace / with . in 'Featured In publications'
+    (function replaceDateFormat() {
+      $('.single-project__featured-in-article-date').each(function() {
+        let date = $(this).text();
+        let newDate = date.replace(/\//g, '.');
+        $(this).text(newDate);
+      });
+    })();
+    
+
   (function toggleCurrentAndPastTitle () {
     if ( $('.past-projects')[0].children.length === 0 ) {
       $('.past-projects__title').css("display", "none");
