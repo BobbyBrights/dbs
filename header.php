@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/DBS_favicon-01.png" type="image/x-icon">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114593525-1"></script>
 	<script>
